@@ -1,5 +1,5 @@
 # MenuConsulter
-Repositorio para la asignatura IV de Antonio Rodríguez Rodríguez. 
+Repositorio para la asignatura Infraestructura Virtual de Antonio Rodríguez Rodríguez. 
 
 ## Problema a resolver:
 
