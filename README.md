@@ -21,16 +21,14 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ## Instalación
 1. Clona el repositorio:
     ```bash
-    git clone <url-del-repositorio>
-    cd <nombre-del-repositorio>
+    git clone https://github.com/antoniorr02/MenuConsulter.git
+    cd MenuConsulter
     ```
-2. Instala las dependencias:
-    ```bash
-    pip install -r requirements.txt
-    ```
+2. Instala las dependencias de docs/requeriments
+
 3. Ejecuta el sistema:
     ```bash
-    python app.py
+    python MenuConsulter.py
     ```
 
 ## Requisitos
@@ -42,6 +40,7 @@ El sistema ha sido diseñado para cumplir con las necesidades de los estudiantes
 
 - **Historia 1:** Como estudiante, quiero que el sistema me avise cuando haya platos que se ajusten a mis preferencias alimenticias.
 - **Historia 2:** Como usuario, quiero ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
+- **Historia 3:** Filtrado de menús según objetivos nutricionales.
 
 ## Hitos del Proyecto
 El desarrollo se divide en varios hitos para asegurar que se cumplan los objetivos de manera eficiente:

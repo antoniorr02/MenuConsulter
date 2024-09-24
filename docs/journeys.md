@@ -2,7 +2,7 @@
 
 ## Journey 1: Estudiante que busca comida según sus preferencias
 ### Contexto
-Juan, un estudiante universitario, es muy selectivo con la comida y quiere asegurarse de que cada día haya opciones que le gusten en el comedor. Tiene poco tiempo y no le gusta revisar los menús manualmente.
+Un estudiante universitario, es muy selectivo con la comida y quiere asegurarse de que cada día haya opciones que le gusten en el comedor. Tiene poco tiempo y no le gusta revisar los menús manualmente.
 
 ### Recorrido del Usuario:
 1. **Inicio de sesión:** Juan inicia sesión en la aplicación.
@@ -14,7 +14,7 @@ Juan, un estudiante universitario, es muy selectivo con la comida y quiere asegu
 
 ## Journey 2: Usuario con objetivo nutricional
 ### Contexto
-Laura, una estudiante que entrena para ganar masa muscular, quiere asegurarse de que las comidas que toma contribuyen a su objetivo de consumo de proteínas y calorías.
+Una estudiante que entrena para ganar masa muscular, quiere asegurarse de que las comidas que toma contribuyen a su objetivo de consumo de proteínas y calorías.
 
 ### Recorrido del Usuario:
 1. **Inicio de sesión:** Laura inicia sesión y configura su objetivo nutricional.
