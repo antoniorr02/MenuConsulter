@@ -6,7 +6,7 @@ Repositorio para la asignatura Infraestructura Virtual de Antonio Rodríguez Rod
 Soy un estudiante que tiene el problema de ser muy exquisito con la comida y quiero saber cuando se va a ofrecer comida que se adapte a mis preferencias, ya que pierdo mucho tiempo teniendo que entrar en la web de comedores universitarios y ver entre todo lo disponible si me gusta algo. 
 Del mismo modo, me gustaría saber la calidad alimenticia de los platos que hay disponibles cada día: macronutrientes, calorías, etc. Ya que tengo como objetivo personal, con mi entrenamiento, subir de peso ganando masa muscular, con lo que debería tener alguna forma de adecuar mi dieta a dicho objetivo.
 
-# Problema que resuelve
+# Resolución del problema
 
 ## Descripción
 Este proyecto es un sistema automatizado que ayuda a los estudiantes a encontrar comidas que se adapten a sus preferencias y objetivos nutricionales. El sistema extrae los menús diarios de los comedores universitarios, filtra los platos según las preferencias del usuario y proporciona un análisis nutricional de los platos.
