@@ -32,6 +32,7 @@ Más desarrolladas [aquí](https://github.com/antoniorr02/MenuConsulter/blob/Obj
 ## Hitos del Proyecto
 El desarrollo se divide en varios hitos para asegurar que se cumplan los objetivos de manera eficiente:
 
+- **Hito 0:** Entendimiento de la resolución del problema.
 - **Hito 1:** Implementación del scraping y extracción del menú.
 - **Hito 2:** Filtro de comidas basado en preferencias.
 - **Hito 3:** Cálculo de macronutrientes y calorías.
