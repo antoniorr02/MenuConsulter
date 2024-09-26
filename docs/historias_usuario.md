@@ -1,6 +1,6 @@
 # Historias de Usuario
 
-## Historia 1: Notificación de platos compatibles
+## [HU1]: Notificación de platos compatibles
 **Como** estudiante, **quiero** recibir una notificación diaria con los platos que se ajusten a mis preferencias alimenticias, **para** poder ahorrar tiempo buscando en el menú.
 
 ### Criterios de aceptación:
@@ -10,7 +10,7 @@
 
 ---
 
-## Historia 2: Visualización de macronutrientes y calorías
+## [HU2]: Visualización de macronutrientes y calorías
 **Como** usuario que sigue un plan de entrenamiento, **quiero** ver el contenido de macronutrientes (proteínas, carbohidratos, grasas) y las calorías de los platos, **para** poder ajustarlo a mi plan de nutrición.
 
 ### Criterios de aceptación:
@@ -20,7 +20,7 @@
 
 ---
 
-## Historia 3: Filtrado de menús según objetivos nutricionales
+## **[HU3]: Filtrado de menús según objetivos nutricionales
 **Como** estudiante, **quiero** que el sistema filtre el menú del día basado en mis necesidades de macronutrientes y calorías, **para** poder ver solo los platos que se ajustan a mi dieta.
 
 ### Criterios de aceptación:
