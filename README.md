@@ -18,23 +18,6 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 - Análisis de macronutrientes y calorías.
 - Notificaciones automáticas por correo o aplicación.
 
-## Instalación
-1. Clona el repositorio:
-    ```bash
-    git clone https://github.com/antoniorr02/MenuConsulter.git
-    cd MenuConsulter
-    ```
-2. Instala las dependencias de docs/requeriments
-
-3. Ejecuta el sistema:
-    ```bash
-    python MenuConsulter.py
-    ```
-
-## Requisitos
-- Python 3.x
-- Bibliotecas: BeautifulSoup, Requests, SQLAlchemy, etc.
-
 ## Historias de Usuario
 El sistema ha sido diseñado para cumplir con las necesidades de los estudiantes que buscan ahorrar tiempo al revisar los menús de comedores universitarios y alcanzar sus metas nutricionales. Algunas historias clave son:
 
