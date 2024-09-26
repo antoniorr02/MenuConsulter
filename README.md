@@ -18,18 +18,18 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 - Análisis de macronutrientes y calorías.
 - Notificaciones automáticas por correo o aplicación.
 
-## Historias de Usuario
+## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
 El sistema ha sido diseñado para cumplir con las necesidades de los estudiantes que buscan ahorrar tiempo al revisar los menús de comedores universitarios y alcanzar sus metas nutricionales. Algunas historias clave son:
 
 - **Historia 1:** Como estudiante, quiero que el sistema me avise cuando haya platos que se ajusten a mis preferencias alimenticias.
 - **Historia 2:** Como usuario, quiero ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
 - **Historia 3:** Filtrado de menús según objetivos nutricionales.
 
-Más desarrolladas [aquí](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
+## [Journey](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/journeys.md)
+- Un estudiante universitario, es muy selectivo con la comida y quiere asegurarse de que cada día haya opciones que le gusten en el comedor. Tiene poco tiempo y no le gusta revisar los menús manualmente.
+- Una estudiante que entrena para ganar masa muscular, quiere asegurarse de que las comidas que toma contribuyen a su objetivo de consumo de proteínas y calorías.
 
-[Journey](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/journeys.md)
-
-## Hitos del Proyecto
+## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
 El desarrollo se divide en varios hitos para asegurar que se cumplan los objetivos de manera eficiente:
 
 - **Hito 0:** Entendimiento de la resolución del problema.
@@ -37,6 +37,3 @@ El desarrollo se divide en varios hitos para asegurar que se cumplan los objetiv
 - **Hito 2:** Filtro de comidas basado en preferencias.
 - **Hito 3:** Cálculo de macronutrientes y calorías.
 - **Hito 4:** Sistema de notificaciones.
-
-Más desarrollados [aquí](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
-
