@@ -20,9 +20,9 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
 El sistema ha sido diseñado para cumplir con las necesidades de los estudiantes que buscan ahorrar tiempo al revisar los menús de comedores universitarios y alcanzar sus metas nutricionales. Algunas historias clave son:
 
-- **Historia 1:** Como estudiante, quiero que el sistema me avise cuando haya platos que se ajusten a mis preferencias alimenticias.
-- **Historia 2:** Como usuario, quiero ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
-- **Historia 3:** Filtrado de menús según objetivos nutricionales.
+- **[HU1]:** Como estudiante, quiero que el sistema me avise cuando haya platos que se ajusten a mis preferencias alimenticias.
+- **[HU2]:** Como usuario, quiero ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
+- **[HU3]:** Filtrado de menús según objetivos nutricionales.
 
 ## [Journey](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/journeys.md)
 - Un estudiante universitario, es muy selectivo con la comida y quiere asegurarse de que cada día haya opciones que le gusten en el comedor. Tiene poco tiempo y no le gusta revisar los menús manualmente.
