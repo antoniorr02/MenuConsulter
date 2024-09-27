@@ -7,7 +7,7 @@
 
 ---
 
-## Hito 1: Implementación del scraping del menú
+## Hito 1: Extracción de menús de los diferentes comedores disponibles.
 - **Objetivo:** Crear un script que permita extraer automáticamente el menú diario de la web de los comedores universitarios.
 - **Entregables:** Código de scraping, pruebas de extracción y almacenamiento de datos en base de datos.
 - **Estado:** Pendiente.
