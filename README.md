@@ -16,9 +16,10 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 - Una estudiante que entrena para ganar masa muscular, quiere asegurarse de que las comidas que toma contribuyen a su objetivo de consumo de proteínas y calorías.
 
 ## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
-- **[HU1]:** Ojalá me avisaran cuando haya platos que se ajusten a mis preferencias alimenticias.
-- **[HU2]:** Me gustaría poder ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
-- **[HU3]:** Ojalá pudiera filtrar los menús disponibles según mis objetivos nutricionales.
+- **[HU1]:** Ojalá pudiera ver rápidamente todos los menús de los diferentes comedores que tenga marcados como favoritos.
+- **[HU2]:** Ojalá me avisaran cuando haya platos que se ajusten a mis preferencias alimenticias.
+- **[HU3]:** Me gustaría poder ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
+- **[HU4]:** Ojalá pudiera filtrar los menús disponibles según mis objetivos nutricionales.
 
 ## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
 El desarrollo se divide en varios hitos para asegurar que se cumplan los objetivos de manera eficiente:
