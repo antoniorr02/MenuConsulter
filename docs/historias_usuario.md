@@ -1,5 +1,14 @@
 # Historias de Usuario
 
+## [HU1]: Ojalá pudiera ver rápidamente todos los menús de los diferentes comedores que tenga marcados como favoritos.
+**Como** estudiante, **quiero** poder ver los platos los menús de los diferentes comedores que tenga marcados como favoritos.
+
+### Criterios de aceptación:
+- El sistema debe permitir al usuario seleccionar los comedores de los que desea obtener los menús.
+- El sistema debe mostrar los menús correspondientes al menú de cada comedor.
+
+---
+
 ## [HU1]: Notificación de platos compatibles
 **Como** estudiante, **quiero** recibir una notificación diaria con los platos que se ajusten a mis preferencias alimenticias, **para** poder ahorrar tiempo buscando en el menú.
 
