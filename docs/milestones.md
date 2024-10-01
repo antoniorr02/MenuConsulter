@@ -2,7 +2,7 @@
 
 ---
 
-## Hito 0: Modelización del problema.
+## Hito 0: Modelo del problema.
 - **Objetivo:** Investigar que tecnologías se van a emplear, así como de dónde se van a extraer la información de los menús.
 - **Entregables:** Información de los técnologias y requisitos necesarios para el uso y desarrollo de la plataforma.
 - **Viabilidad:** Aquí está en la elección de las tecnologías adecuadas y en obtener los requisitos claros.
