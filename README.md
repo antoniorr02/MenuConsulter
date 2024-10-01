@@ -24,7 +24,7 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
 El desarrollo se divide en varios hitos para asegurar que se cumplan los objetivos de manera eficiente:
 
-- **Hito 0:** Entendimiento de la resolución del problema.
+- **Hito 0:** Toma de decisiones para la resolución del problema.
 - **Hito 1:** Extracción de menús de los diferentes comedores disponibles.
 - **Hito 2:** Filtro de comidas basado en preferencias.
 - **Hito 3:** Cálculo de macronutrientes y calorías.
