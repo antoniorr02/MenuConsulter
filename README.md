@@ -28,4 +28,3 @@ El desarrollo se divide en varios hitos para asegurar que se cumplan los objetiv
 - **Hito 1:** Extracción de menús de los diferentes comedores disponibles.
 - **Hito 2:** Filtro de comidas basado en preferencias.
 - **Hito 3:** Cálculo de macronutrientes y calorías.
-- **Hito 4:** Sistema de notificaciones.
