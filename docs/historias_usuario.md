@@ -1,6 +1,6 @@
 # Historias de Usuario
 
-## [HU1]: Ojalá pudiera ver rápidamente todos los menús de los diferentes comedores que tenga marcados como favoritos.
+## [HU1]: Como estudiante, quiero ver rápidamente los menús de los comedores que he marcado como favoritos para ahorrar tiempo en la búsqueda de opciones para comer.
 **Como** estudiante, **quiero** poder ver los platos los menús de los diferentes comedores que tenga marcados como favoritos.
 
 ### Criterios de aceptación:
