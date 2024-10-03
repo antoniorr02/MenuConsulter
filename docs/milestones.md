@@ -4,8 +4,8 @@
 
 ## Hito 0: Modelo del problema.
 - **Objetivo:** Poner las bases de la estructura y metodología de desarrollo del proyecto definiendo las variables necesarias, así como decidir de dónde y con que metodología se va a extraer la información necesaria para el correcto funcionamiento de la plataforma.
-- **Producto:** Informe sobre los requisitos necesarios para el uso y desarrollo de la plataforma.
-- **Viabilidad:** Completa conformidad entre personal asignado para el desarrollo del presente hito, tutor y desarrollador final.
+- **Producto:** Requisitos necesarios para el uso y desarrollo de la plataforma.
+- **Viabilidad:** Completa conformidad entre personal asignado para el desarrollo del presente hito, tutor y desarrollador final. Se trata de que todas las partes asociadas estén de acuerdo en que las variables que se deben tener en cuenta para la resolución del problema hagan una buena abstracción del mismo, permitiendo materializar una correcta resolución futura.
 
 ---
 
