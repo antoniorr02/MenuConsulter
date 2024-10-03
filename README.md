@@ -12,19 +12,7 @@ Este proyecto es un sistema automatizado que ayuda a los estudiantes a encontrar
 El estudiante evita perder tiempo revisando los menús manualmente y puede seguir un plan nutricional adecuado a sus necesidades de entrenamiento.
 
 ## [Journey](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/journeys.md)
-- Un estudiante universitario llamado Juan, es muy selectivo con la comida y quiere asegurarse de que cada día haya opciones que le gusten en el comedor. Tiene poco tiempo y no le gusta revisar los menús manualmente. Le gustan mucho los macarrones que se ponen ciertos diás el el menú del comedor de la facultad de Ciencias Económicas y Empresariales, con lo que le gustaría que el sistema le avise el día anterior de que ese día va a estar disponible su plato favorito.
-- Una estudiante que entrena para ganar masa muscular, quiere asegurarse de que las comidas que toma contribuyen a su objetivo de consumo de proteínas y calorías.
 
 ## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
-- **[HU1]:** Ojalá pudiera ver rápidamente todos los menús de los diferentes comedores que tenga marcados como favoritos.
-- **[HU2]:** Ojalá me avisaran cuando haya platos que se ajusten a mis preferencias alimenticias.
-- **[HU3]:** Me gustaría poder ver un análisis de macronutrientes de cada plato para ajustar mi dieta según mis objetivos de entrenamiento.
-- **[HU4]:** Ojalá pudiera filtrar los menús disponibles según mis objetivos nutricionales.
 
 ## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
-El desarrollo se divide en varios hitos para asegurar que se cumplan los objetivos de manera eficiente:
-
-- **Hito 0:** Modelo del problema.
-- **Hito 1:** Extracción de menús de los diferentes comedores disponibles.
-- **Hito 2:** Filtro de comidas basado en preferencias.
-- **Hito 3:** Cálculo de macronutrientes y calorías.
