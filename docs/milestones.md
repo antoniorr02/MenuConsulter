@@ -3,10 +3,9 @@
 ---
 
 ## Hito 0: Modelo del problema.
-- **Objetivo:** Investigar que tecnologías se van a emplear, así como de dónde se van a extraer la información de los menús.
-- **Entregables:** Información de los técnologias y requisitos necesarios para el uso y desarrollo de la plataforma.
-- **Viabilidad:** Aquí está en la elección de las tecnologías adecuadas y en obtener los requisitos claros.
-- **Producto:** Todavía no hay un producto para el usuario final.
+- **Objetivo:** Poner las bases de la estructura y metodología de desarrollo del proyecto definiendo las variables necesarias, así como decidir de dónde y con que metodología se va a extraer la información necesaria para el correcto funcionamiento de la plataforma.
+- **Producto:** Informe sobre los requisitos necesarios para el uso y desarrollo de la plataforma.
+- **Viabilidad:** Completa conformidad entre personal asignado para el desarrollo del presente hito, tutor y desarrollador final.
 
 ---
 
