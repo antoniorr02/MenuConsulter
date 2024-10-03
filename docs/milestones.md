@@ -10,7 +10,7 @@
 ---
 
 ## Hito 1: Extracción de menús de los comedores disponibles
-- **Objetivo:** Extración automática del menú diario de la web de los comedores universitarios.
+- **Objetivo:** Extracción automática del menú diario de la web de los comedores universitarios.
 - **Entregables:** Código para la obtención de la información y almacenamiento de datos en base de datos.
 - **Viabilidad:** Pasar los test necesarios que valienden el objetivo.
 - **Producto:** Todavía limitado; se enfoca en obtener los datos, pero no se entrega nada que el usuario pueda consumir directamente (a menos que se presente en una interfaz sencilla).
