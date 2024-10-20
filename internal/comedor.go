@@ -1,4 +1,4 @@
-package comedor
+package internal
 
 type Comedor struct {
 	Nombre string
