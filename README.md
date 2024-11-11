@@ -11,13 +11,13 @@ Soy un estudiante que tiene el problema de ser muy exquisito con la comida y qui
 Este proyecto es un sistema automatizado que ayuda a los estudiantes a encontrar comidas que se adapten a sus preferencias y objetivos nutricionales. El sistema extrae los menús diarios de diferentes comedores disponibles, filtra los platos según las preferencias del usuario y proporciona un análisis nutricional de los platos.
 El estudiante evita perder tiempo revisando los menús manualmente y puede seguir un plan nutricional adecuado a sus necesidades de entrenamiento.
 
-## [Journey](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/journeys.md)
+## [Journey](https://github.com/antoniorr02/MenuConsulter/docs/journeys.md)
 
-## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
+## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/docs/historias_usuario.md)
 
-## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
+## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/docs/milestones.md)
 
-## [Gestor de tareas](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/gestor_tareas.md)
+## [Gestor de tareas](https://github.com/antoniorr02/MenuConsulter/docs/gestor_tareas.md)
 
 ### Resumen de las tareas:
 - `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
@@ -26,4 +26,4 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 - `mage clean`: Limpia el binario y otros archivos generados.
 - `mage check`: Verifica que el código fuente esté correctamente formateado.
 
-## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/gestor_dependencias.md)
+## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/docs/gestor_dependencias.md)
