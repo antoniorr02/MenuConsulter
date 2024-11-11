@@ -1,14 +1,7 @@
-# Gestor de tareas
-
-Para la automatización de tareas repetitivas y facilitar el proceso de compilación y ejecución de nuestro proyecto, es necesario elegir un **Task Runner**. A continuación, exploramos algunas de las opciones más interesantes que hemos considerado:
-
-- **Make**: Es una de las herramientas más populares para la automatización de tareas. Utiliza un archivo `Makefile` donde se definen las reglas para ejecutar las tareas. Su ventaja principal es su gran versatilidad, ya que se basa en el uso de la shell, lo que le permite ser utilizado con diferentes lenguajes. Esto lo convierte en una opción bastante flexible.
-
-- **Mage**: Es una herramienta de automatización escrita en Go, que permite definir tareas directamente en este lenguaje. Estas tareas se configuran en el archivo `magefile.go` y se pueden ejecutar desde la línea de comandos.
-
-- **Task**: Otra herramienta para automatizar tareas en Go. En este caso, las tareas se definen en un archivo `Taskfile.yml` y también se ejecutan desde la línea de comandos.
+# Opciones de gestor de tareas
 
 #### Mage
+**Mage**: Es una herramienta de automatización escrita en Go, que permite definir tareas directamente en este lenguaje. Estas tareas se configuran en el archivo `magefile.go` y se pueden ejecutar desde la línea de comandos.
 ##### Ventajas:
 
 - Al estar escrito en Go, es especialmente útil para proyectos desarrollados en este lenguaje.
@@ -26,6 +19,7 @@ Para la automatización de tareas repetitivas y facilitar el proceso de compilac
 - No es tan flexible con lenguajes fuera de Go.
 
 #### Make
+**Make**: Es una de las herramientas más populares para la automatización de tareas. Utiliza un archivo `Makefile` donde se definen las reglas para ejecutar las tareas. Su ventaja principal es su gran versatilidad, ya que se basa en el uso de la shell, lo que le permite ser utilizado con diferentes lenguajes. Esto lo convierte en una opción bastante flexible.
 ##### Ventajas:
 
 - Es ampliamente utilizado y bien conocido en la industria del software.
@@ -39,6 +33,7 @@ Para la automatización de tareas repetitivas y facilitar el proceso de compilac
 - No ofrece tanta modularidad como Mage.
 
 #### Task
+**Task**: Es una herramienta para automatizar tareas en Go. En este caso, las tareas se definen en un archivo `Taskfile.yml` y también se ejecutan desde la línea de comandos.
 ##### Ventajas:
 
 - Usa un archivo `.yml` para gestionar las tareas, lo que lo hace fácil de leer y manejar.
@@ -62,3 +57,10 @@ Aunque **Make** es la herramienta más comúnmente utilizada en muchos lenguajes
 ### Instalación de mage
 - `go install github.com/magefile/mage@latest`
 - [Documentación oficial](https://github.com/magefile/mage)
+
+### Resumen de las tareas:
+- `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
+- `mage installDeps`: Instala las dependencias del proyecto utilizandgo modules.
+- `mage run`: Ejecuta el binario generado del proyecto.
+- `mage clean`: Limpia el binario y otros archivos generados.
+- `mage check`: Verifica que el código fuente esté correctamente formateado.
