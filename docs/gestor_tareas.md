@@ -62,10 +62,3 @@ Aunque **Make** es la herramienta más comúnmente utilizada en muchos lenguajes
 ### Instalación de mage
 - `go install github.com/magefile/mage@latest`
 - [Documentación oficial](https://github.com/magefile/mage)
-
-### Resumen de las tareas:
-- `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
-- `mage installDeps`: Instala las dependencias del proyecto utilizandgo modules.
-- `mage run`: Ejecuta el binario generado del proyecto.
-- `mage clean`: Limpia el binario y otros archivos generados.
-- `mage check`: Verifica que el código fuente esté correctamente formateado.
