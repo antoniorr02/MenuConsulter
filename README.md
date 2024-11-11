@@ -13,11 +13,11 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 
 ## [Journey](https://github.com/antoniorr02/MenuConsulter/docs/journeys.md)
 
-## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/docs/historias_usuario.md)
+## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
 
-## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/docs/milestones.md)
+## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
 
-## [Gestor de tareas](https://github.com/antoniorr02/MenuConsulter/docs/gestor_tareas.md)
+## [Gestor de tareas](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/gestor_tareas.md)
 
 ### Resumen de las tareas:
 - `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
@@ -26,4 +26,4 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 - `mage clean`: Limpia el binario y otros archivos generados.
 - `mage check`: Verifica que el código fuente esté correctamente formateado.
 
-## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/docs/gestor_dependencias.md)
+## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/gestor_dependencias.md)
