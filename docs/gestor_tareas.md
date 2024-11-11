@@ -57,6 +57,11 @@ Aunque **Make** es la herramienta más comúnmente utilizada en muchos lenguajes
 ### Instalación de mage
 - `go install github.com/magefile/mage@latest`
 - [Documentación oficial](https://github.com/magefile/mage)
+Es posible que necesites ejecutar previamente:
+`nano ~/.zshrc`
+`export PATH=$PATH:$(go env GOPATH)/bin`
+`source ~/.zshrc`
+Comprueba la instalación con: `mage -v` 
 
 ### Resumen de las tareas:
 - `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
