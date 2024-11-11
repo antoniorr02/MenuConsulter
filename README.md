@@ -16,3 +16,7 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ## [Historias de Usuario](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/historias_usuario.md)
 
 ## [Hitos del Proyecto](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/milestones.md)
+
+## [Gestor de tareas](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/gestor_tareas.md)
+
+## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-1/docs/gestor_dependencias.md)
