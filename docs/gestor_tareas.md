@@ -1,3 +1,11 @@
+# Requisitos buscados para el gestor de tareas
+1. Compatibilidad con Go.
+2. Simplicidad en la configuración.
+3. Baja curva de aprendizaje.
+4. Flexibilidad en la definición de tareas.
+5. Fácil mantenimiento.
+6. Documentación detallada y soporte.
+
 # Opciones de gestor de tareas
 
 **Mage**: Al estar escrito en Go, Mage permite a los desarrolladores que ya conocen este lenguaje definir tareas sin tener que aprender nuevas sintaxis (como la de Make) o utilizar archivos YAML. Esto facilita la mantenibilidad y reduce la deuda técnica.
@@ -49,7 +57,7 @@ Aunque **Make** es la herramienta más comúnmente utilizada en muchos lenguajes
 
 ### Justificación de la elección
 
- Aunque **Make** sea la opción más popular, la elección de **Mage** como herramienta de automatización se debe a su alineación directa con los requisitos del proyecto: al estar escrito en Go, reduce la deuda técnica, mejora la curva de aprendizaje y mejora la mantenibilidad, ya que los desarrolladores pueden definir las tareas en el mismo lenguaje en el que programan. Esto es crucial para nuestro equipo, que busca minimizar la complejidad y el esfuerzo adicional.
+ Aunque **Make** sea la opción más popular, la elección de **Mage** como herramienta de automatización se debe a su alineación directa con los requisitos del proyecto: al estar escrito en Go, reduce la curva de aprendizaje y mejora la mantenibilidad, ya que los desarrolladores pueden definir las tareas en el mismo lenguaje en el que programan. Esto es crucial para nuestro equipo, que busca minimizar la complejidad y el esfuerzo adicional para su configuración y posterior mantenimiento. Cumpliendo con todos los requisitos que se buscan para el gestor de tareas.
 
 ### Instalación de mage
 - `go install github.com/magefile/mage@latest`
