@@ -42,7 +42,7 @@ func Clean() error {
 
 func Check() error {
 	fmt.Println("Comprobando sintaxis del proyecto...")
-	return runCommand("gofmt", "-l", CODE_FOLDERS)
+	return runCommand("go", "build", "-o", "/dev/null", CODE_FOLDERS)
 }
 
 func runCommand(cmd string, args ...string) error {
