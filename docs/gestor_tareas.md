@@ -3,7 +3,7 @@
 - Descripción: La herramienta debe ser capaz de integrarse directamente con el entorno de Go, permitiendo la creación y ejecución de tareas sin dependencias adicionales de lenguaje.
 - Medición: Evaluar si la herramienta permite definir tareas usando Go de forma nativa o requiere archivos de configuración en otros lenguajes. Medir si tiene integración directa con go modules y si admite tareas en Go sin configuraciones adicionales.
 - Importancia: Permitir que el equipo trabaje sin cambiar de lenguaje es crucial para mantener un flujo de trabajo eficiente y evita la necesidad de herramientas externas de traducción o adaptación.
-2. Configuración simple y sin dependencias externas.
+2. Ausencia de dependencias externas.
 - Descripción: La herramienta debe instalarse y configurarse sin dependencias adicionales y sin procesos complejos de configuración.
 - Medición: Contar la cantidad de pasos de instalación y configuración inicial; número de dependencias externas necesarias (idealmente, ninguna).
 - Importancia: Una configuración simple permite que el equipo pueda usar la herramienta rápidamente en nuevos entornos y evita problemas de compatibilidad.
