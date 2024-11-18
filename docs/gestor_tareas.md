@@ -1,5 +1,5 @@
 # Requisitos buscados para el gestor de tareas
-1. Uso nativo de Go para definir tareas.
+1. Uso nativo del lenguaje del proyecto para definir tareas.
 - Descripción: La herramienta debe ser capaz de integrarse directamente con el entorno de Go, permitiendo la creación y ejecución de tareas sin dependencias adicionales de lenguaje.
 - Medición: Evaluar si la herramienta permite definir tareas usando Go de forma nativa o requiere archivos de configuración en otros lenguajes. Medir si tiene integración directa con go modules y si admite tareas en Go sin configuraciones adicionales.
 - Importancia: Permitir que el equipo trabaje sin cambiar de lenguaje es crucial para mantener un flujo de trabajo eficiente y evita la necesidad de herramientas externas de traducción o adaptación.
