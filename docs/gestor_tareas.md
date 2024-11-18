@@ -1,16 +1,21 @@
 # Requisitos buscados para el gestor de tareas
-1. Uso nativo del lenguaje del proyecto para definir tareas.
-- Descripción: La herramienta debe ser capaz de integrarse directamente con el entorno de Go, permitiendo la creación y ejecución de tareas sin dependencias adicionales de lenguaje.
-- Medición: Evaluar si la herramienta permite definir tareas usando Go de forma nativa o requiere archivos de configuración en otros lenguajes. Medir si tiene integración directa con go modules y si admite tareas en Go sin configuraciones adicionales.
-- Importancia: Permitir que el equipo trabaje sin cambiar de lenguaje es crucial para mantener un flujo de trabajo eficiente y evita la necesidad de herramientas externas de traducción o adaptación.
-2. Ausencia de dependencias externas.
-- Descripción: La herramienta debe instalarse y configurarse sin dependencias adicionales y sin procesos complejos de configuración.
-- Medición: Contar la cantidad de pasos de instalación y configuración inicial; número de dependencias externas necesarias (idealmente, ninguna).
-- Importancia: Una configuración simple permite que el equipo pueda usar la herramienta rápidamente en nuevos entornos y evita problemas de compatibilidad.
-3. Fácil mantenibilidad.
-- Descripción: Las tareas deben ser fáciles de leer, modificar y extender en el tiempo sin producir deuda técnica.
-- Medición: Evaluar como de fácil es entender, corregir, adaptar y mejorar un sistema de software a lo largo del tiempo, reduciendo la deuda técnica.
-- Importancia: Una estructura de tareas clara facilita el mantenimiento y la colaboración a largo plazo, incluso con cambios en el equipo.
+1. Explícito
+- Ya que buscamos conocer nuevas herramientas, con lo que utilizar el gestor de tareas implícito de Go, no cumpliría con este objetivo de la asignatura. 
+
+2. Configuración externa
+- Requiere un archivo adicional que describa las tareas o dependencias (e.g., Makefile en make o magefile en mage).
+
+3. Imperativo
+- Debe de describirse los pasos a seguir para completar una tarea.
+
+4. Genérico
+- El gestor de tareas debe de ser genérico sin dejar de estar específicamente orientado a go.
+
+5. Uso de DSLs (Domain-Specific Languages)
+- La herramienta debe de ofrecer la ventaja de aprovechar las características del lenguaje mientras se definen las tareas.
+
+6. Facilidad de integración y estandarización
+- La herramienta debe de integrarse fácilmente con otros sistemas y herramientas dentro del ecosistema Go.
 
 # Opciones de gestor de tareas
 
@@ -23,25 +28,14 @@
 **Task**: Aunque Task también está pensado para Go, el uso de archivos YAML puede complicar la flexibilidad en proyectos más complejos, ya que se está añadiendo una capa de abstracción que Mage resuelve de forma directa al programar las tareas en Go.
 [Documentación oficial](https://taskfile.dev/)
 
-# Evaluación de las opciones
-**Mage**
-- Compatibilidad con Go: Alta. Mage permite escribir tareas directamente en Go, utilizando magefile.go sin dependencias externas.
-- Configuración Simple: Alta. Mage se instala con una sola instrucción (go install) y no requiere configuración adicional.
-- Mantenibilidad: Alta. Al escribir las tareas en Go, el código es modular y reutilizable, con documentación directa en el archivo de tareas.
-
-**Make**
-- Compatibilidad con Go: Baja. Make no está diseñado específicamente para Go y requiere definir las tareas en un archivo Makefile.
-- Configuración Simple: Moderada. Make viene preinstalado en sistemas Unix, pero requiere configuración adicional en Windows.
-- Mantenibilidad: Baja. La sintaxis de Makefiles es menos intuitiva, especialmente para proyectos en Go.
-
-**Task**
-- Compatibilidad con Go: Moderada-Alta. Task permite integrar comandos de Go y usa YAML para definir tareas, lo que requiere conocimientos adicionales de configuración.
-- Configuración Simple: Moderada. Task se instala de manera simple, pero requiere un archivo .yml adicional para definir tareas.
-- Mantenibilidad: Moderada. La sintaxis de YAML es clara, pero separa el lenguaje del proyecto (Go) de la definición de tareas, lo que puede dificultar la mantenibilidad en entornos avanzados.
-
 ### Justificación de la elección
-
- Aunque **Make** sea la opción más popular, basado en los criterios de decisión, **Mage** se presenta como la herramienta óptima para el proyecto, dada su alta compatibilidad con Go, simplicidad de configuración, y facilidad para mantener las tareas a largo plazo. Mage ofrece una experiencia de desarrollo fluida y específica para Go, alineándose con las necesidades y estructura del equipo técnico en este caso.
+La elección de **Mage** como gestor de tareas en un proyecto Go se justifica principalmente por su control y facilidad de integración dentro del ecosistema Go, a pesar de que Go ya ofrece herramientas integradas para tareas simples.
+1. Mage, como gestor de tareas explícito, permite un control mucho más granular sobre el flujo de trabajo, a diferencia de las herramientas implícitas de Go, como go build y go test, que son eficientes pero limitadas para tareas complejas o personalizadas.
+2. Mage requiere un archivo de configuración externo (magefile.go), lo que facilita la organización y gestión de tareas de forma explícita, mientras que Go depende de su sistema interno para tareas simples, lo que puede volverse limitado a medida que el proyecto crece.
+3. Al ser imperativo, Mage permite definir tareas detalladas y secuenciales que se ejecutan con precisión, lo que es ideal cuando se requieren pasos específicos y controlados, a diferencia de los comandos más abstractos de Go.
+4. Mage, aunque es un task runner genérico que utiliza Go como su DSL, está bien adaptado al ecosistema Go, aprovechando las ventajas del lenguaje para crear tareas personalizadas sin sacrificar rendimiento ni claridad.
+5. Mage usa Go como un DSL para definir tareas, lo que lo que se alinea con las mejores prácticas del lenguaje, mientras que otras herramientas de Go no requieren un DSL pero limitan la capacidad de personalización.
+6. Mage se integra fácilmente con las herramientas y bibliotecas de Go, y al estar escrito en Go, se alinea con el flujo de trabajo del equipo, facilitando la adopción y extensión del proyecto.
 
 ### Instalación de mage
 - `go install github.com/magefile/mage@latest`
