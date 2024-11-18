@@ -9,7 +9,7 @@
 - Importancia: Una configuración simple permite que el equipo pueda usar la herramienta rápidamente en nuevos entornos y evita problemas de compatibilidad.
 3. Fácil mantenibilidad.
 - Descripción: Las tareas deben ser fáciles de leer, modificar y extender en el tiempo sin producir deuda técnica.
-- Medición: Evaluar si la sintaxis y estructura de las tareas permite comentarios claros, modularidad, y reutilización. Determinar si el código de las tareas es autodescriptivo y si se puede organizar de manera lógica.
+- Medición: Evaluar como de fácil es entender, corregir, adaptar y mejorar un sistema de software a lo largo del tiempo, reduciendo la deuda técnica.
 - Importancia: Una estructura de tareas clara facilita el mantenimiento y la colaboración a largo plazo, incluso con cambios en el equipo.
 
 # Opciones de gestor de tareas
