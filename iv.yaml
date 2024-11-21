@@ -1,2 +1,5 @@
 lenguaje: go
 entidad: internal/comedor.go
+automatizar:
+  fichero: justfile.go
+  orden: just
