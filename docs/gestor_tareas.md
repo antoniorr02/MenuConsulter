@@ -1,10 +1,11 @@
 # Requisitos buscados para el gestor de tareas
 1. Debe de ser una herramienta actualizada para reducir la deuda técnica futura y que no ocurra como con Mage en la que encontramos que la última actualización fue gace más de un año.
 2. Herramientas que permitan mantener las mejores prácticas para el lenguaje que faciliten su uso y mantenimiento.
-3. Reducción de la deuda técnica futura.
-- Diseñar el sistema de manera que sea fácil de mantener y escalar, evitando soluciones a corto plazo que generen problemas a largo plazo.
 
 # Opciones de gestor de tareas
+
+**Mage**: Al estar escrito en Go, Mage permite a los desarrolladores que ya conocen este lenguaje definir tareas sin tener que aprender nuevas sintaxis (como la de Make) o utilizar archivos YAML. Sin embargo, actualmente no tiene actualizaciones con lo que generaría deuda técnica en nuestro proyecto.
+[Documentación oficial](https://github.com/magefile/mage)
 
 **Make**: Aunque es una herramienta muy versátil y utilizada en muchos lenguajes, su sintaxis y uso de archivos Makefile no está adaptado a Go y puede ser menos intuitivo para quienes están acostumbrados a trabajar en Go. Además, puede generar cierta deuda técnica si el equipo necesita dedicar tiempo extra a aprender y adaptar la sintaxis para definir tareas básicas.
 [Documentación de configuración(no oficial)](https://earthly.dev/blog/golang-makefile/)
@@ -17,7 +18,6 @@
 
 **Sage** es una herramienta inspirada en mage para automatizar tareas en proyectos Go, que sustituye archivos como Makefile o Justfile.
 [Documentación oficial](https://github.com/einride/sage)
-
 
 ### Justificación de la elección
 Just es una herramienta ideal para un gestor de tareas en Go porque, al estar escrita en el mismo lenguaje, se integra perfectamente con el proyecto sin necesidad de dependencias externas. Su sintaxis sencilla facilita el mantenimiento y la automatización de tareas repetitivas como compilación, pruebas y ejecución del servidor, lo que mejora la consistencia y reduce errores humanos. Además, al automatizar estos procesos esenciales, Just ayuda a reducir la deuda técnica, asegurando que el sistema sea fácil de mantener y escalar a largo plazo.
