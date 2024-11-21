@@ -22,7 +22,6 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ### Resumen de las tareas:
 - `just build`: Compila el proyecto y genera el binario en la carpeta bin.
 - `just install_deps`: Instala las dependencias del proyecto utilizandgo modules.
-- `just run`: Ejecuta el binario generado del proyecto.
 - `just clean`: Limpia el binario y otros archivos generados.
 - `just check`: Verifica que el código fuente esté correctamente formateado.
 

@@ -25,6 +25,5 @@ Just es una herramienta ideal para un gestor de tareas en Go porque, al estar es
 ### Resumen de las tareas:
 - `just build`: Compila el proyecto y genera el binario en la carpeta bin.
 - `just installDeps`: Instala las dependencias del proyecto utilizandgo modules.
-- `just run`: Ejecuta el binario generado del proyecto.
 - `just clean`: Limpia el binario y otros archivos generados.
 - `just check`: Verifica que el código fuente esté correctamente formateado.
