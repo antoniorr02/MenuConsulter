@@ -20,10 +20,10 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ## [Gestor de tareas](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/gestor_tareas.md)
 
 ### Resumen de las tareas:
-- `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
-- `mage installDeps`: Instala las dependencias del proyecto utilizandgo modules.
-- `mage run`: Ejecuta el binario generado del proyecto.
-- `mage clean`: Limpia el binario y otros archivos generados.
-- `mage check`: Verifica que el código fuente esté correctamente formateado.
+- `just build`: Compila el proyecto y genera el binario en la carpeta bin.
+- `just install_deps`: Instala las dependencias del proyecto utilizandgo modules.
+- `just run`: Ejecuta el binario generado del proyecto.
+- `just clean`: Limpia el binario y otros archivos generados.
+- `just check`: Verifica que el código fuente esté correctamente formateado.
 
 ## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/gestor_dependencias.md)

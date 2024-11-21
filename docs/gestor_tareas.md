@@ -1,7 +1,9 @@
 # Requisitos buscados para el gestor de tareas
-1. Lenguaje de programación: Go.
-2. Mejores prácticas y herramientas recomendadas para Go.
+1. Lenguaje de programación del proyecto.
+- Habrá que tener en cuenta las opciones disponibles para Go.
+2. Herramientas que permitan mantener las mejores prácticas para el lenguaje que faciliten su uso y mantenimiento.
 3. Reducción de la deuda técnica futura.
+- Diseñar el sistema de manera que sea fácil de mantener y escalar, evitando soluciones a corto plazo que generen problemas a largo plazo.
 
 # Opciones de gestor de tareas
 
@@ -14,21 +16,15 @@
 **Task**: Aunque Task también está pensado para Go, el uso de archivos YAML puede complicar la flexibilidad en proyectos más complejos, ya que se está añadiendo una capa de abstracción que Mage resuelve de forma directa al programar las tareas en Go.
 [Documentación oficial](https://taskfile.dev/)
 
-### Justificación de la elección
-Elegir **Mage** en Go es una alternativa muy adecuada pues simplifica la gestión de tareas con sintaxis nativa y aprovechando las mejores prácticas y herramientas del ecosistema Go. Esto, junto con el soporte que la herramienta tiene, reduce la deuda técnica futura al mantener la consistencia en el lenguaje y facilitar el mantenimiento.
+**Just**: Just es una herramienta de automatización escrita en Go que se utiliza para crear "Makefiles" más simples y comprensibles. Funciona de manera similar a Make pero se enfoca en ser más fácil de usar y entender. En lugar de tener que definir un archivo Makefile con comandos complicados, puedes usar un archivo justfile, que es similar a un archivo de script con tareas y dependencias.
+[Documentacion oficial](https://github.com/casey/just)
 
-### Instalación de mage
-- `go install github.com/magefile/mage@latest`
-- [Documentación oficial](https://github.com/magefile/mage)
-Es posible que necesites ejecutar previamente:
-`nano ~/.zshrc`
-`export PATH=$PATH:$(go env GOPATH)/bin`
-`source ~/.zshrc`
-Comprueba la instalación con: `mage -v` 
+### Justificación de la elección
+Just es una herramienta ideal para un gestor de tareas en Go porque, al estar escrita en el mismo lenguaje, se integra perfectamente con el proyecto sin necesidad de dependencias externas. Su sintaxis sencilla facilita el mantenimiento y la automatización de tareas repetitivas como compilación, pruebas y ejecución del servidor, lo que mejora la consistencia y reduce errores humanos. Además, al automatizar estos procesos esenciales, Just ayuda a reducir la deuda técnica, asegurando que el sistema sea fácil de mantener y escalar a largo plazo.
 
 ### Resumen de las tareas:
-- `mage build`: Compila el proyecto y genera el binario en la carpeta bin.
-- `mage installDeps`: Instala las dependencias del proyecto utilizandgo modules.
-- `mage run`: Ejecuta el binario generado del proyecto.
-- `mage clean`: Limpia el binario y otros archivos generados.
-- `mage check`: Verifica que el código fuente esté correctamente formateado.
+- `just build`: Compila el proyecto y genera el binario en la carpeta bin.
+- `just installDeps`: Instala las dependencias del proyecto utilizandgo modules.
+- `just run`: Ejecuta el binario generado del proyecto.
+- `just clean`: Limpia el binario y otros archivos generados.
+- `just check`: Verifica que el código fuente esté correctamente formateado.
