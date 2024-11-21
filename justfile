@@ -13,11 +13,6 @@ install_deps:
     echo "Instalando las dependencias..."
     go mod tidy
 
-# Tarea para ejecutar el programa
-run:
-    echo "Ejecutando el programa {{BINARY_NAME}}..."
-    {{BIN}}/{{BINARY_NAME}}
-
 # Tarea para limpiar los binarios
 clean:
     echo "Limpiando los binarios..."
@@ -27,4 +22,4 @@ clean:
 # Tarea para comprobar la sintaxis del proyecto
 check:
     echo "Comprobando sintaxis del proyecto..."
-    go build -o /dev/null
+    gofmt -e {{CODE_FOLDERS}} > /dev/null
