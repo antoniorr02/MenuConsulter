@@ -15,8 +15,8 @@
 **Just**: Just es una herramienta de automatización escrita en Go que se utiliza para crear "Makefiles" más simples y comprensibles. Funciona de manera similar a Make pero se enfoca en ser más fácil de usar y entender. En lugar de tener que definir un archivo Makefile con comandos complicados, puedes usar un archivo justfile, que es similar a un archivo de script con tareas y dependencias.
 [Documentacion oficial](https://github.com/casey/just)
 
-**Sage** es una herramienta para automatizar tareas en proyectos Go, que sustituye archivos como Makefile o Justfile.
-[Documentación oficial](https://pkg.go.dev/github.com/nahojer/sage#section-readme)
+**Sage** es una herramienta inspirada en mage para automatizar tareas en proyectos Go, que sustituye archivos como Makefile o Justfile.
+[Documentación oficial](https://github.com/einride/sage)
 
 
 ### Justificación de la elección
