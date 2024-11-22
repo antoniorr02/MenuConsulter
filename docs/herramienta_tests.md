@@ -1,5 +1,5 @@
 # Requisitos buscados para la herramienta de tests
-1. Debe de ser una herramienta actualizada para reducir la deuda técnica futura.
+1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
 2. La herramienta debe de ajustarse a la metodología TDD.
 3. La herramienta debe permitir ver el código cubierto por los test.
 4. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
@@ -36,3 +36,4 @@
 
 ### Justificación de la elección
 La elección de **Testify** como herramienta de pruebas se justifica por su equilibrio entre simplicidad y funcionalidad. Es una herramienta ampliamente utilizada y mantenida en el ecosistema de Go, lo que asegura soporte a largo plazo y una actualización frecuente, siendo la última del mismo de hace menos de una semana. Compatible con TDD, ofrece aserciones claras, integración con mocks, y flexibilidad para ejecutar pruebas desde directorios separados, ajustándose así a los requisitos del presente y del siguiente objetivo. Además, su compatibilidad con la herramienta estándar, `go test` de Go la convierte en una opción confiable y versátil.
+Por otro lado, aunque Testify en sí mismo no incluye funcionalidades para medir la cobertura, al usarlo junto con el comando de pruebas nativo de Go, puedes generar informes de cobertura con `go test -cover`.
