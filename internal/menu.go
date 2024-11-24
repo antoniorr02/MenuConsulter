@@ -26,7 +26,7 @@ type Menu struct {
 }
 
 func NuevoMenu(tipo string, dia DiaSemana, platos []Plato) (*Menu, error) {
-	file, err := os.Open("tipos.json")
+	file, err := os.Open("config/tipos.json")
 	if err != nil {
 		return nil, fmt.Errorf("error al abrir el archivo de tipos: %w", err)
 	}
