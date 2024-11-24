@@ -24,6 +24,7 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 - `just install_deps`: Instala las dependencias del proyecto utilizandgo modules.
 - `just clean`: Limpia el binario y otros archivos generados.
 - `just check`: Verifica que el código fuente esté correctamente formateado.
+- `just test`: Ejecuta los test para comprobar el correcto funcionamiento del proyecto.
 
 ## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/gestor_dependencias.md)
 
