@@ -31,4 +31,4 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 
 ## [Medología de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/metodologia_tests.md)
 
-## [Herramienta de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/herramienta_test.md)
+## [Herramienta de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/herramienta_tests.md)
