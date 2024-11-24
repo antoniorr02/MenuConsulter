@@ -27,8 +27,8 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 
 ## [Gestor de dependencias](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/gestor_dependencias.md)
 
-## [Documentación del proceso de desarrollo con test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/documentacion_proceso_test.md)
+## [Documentación del proceso de desarrollo con test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/documentacion_proceso_test.md)
 
-## [Medología de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/metodologia_tests.md)
+## [Medología de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/metodologia_tests.md)
 
-## [Herramienta de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-3/docs/herramienta_tets.md)
+## [Herramienta de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/herramienta_tets.md)
