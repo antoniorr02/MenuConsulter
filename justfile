@@ -25,5 +25,5 @@ check:
     gofmt -e {{CODE_FOLDERS}} > /dev/null
 
 test:
-    echo: "Ejecutando tests del proyecto..."
-    go test -v
+    echo "Ejecutando tests del proyecto..."
+    go test ./internal -v
