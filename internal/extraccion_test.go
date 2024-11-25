@@ -4,6 +4,7 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	"golang.org/x/net/html"
 )
 
 func TestCargarDocumento(t *testing.T) {
@@ -16,17 +17,68 @@ func TestCargarDocumento(t *testing.T) {
 }
 
 func TestExtraerFecha(t *testing.T) {
-	doc, _ := cargarDocumento("../data/menu.html")
-	fecha := extraerFecha(doc.Find("table.inline").First())
+	doc, err := cargarDocumento("../data/menu.html")
+	if err != nil {
+		t.Fatalf("Error al cargar el documento: %v", err)
+	}
+
+	// Busca la primera tabla con clase "inline"
+	tablas := buscarNodos(doc, "table")
+	var tablaInline *html.Node
+	for _, tabla := range tablas {
+		for _, attr := range tabla.Attr {
+			if attr.Key == "class" && attr.Val == "inline" {
+				tablaInline = tabla
+				break
+			}
+		}
+		if tablaInline != nil {
+			break
+		}
+	}
+
+	if tablaInline == nil {
+		t.Fatalf("No se encontró una tabla con la clase 'inline'")
+	}
+
+	fecha := extraerFecha(tablaInline)
 
 	assert.NotEmpty(t, fecha, "No se extrajo una fecha válida")
 	assert.Equal(t, "VIERNES,  22  DE  NOVIEMBRE  DE  2024", fecha, "La fecha extraída no es correcta")
 }
 
 func TestProcesarPlatos(t *testing.T) {
-	doc, _ := cargarDocumento("../data/menu.html")
-	row := doc.Find("table.inline").First().Find("tr").Eq(1)
+	doc, err := cargarDocumento("../data/menu.html")
+	if err != nil {
+		t.Fatalf("Error al cargar el documento: %v", err)
+	}
 
+	// Busca la primera tabla con clase "inline"
+	tablas := buscarNodos(doc, "table")
+	var tablaInline *html.Node
+	for _, tabla := range tablas {
+		for _, attr := range tabla.Attr {
+			if attr.Key == "class" && attr.Val == "inline" {
+				tablaInline = tabla
+				break
+			}
+		}
+		if tablaInline != nil {
+			break
+		}
+	}
+
+	if tablaInline == nil {
+		t.Fatalf("No se encontró una tabla con la clase 'inline'")
+	}
+
+	// Encuentra la segunda fila de la tabla
+	filas := buscarNodos(tablaInline, "tr")
+	if len(filas) < 2 {
+		t.Fatalf("No se encontraron suficientes filas en la tabla")
+	}
+
+	row := filas[1]
 	platos := procesarPlatos(row)
 
 	assert.NotEmpty(t, platos, "No se procesaron platos")
