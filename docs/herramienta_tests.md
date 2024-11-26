@@ -1,10 +1,9 @@
 # Requisitos para la elección de la herramienta
 1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
-2. La herramienta debe de ajustarse a la metodología TDD.
-3. La herramienta debe de permitir ejecutar pruebas, así como permitir ver el código cubierto por los test (CLI).
-4. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
-5. La herramienta debe de permitir la realización de aserciones.
-6. La herramienta debe de permitir realizar pruebas automáticas y agrupar las aserciones en subtests (test runner).
+2. La herramienta debe de permitir ejecutar pruebas, así como permitir ver el código cubierto por los test (CLI).
+3. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
+4. La herramienta debe de permitir la realización de aserciones.
+5. La herramienta debe de permitir realizar pruebas automáticas y agrupar las aserciones en subtests (test runner).
 
 # Opciones adecaudas a los criterios
 
