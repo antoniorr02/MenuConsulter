@@ -1,4 +1,4 @@
-# Requisitos para la elección de la herramienta para testear
+# Requisitos para la elección del testing framework
 1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
 2. La herramienta debe de permitir ejecutar pruebas, así como permitir ver el código cubierto por los test (CLI).
 3. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
