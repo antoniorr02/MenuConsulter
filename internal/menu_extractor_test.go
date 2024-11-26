@@ -7,15 +7,6 @@ import (
 	"golang.org/x/net/html"
 )
 
-func TestCargarDocumento(t *testing.T) {
-	filePath := "../data/menu.html"
-
-	doc, err := cargarDocumento(filePath)
-
-	assert.NoError(t, err, "La función cargarDocumento devolvió un error")
-	assert.NotNil(t, doc, "El documento cargado es nil")
-}
-
 func TestExtraerFecha(t *testing.T) {
 	doc, err := cargarDocumento("../data/menu.html")
 	if err != nil {
