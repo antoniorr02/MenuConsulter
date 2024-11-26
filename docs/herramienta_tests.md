@@ -19,9 +19,6 @@
 **Convey**: Framework enfocado en BDD, con un entorno interactivo que permite visualizar resultados y organizar tests de forma legible y modular.
 [Documentación oficial](https://github.com/smartystreets/goconvey)
 
-**Snyk Advisor**: Se trata de un herramienta para evaluar dependencias en términos de seguridad, mantenimiento y calidad, útil para decisiones informadas en el ciclo de desarrollo, se ha incluido ya que si bien no es una herramienta que sustituya a las anteriormente expuesta, se comentó en clase durante la explicación del presente objetivo como una herramienta que puede ser interesante a tener en cuenta al tener un rol preventivo, que nos ayudará a seleccionar dependencias robustas y minimizar riesgos de seguridad.
-[Documentación oficial](https://snyk.io/advisor/golang)
-
 ### Justificación de la elección
 La elección de **Testify** como herramienta de pruebas se justifica por su equilibrio entre simplicidad y funcionalidad. Es una herramienta ampliamente utilizada y mantenida en el ecosistema de Go, lo que asegura soporte a largo plazo y una actualización frecuente, siendo la última del mismo de hace menos de una semana. Compatible con TDD, ofrece aserciones claras, integración con mocks, y flexibilidad para ejecutar pruebas desde directorios separados, ajustándose así a los requisitos del presente y del siguiente objetivo. Además, su compatibilidad con la herramienta estándar, `go test` de Go la convierte en una opción confiable y versátil.
 Por otro lado, aunque Testify en sí mismo no incluye funcionalidades para medir la cobertura, al usarlo junto con el comando de pruebas nativo de Go, puedes generar informes de cobertura con `go test -cover`.
