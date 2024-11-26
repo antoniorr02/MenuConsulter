@@ -7,30 +7,41 @@ import (
 	"golang.org/x/net/html"
 )
 
-func TestExtraerFecha(t *testing.T) {
-	doc, err := cargarDocumento("../data/menu.html")
+func cargarDocumentoTest(t *testing.T, filePath string) *html.Node {
+	t.Helper()
+	doc, err := cargarDocumento(filePath)
 	if err != nil {
-		t.Fatalf("Error al cargar el documento: %v", err)
+		t.Fatalf("Error al cargar el documento '%s': %v", filePath, err)
 	}
+	return doc
+}
 
-	// Busca la primera tabla con clase "inline"
+func encontrarTablaInline(t *testing.T, doc *html.Node) *html.Node {
+	t.Helper()
 	tablas := buscarNodos(doc, "table")
-	var tablaInline *html.Node
 	for _, tabla := range tablas {
 		for _, attr := range tabla.Attr {
 			if attr.Key == "class" && attr.Val == "inline" {
-				tablaInline = tabla
-				break
+				return tabla
 			}
 		}
-		if tablaInline != nil {
-			break
-		}
 	}
+	t.Fatalf("No se encontró una tabla con la clase 'inline'")
+	return nil
+}
 
-	if tablaInline == nil {
-		t.Fatalf("No se encontró una tabla con la clase 'inline'")
+// Función auxiliar para validar que un nodo no sea nil
+func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
+	t.Helper()
+	if nodo == nil {
+		t.Fatalf(mensaje)
 	}
+}
+
+func TestExtraerFecha(t *testing.T) {
+	doc := cargarDocumentoTest(t, "../data/menu.html")
+
+	tablaInline := encontrarTablaInline(t, doc)
 
 	fecha := extraerFecha(tablaInline)
 
@@ -39,29 +50,9 @@ func TestExtraerFecha(t *testing.T) {
 }
 
 func TestProcesarPlatos(t *testing.T) {
-	doc, err := cargarDocumento("../data/menu.html")
-	if err != nil {
-		t.Fatalf("Error al cargar el documento: %v", err)
-	}
+	doc := cargarDocumentoTest(t, "../data/menu.html")
 
-	// Busca la primera tabla con clase "inline"
-	tablas := buscarNodos(doc, "table")
-	var tablaInline *html.Node
-	for _, tabla := range tablas {
-		for _, attr := range tabla.Attr {
-			if attr.Key == "class" && attr.Val == "inline" {
-				tablaInline = tabla
-				break
-			}
-		}
-		if tablaInline != nil {
-			break
-		}
-	}
-
-	if tablaInline == nil {
-		t.Fatalf("No se encontró una tabla con la clase 'inline'")
-	}
+	tablaInline := encontrarTablaInline(t, doc)
 
 	// Encuentra la segunda fila de la tabla
 	filas := buscarNodos(tablaInline, "tr")
