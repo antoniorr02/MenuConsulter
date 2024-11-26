@@ -11,23 +11,11 @@
 **Ginkgo**: Framework avanzado para pruebas en BDD, muy estructurado y adecuado para proyectos grandes. Compatible con herramientas de aserciones como Gomega.
 [Documentación oficial](https://github.com/onsi/ginkgo)
 
-**GoMock**: Ideal para generar mocks basados en interfaces, facilitando la simulación de dependencias y pruebas unitarias más precisas.
-[Documentación oficial](https://github.com/golang/mock)
-
-**Goblin**: Framework inspirado en Mocha, centrado en pruebas de estilo BDD. Ofrece sintaxis limpia y fluida, ideal para escribir pruebas de forma estructurada.
-[Documentación oficial](https://github.com/franela/goblin)
-
 **Testify**: Uno de los paquetes más populares en Go. Ofrece aserciones sencillas, mocks integrados y soporte para requisitos como la separación de directorios y pruebas en TDD.
 [Documentación oficial](https://github.com/stretchr/testify) 
 
 **GoCheck**: Extiende el paquete testing de go con funcionalidades avanzadas como agrupación de tests y soporte para fixtures, facilitando el trabajo en proyectos más complejos.
 [Documentación oficial](https://github.com/go-check/check)
-
-**Gomega**: Librería de aserciones expresiva, diseñada para complementarse con Ginkgo. Permite construir pruebas altamente legibles y adaptadas al enfoque BDD.
-[Documentación oficial](https://github.com/onsi/gomega)
-
-**Go-cmp**: Excelente para comparar estructuras de datos complejas, ofreciendo personalización avanzada, pero no incluye soporte para mocks o frameworks más completos.
-[Documentación oficial](https://github.com/google/go-cmp)
 
 **Convey**: Framework enfocado en BDD, con un entorno interactivo que permite visualizar resultados y organizar tests de forma legible y modular.
 [Documentación oficial](https://github.com/smartystreets/goconvey)
