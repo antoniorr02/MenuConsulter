@@ -1,11 +1,15 @@
-# Requisitos para la elección del test runner y biblioteca de aserciones
+# Requisitos para la elección del test runner
+1. Debe de cumplir con el estándar del lenguaje (si lo hubiera).
+2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
+3. La herramienta debe de permitir realizar pruebas automáticas y agrupar las aserciones en subtests. 
+
+# Requisitos para la elección de la biblioteca de aserciones
 1. Debe de cumplir con el estándar del lenguaje (si lo hubiera).
 2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
 3. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
 4. La herramienta debe de permitir la realización de aserciones.
-5. La herramienta debe de permitir realizar pruebas automáticas y agrupar las aserciones en subtests (test runner). 
 
-# Opciones adecaudas a los criterios
+# Opciones adecuadas a los criterios
 
 **Ginkgo**: Framework avanzado para pruebas en BDD, muy estructurado y adecuado para proyectos grandes. Compatible con herramientas de aserciones como Gomega.
 [Documentación oficial](https://github.com/onsi/ginkgo)
