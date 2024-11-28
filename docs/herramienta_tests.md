@@ -11,6 +11,8 @@
 
 # Opciones adecuadas a los criterios
 
+**go test**: Se trata del test runner estándar en Go. 
+
 **Ginkgo**: Framework avanzado para pruebas en BDD, muy estructurado y adecuado para proyectos grandes. Compatible con herramientas de aserciones como Gomega.
 [Documentación oficial](https://github.com/onsi/ginkgo)
 
@@ -23,6 +25,6 @@
 **Convey**: Framework enfocado en BDD, con un entorno interactivo que permite visualizar resultados y organizar tests de forma legible y modular.
 [Documentación oficial](https://github.com/smartystreets/goconvey)
 
-### Justificación de la elección
+### Justificación de la elección del test runner y la biblioteca de aserciones.
 La elección de **Testify** como herramienta de pruebas se justifica por su equilibrio entre simplicidad y funcionalidad. Es una herramienta ampliamente utilizada y mantenida en el ecosistema de Go, lo que asegura soporte a largo plazo y una actualización frecuente, siendo la última del mismo de hace menos de una semana. Compatible con TDD, ofrece aserciones claras, integración con mocks, y flexibilidad para ejecutar pruebas desde directorios separados, ajustándose así a los requisitos del presente y del siguiente objetivo. Además, su compatibilidad con la herramienta estándar, `go test` de Go la convierte en una opción confiable y versátil.
 Por otro lado, aunque Testify en sí mismo no incluye funcionalidades para medir la cobertura, al usarlo junto con el comando de pruebas nativo de Go, puedes generar informes de cobertura con `go test -cover`.
