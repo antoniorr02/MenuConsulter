@@ -3,15 +3,15 @@
 2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
 3. La herramienta debe de permitir realizar pruebas automáticas y agrupar las aserciones en subtests. 
 
+La herramienta que se usa según el estándar será: **go test**
+
 # Requisitos para la elección de la biblioteca de aserciones
 1. Debe de cumplir con el estándar del lenguaje (si lo hubiera).
 2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
 3. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
 4. La herramienta debe de permitir la realización de aserciones.
 
-# Opciones adecuadas a los criterios
-
-**go test**: Se trata del test runner estándar en Go. 
+# Opciones adecuadas a los criterios de la biblioteca de aserciones
 
 **Ginkgo**: Framework avanzado para pruebas en BDD, muy estructurado y adecuado para proyectos grandes. Compatible con herramientas de aserciones como Gomega.
 [Documentación oficial](https://github.com/onsi/ginkgo)
