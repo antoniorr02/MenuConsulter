@@ -30,6 +30,6 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 
 ## [Documentación del proceso de desarrollo con test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/documentación_proceso_test.md)
 
-## [Medología de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/metodologia_tests.md)
+## [Biblioteca de aserciones](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/biblioteca_aserciones.md)
 
-## [Herramienta de test](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/herramienta_tests.md)
+## [Test runner](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/test_runner.md)
