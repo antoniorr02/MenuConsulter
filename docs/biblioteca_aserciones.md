@@ -1,8 +1,6 @@
 # Requisitos para la elección de la biblioteca de aserciones
-1. Debe de cumplir con el estándar del lenguaje (si lo hubiera).
-2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
-3. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
-4. La herramienta debe de permitir la realización de aserciones.
+1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
+2. La herramienta debe de permitir la separación en directorios para pruebas, de forma que se pueda escribir en algún lugar con permiso, teniendo en cuenta de esta forma el siguiente objetivo en la decisión actual.
 
 # Opciones adecuadas a los criterios de la biblioteca de aserciones
 
