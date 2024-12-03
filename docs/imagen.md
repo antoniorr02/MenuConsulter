@@ -14,3 +14,7 @@
 
 ### Justificación de la elección
 En base a los criterios me he decantado por utilizar `Golang 1.23` con Alpine. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles, concretamente usaremos [Golang 1.23.3:Alpine 3.20](https://hub.docker.com/layers/library/golang/1.23.3-alpine3.20/images/sha256-cdb47cf7cc930903987ead22e38dfb607db077bf120e740f7f5f14d1d18e4668?context=explore)
+
+### Generación y ejecución de la imagen
+**Construir la imagen:** `docker build -t <nombre_imagen> .`
+**Ejecutar la imagen**: `docker run --rm <nombre_imagen>`
