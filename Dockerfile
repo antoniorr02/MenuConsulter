@@ -8,7 +8,7 @@ RUN adduser -D test && chown test /app
 
 USER test
 
-COPY go.mod justfile ./
+COPY go.mod go.sum justfile ./
 
 RUN go mod download
 
