@@ -4,7 +4,7 @@
 
 # Opciones adecuadas a los criterios de la biblioteca de aserciones
 
-**Gomega**: Se trata de una biblioteca de aserciones que presenta una muy buena valoración en Snyk Advisor, al tener un gran mantenimiento y comunidad.
+**Gomega**: Se trata de una herramienta con mucho soporte y actualización. Además, ofrece soporte para pruebas basadas en BDD y mensajes detallados para facilitar la depuración.
 [Documentación oficial](https://github.com/onsi/gomega)
 
 **Testify**: Uno de los paquetes más populares en Go. Ofrece aserciones sencillas, mocks integrados y soporte para requisitos como la separación de directorios y pruebas en TDD.
