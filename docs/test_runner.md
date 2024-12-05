@@ -1,7 +1,6 @@
 # Requisitos para la elección del test runner
 1. Debe de cumplir con el estándar del lenguaje (si lo hubiera).
 2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
-3. La herramienta debe de permitir realizar pruebas automáticas y agrupar las aserciones en subtests. 
 
 # Opciones adecuadas a los criterios del test runner
 
