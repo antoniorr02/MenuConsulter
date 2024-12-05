@@ -4,7 +4,7 @@ LABEL mantainer="antoniorr@correo.ugr.es" version="5.0.0"
 
 WORKDIR /app
 
-RUN adduser -D test && chown test /app
+RUN adduser -D -u 1001 test && chown test /app
 
 USER test
 
