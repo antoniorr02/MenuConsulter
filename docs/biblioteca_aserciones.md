@@ -1,6 +1,6 @@
 # Requisitos para la elección de la biblioteca de aserciones
 1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
-2. La biblioteca de aserciones no debe de ser BDD, ya que para nuestro proyecto bastaría con pruebas unitarias, que permitan mensajes personalizados.
+2. La biblioteca de aserciones no debe de ser BDD, ya que para nuestro proyecto bastaría con aserciones simples, que permitan mensajes personalizados.
 
 # Opciones adecuadas a los criterios de la biblioteca de aserciones
 
