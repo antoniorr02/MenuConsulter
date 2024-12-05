@@ -1,5 +1,6 @@
 # Requisitos para la elección de la biblioteca de aserciones
 1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
+2. Debe permitir emitir mensajes personalizados.
 
 # Opciones adecuadas a los criterios de la biblioteca de aserciones
 
