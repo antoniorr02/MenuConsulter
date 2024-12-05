@@ -33,3 +33,9 @@ El estudiante evita perder tiempo revisando los menús manualmente y puede segui
 ## [Biblioteca de aserciones](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/biblioteca_aserciones.md)
 
 ## [Test runner](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-4/docs/test_runner.md)
+
+## [Imagen docker](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-5/docs/imagen.md)
+
+### Generación y ejecución de la imagen
+**Construir la imagen:** `docker build -t <nombre_imagen> .`
+**Ejecutar la imagen**: `docker run --rm <nombre_imagen>`
