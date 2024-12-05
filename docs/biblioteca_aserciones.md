@@ -1,13 +1,14 @@
 # Requisitos para la elección de la biblioteca de aserciones
 1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
 2. Debe permitir emitir mensajes personalizados.
+3. Debe de tener mocks.
 
 # Opciones adecuadas a los criterios de la biblioteca de aserciones
 
 **Gomega**: Se trata de una herramienta con mucho soporte y actualización. Además, ofrece soporte para pruebas basadas en BDD y mensajes detallados para facilitar la depuración.
 [Documentación oficial](https://github.com/onsi/gomega)
 
-**Testify**: Uno de los paquetes más populares en Go. Ofrece aserciones sencillas, mocks integrados y soporte para requisitos como la separación de directorios y pruebas en TDD.
+**Testify**: Ofrece aserciones sencillas y potentes, soporte para mensajes personalizados, mocks integrados y una comunidad activa que garantiza su mantenimiento y relevancia.
 [Documentación oficial](https://github.com/stretchr/testify) 
 
 **GoCheck**: Extiende el paquete testing de go con funcionalidades avanzadas como agrupación de tests y soporte para fixtures, facilitando el trabajo en proyectos más complejos. Si bien presenta una gran deuda técnica al no haber sido actualizada en más de 4 años, no cumpliendo con el segundo requisito propuesto.
