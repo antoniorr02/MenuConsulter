@@ -1,5 +1,5 @@
 # Requisitos para la elección de la biblioteca de aserciones
-1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica futura.
+1. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
 
 # Opciones adecuadas a los criterios de la biblioteca de aserciones
 
