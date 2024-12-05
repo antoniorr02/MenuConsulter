@@ -23,3 +23,7 @@ clean:
 check:
     echo "Comprobando sintaxis del proyecto..."
     gofmt -e {{CODE_FOLDERS}} > /dev/null
+
+test:
+    echo "Ejecutando tests del proyecto..."
+    go test ./internal -v
