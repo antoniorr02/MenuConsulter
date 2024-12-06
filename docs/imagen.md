@@ -2,12 +2,11 @@
 1. Imagen actualizada de forma que no se aumente la deuda técnica futura
 2. Prefencia por imágenes ligeras (ej. Alpine), disminuyendo el requerimiento de disco.
 3. La imagen debe brindar un buen rendimiento
-4. La imagen debe de ofrecer seguridad, esto sigue la línea del requisito 1, pues al estar actualizada la imagen esto incrementa el nivel de seguridad.
-5. La imagen debe de traer el lenguaje del proyecto configurada por defecto.
+4. La imagen debe de traer el lenguaje del proyecto configurada por defecto.
 
 # Opciones de imagen
 
-**[Golang](https://hub.docker.com/_/golang)**: Se trata de una imagen que trae go instalado lo que elimina la necesidad de configurarlo a parte, y se encuentra actualizada recientemente lo que disminuye la deuda técnica y seguridad. Del mismo modo, es una herramienta muy versátil que permite incluso combinar Golang con Alpine.
+**[Golang](https://hub.docker.com/_/golang)**: Se trata de una imagen que trae go instalado lo que elimina la necesidad de configurarlo a parte, y se encuentra actualizada recientemente lo que disminuye la deuda técnica. Del mismo modo, es una herramienta muy versátil que permite incluso combinar Golang con Alpine.
 
 **[Alpine](https://hub.docker.com/_/alpine)**: Es una imagen muy liviana, pero no es tan sencilla como ubuntu al tener una librería estandar diferentes (tal y como se ha comentado en clase), lo que puede complicar su uso. Del mismo modo, exige que instalemos y configuremos go nosotros mismos.
 
