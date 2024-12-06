@@ -1,4 +1,3 @@
-# Comentario para prueba de commit
 name: Docker Hub Upload
 on:
   push:
@@ -22,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: antoniorr02/MenuConsulter:latest
+          tags: antoniorr02/menuconsulter:latest
