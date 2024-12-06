@@ -19,3 +19,4 @@ USER test
 WORKDIR /app/test
 
 ENTRYPOINT ["just", "test"]
+#
