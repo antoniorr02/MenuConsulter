@@ -9,7 +9,7 @@
 
 **[Alpine](https://hub.docker.com/_/alpine)**: Es una imagen muy liviana, pero no es tan sencilla como ubuntu al tener una librería estandar diferentes (tal y como se ha comentado en clase), lo que puede complicar su uso. Del mismo modo, exige que instalemos y configuremos go nosotros mismos.
 
-**[DockerSlim](https://github.com/kcq/docker-slim)**: Se trata de una variante optimizada para ser más ligera que la imagen estándar de Golang. Aunque es un poco más grande que Alpine. Por otro lado, la última actualización tiene más de 7 meses, mientras que alpine y golang se actualizan con mayor frecuencia.
+**[DockerSlim](https://github.com/kcq/docker-slim)**: Es un poco más grande que Alpine. Por otro lado, la última actualización tiene más de 7 meses, mientras que alpine y golang se actualizan con mayor frecuencia.
 
 **[Ubuntu](https://hub.docker.com/_/ubuntu)**: Se va a descartar ya que es la imagen más grande de las tres que se han encontrado.
 
