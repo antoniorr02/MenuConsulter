@@ -1,4 +1,4 @@
-FROM golang:1.23.4-alpine3.20
+FROM golang:1.23.4-alpine
 
 LABEL mantainer="antoniorr@correo.ugr.es"
 
