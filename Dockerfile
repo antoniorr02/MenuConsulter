@@ -6,14 +6,12 @@ WORKDIR /app
 
 RUN adduser -D -u 1001 test && chown test /app
 
+USER root
+RUN apk add just
 USER test
 
 COPY go.mod go.sum /app/
 RUN go mod download
-
-USER root
-RUN apk add just
-USER test
 
 WORKDIR /app/test
 
