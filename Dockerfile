@@ -6,7 +6,6 @@ WORKDIR /app
 
 RUN adduser -D -u 1001 test && chown test /app
 
-USER root
 RUN apk add just
 USER test
 
