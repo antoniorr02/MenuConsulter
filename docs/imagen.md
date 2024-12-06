@@ -20,6 +20,6 @@ En base a los criterios me he decantado por utilizar `Golang 1.23` con Alpine. S
 
 ### Generación y ejecución de la imagen
 **Construir la imagen:** `docker build -t <nombre_imagen> .`
-**Ejecutar la imagen**: `docker run --rm <nombre_imagen>`
+**Ejecutar la imagen**: `docker run -u 1001 -t -v `pwd`:/app/test <nombre_imagen>`
 
 **Desde docker hub**: `docker run -u 1001 -t -v `pwd`:/app/test antoniorr02/menuconsulter`
