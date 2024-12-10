@@ -1,0 +1,25 @@
+name: Docker Hub Upload
+on:
+  push:
+    paths:
+      - 'go.mod'
+      - 'go.sum'
+      - 'Dockerfile'
+
+jobs:
+  job1:
+    name: Pasar de Docker a Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+      - name: Login a Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Construir y lanzar la imagen de Docker
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: antoniorr02/menuconsulter:latest
