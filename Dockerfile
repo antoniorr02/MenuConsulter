@@ -1,6 +1,7 @@
 FROM golang:alpine
 
 LABEL mantainer="antoniorr@correo.ugr.es"
+LABEL version="0.0.1"
 
 WORKDIR /app
 
