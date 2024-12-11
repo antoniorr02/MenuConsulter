@@ -11,9 +11,6 @@ USER test
 
 WORKDIR /app/test
 
-COPY go.mod go.sum /app/test/
-RUN go mod download
-
 RUN mkdir -p /app/test/.cache/go-build
 ENV GOCACHE=/app/test/.cache/go-build
 
