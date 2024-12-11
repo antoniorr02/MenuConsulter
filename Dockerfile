@@ -4,16 +4,17 @@ LABEL mantainer="antoniorr@correo.ugr.es"
 
 WORKDIR /app
 
-RUN adduser -D test && chown test /app
+RUN adduser -D test
 
 RUN apk add just
 USER test
 
-COPY go.mod /app/
+WORKDIR /app/test
+
+COPY go.mod go.sum /app/test/
 RUN go mod download
 
+RUN mkdir -p /app/test/.cache/go-build
 ENV GOCACHE=/app/test/.cache/go-build
-
-WORKDIR /app/test
 
 ENTRYPOINT ["just", "test"]
