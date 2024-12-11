@@ -15,7 +15,7 @@
 **[Bitnami Ubuntu](https://hub.docker.com/r/bitnami/ubuntu-base-buildpack)**: La imagen que ofrece Bitnami para docker con Golang funciona sobre Debian, con lo que al igual que ocurre con Ubuntu se va a descartar por el peso de la misma. 
 
 ### Justificación de la elección
-En base a los criterios me he decantado por utilizar `Golang 1.23.4` al ser la más reciente con lo que disminuye la deuda técnica futura, con Alpine por su ligereza. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles, concretamente usaremos [Golang 1.23.4:Alpine](https://hub.docker.com/layers/library/golang/1.23.4-alpine3.21/images/sha256-5949eba7ed5bb0b3da95b97ec5b8800c1dc0ce4338302fef50d71cf3ded6456a?context=explore)
+En base a los criterios me he decantado por utilizar `Golang`, con Alpine por su ligereza. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles.
 
 ### Generación y ejecución de la imagen
 **Construir la imagen:** `docker build -t <nombre_imagen> .`
