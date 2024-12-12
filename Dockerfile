@@ -1,12 +1,11 @@
-FROM golang:buster
+FROM golang:stretch
 
 LABEL maintainer="antoniorr@correo.ugr.es"
 LABEL version="0.0.1"
 
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y curl \
-    && curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
+RUN curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
 
 RUN adduser test 
 USER test

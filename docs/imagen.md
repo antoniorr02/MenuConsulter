@@ -14,7 +14,9 @@
 
 **[Bitnami Ubuntu](https://hub.docker.com/r/bitnami/ubuntu-base-buildpack)**: Esta imagen pesa más que otras alternativas, con lo que se va a descartar.
 
-**[Okteto](https://github.com/okteto/okteto)**: Esta imagen pesa mucho más que otras alternativas, casi tanto como la alternativa de golang, con lo que se va a descartar.
+**[Okteto golang](https://github.com/okteto/okteto)**: Esta imagen pesa mucho más que otras alternativas, casi tanto como la alternativa de golang, con lo que se va a descartar.
+
+**[Circleci golang](https://github.com/CircleCI-Archived/circleci-dockerfiles/blob/master/golang/images/1.10.0-stretch/Dockerfile)**: Ocupa incluso más que okteto, descartada.
 
 ### Justificación de la elección
 En base a los criterios y las pruebas realizadas en la carpeta [pruebas_imagenes](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-5/docs/pruebas_imagenes) me he decantado por utilizar `Golang`, con Alpine por su ligereza y velocidad de ejecución en comparación a las otras imagenes probadas. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles.
