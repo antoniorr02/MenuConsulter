@@ -12,7 +12,7 @@
 
 **[Ubuntu](https://hub.docker.com/_/ubuntu)**: Se va a descartar ya que es la imagen más grande de las tres que se han encontrado.
 
-**[Bitnami Ubuntu](https://hub.docker.com/r/bitnami/ubuntu-base-buildpack)**: La imagen que ofrece Bitnami para docker con Golang funciona sobre Debian, con lo que al igual que ocurre con Ubuntu se va a descartar por el peso de la misma. 
+**[Bitnami Ubuntu](https://hub.docker.com/r/bitnami/ubuntu-base-buildpack)**: Esta imagen al igual que ocurre con Ubuntu se va a descartar por el peso de la misma. 
 
 ### Justificación de la elección
 En base a los criterios me he decantado por utilizar `Golang`, con Alpine por su ligereza. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles.
