@@ -1,7 +1,6 @@
 # Requisitos buscados para la imagen para el contenedor
 1. Imagen actualizada de forma que no se aumente la deuda técnica futura
 2. Preferencia por imágenes ligeras (ej. Alpine), disminuyendo el requerimiento de disco.
-3. Se preferirán imagenes que mejoren el rendimiento, ejecutándose más rápido.
 
 # Opciones de imagen
 
@@ -12,6 +11,8 @@
 **[DockerSlim](https://github.com/kcq/docker-slim)**: Es un poco más grande que Alpine, si bien no deja de ser muy ligera y es una diferencia despreciable. Por otro lado, la última actualización tiene más de 7 meses, mientras que alpine y golang se actualizan con mayor frecuencia.
 
 **[Ubuntu](https://hub.docker.com/_/ubuntu)**: Se va a descartar ya que es la imagen más grande de las tres que se han encontrado.
+
+**[Circleci Golang]**(https://github.com/CircleCI-Archived/circleci-dockerfiles/blob/master/golang/images/1.10.0-stretch/Dockerfile): 
 
 ### Justificación de la elección
 En base a los criterios y las pruebas realizadas en la carpeta [pruebas_imagenes](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-5/docs/pruebas_imagenes) me he decantado por utilizar `Golang`, con Alpine por su ligereza y velocidad de ejecución en comparación a las otras imagenes probadas. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles.
