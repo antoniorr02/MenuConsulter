@@ -1,18 +1,9 @@
-# Dockerfile
-FROM docker.io/bitnami/minideb:bookworm
+FROM golang:buster
 
 LABEL maintainer="antoniorr@correo.ugr.es"
 LABEL version="0.0.1"
 
 WORKDIR /app
-
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends wget ca-certificates && \ 
-    rm -rf /var/lib/apt/lists/*
-
-RUN wget -q https://go.dev/dl/go1.23.3.linux-amd64.tar.gz && \
-    tar -C /usr/local -xzf go1.23.3.linux-amd64.tar.gz && \
-    rm go1.23.3.linux-amd64.tar.gz
 
 RUN apt-get update && apt-get install -y curl \
     && curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
