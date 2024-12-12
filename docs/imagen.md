@@ -1,6 +1,7 @@
 # Requisitos buscados para la imagen para el contenedor
 1. Imagen actualizada de forma que no se aumente la deuda técnica futura
 2. Preferencia por imágenes ligeras (ej. Alpine), disminuyendo el requerimiento de disco.
+3. Se preferirán imagenes que mejoren el rendimiento, ejecutándose más rápido.
 
 # Opciones de imagen
 
