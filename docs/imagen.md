@@ -13,10 +13,8 @@
 
 **[Ubuntu](https://hub.docker.com/_/ubuntu)**: Se va a descartar ya que es la imagen más grande de las tres que se han encontrado.
 
-**[Bitnami Ubuntu](https://hub.docker.com/r/bitnami/ubuntu-base-buildpack)**: Esta imagen al igual que ocurre con Ubuntu se va a descartar por el peso de la misma. 
-
 ### Justificación de la elección
-En base a los criterios y las pruebas realizadas en la carpeta [pruebas_imagenes](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-5/docs/pruebas_imagenes) me he decantado por utilizar `Golang`, con Alpine por su ligereza. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles.
+En base a los criterios y las pruebas realizadas en la carpeta [pruebas_imagenes](https://github.com/antoniorr02/MenuConsulter/blob/Objetivo-5/docs/pruebas_imagenes) me he decantado por utilizar `Golang`, con Alpine por su ligereza y velocidad de ejecución en comparación a las otras imagenes probadas. Si entramos [Golang-Alpine](https://hub.docker.com/_/golang/tags?page=1&name=alpine) vemos las diferentes opciones disponibles.
 
 ### Generación y ejecución de la imagen
 **Construir la imagen:** `docker build -t <nombre_imagen> .`
