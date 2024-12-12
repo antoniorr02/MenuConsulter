@@ -1,18 +1,15 @@
 FROM golang:alpine
 
-LABEL mantainer="antoniorr@correo.ugr.es"
-LABEL version="0.0.1"
-
-WORKDIR /app
-
-RUN adduser -D test
+LABEL mantainer="antoniorr@correo.ugr.es" version="0.0.2"
 
 RUN apk add just
+
+RUN adduser -u 1001 -D -h /home/test test
 USER test
 
-WORKDIR /app/test
+RUN mkdir -p /home/test/.cache/go-build 
+ENV GOCACHE=/home/test/.cache/go-build
 
-RUN mkdir -p /app/test/.cache/go-build
-ENV GOCACHE=/app/test/.cache/go-build
+WORKDIR /app/test
 
 ENTRYPOINT ["just", "test"]
