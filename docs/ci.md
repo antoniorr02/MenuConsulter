@@ -1,6 +1,6 @@
 # Requisitos buscados para el sistema de integración continua
 1. La herramienta debe de ser gratuita (freemium).
-2. La herramienta debe de poder conectarse a GitHub.
+2. La herramienta debe de poder conectarse a GitHub Checks API.
 
 # Opciones disponibles
 
