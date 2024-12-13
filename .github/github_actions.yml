@@ -1,0 +1,20 @@
+name: GitHub Actions
+on:
+  push:
+
+jobs:
+  test:
+    name: Pasar de Docker a Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Go
+        uses: actions/setup-go@v5
+
+      - name: Instalar just
+      - uses: extractions/setup-just@v2
+
+      - name: Ejecutar test
+      - run: just test
