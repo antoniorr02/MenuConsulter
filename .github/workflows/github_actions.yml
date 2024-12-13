@@ -1,7 +1,7 @@
 name: GitHub Actions
 on:
   push:
-#
+
 jobs:
   test:
     name: Pasar de Docker a Docker Hub
@@ -14,7 +14,7 @@ jobs:
         uses: actions/setup-go@v5
 
       - name: Instalar just
-      - uses: extractions/setup-just@v2
+        uses: extractions/setup-just@v2
 
       - name: Ejecutar test
-      - run: just test
+        run: just test
