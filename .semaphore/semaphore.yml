@@ -1,20 +1,26 @@
 version: v1.0
-name: Go
+name: Probando semaphore
 agent:
   machine:
     type: f1-standard-2
     os_image: ubuntu2204
 blocks:
-  - name: Test
+  - name: Instalar y ejecutar pruebas
     task:
       jobs:
-        - name: go test
+        - name: Tests con Go
           commands:
-            - sem-version go 1.11
-            - "export GO111MODULE=on"
-            - "export GOPATH=~/go"
-            - "export PATH=/home/semaphore/go/bin:$PATH"
             - checkout
-            - go get ./...
-            - go test ./...
-            - go build -v .
+            - name: Instalar Just
+              command: |
+                mkdir -p /tmp/bin
+                curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+                export PATH="/tmp/bin:$PATH"
+            - name: Verificar Just
+              command: |
+                export PATH="/tmp/bin:$PATH"
+                just --version
+            - name: Ejecutar pruebas
+              command: |
+                export PATH="/tmp/bin:$PATH"
+                just test

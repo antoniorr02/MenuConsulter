@@ -10,7 +10,7 @@
 
 **[TravisCI](https://app.travis-ci.com/)**: Solo tiene un perido de prueba gratuita con lo que se va a descartar al no cumplir con el criterio 1.
 
-**[Semaphore](https://semaphoreci.com/)**:
+**[Semaphore](https://semaphoreci.com/)**: Al igual que Circle CI cumple los requisitos que se buscan, sin embargo, aún habiendo sido posible configurarlo muy facilmente, lo voy a descartar porque la interfaz donde se muestran los resultados de los test no me parece tan amigable como Circle CI.
 
 **[Cirrus CI](https://cirrus-ci.org/)**:
 
