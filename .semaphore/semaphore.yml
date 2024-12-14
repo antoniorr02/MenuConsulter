@@ -8,9 +8,6 @@ agent:
 
 blocks:
   - name: Test
-    trigger:
-        branches:
-          only: Objetivo-6
     task:
       jobs:
         - name: Test con Just
@@ -19,4 +16,6 @@ blocks:
             - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
             - export PATH="/tmp/bin:$PATH"
             - just --version
+            - git clone https://github.com/antoniorr02/MenuConsulter.git
+            - cd MenuConsulter/Objetivo-6
             - just test
