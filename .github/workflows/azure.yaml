@@ -22,3 +22,4 @@ jobs:
   
   - script: just test
     workingDirectory: $(Build.SourcesDirectory)
+#
