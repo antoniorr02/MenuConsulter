@@ -2,10 +2,10 @@ trigger:
   - push
 
 jobs:
-- job: BuildAndTest
-  pool:
+ job: BuildAndTest
+pool:
     vmImage: 'ubuntu-latest'
-  steps:
+  teps:
   - task: UseDotNet@2
     inputs:
     packageType: 'sdk'
