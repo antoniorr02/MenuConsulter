@@ -16,5 +16,5 @@ blocks:
             - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
             - export PATH="/tmp/bin:$PATH"
             - just --version
-            - cp ./justfile
+            - ls -la
             - just --justfile ./justfile test
