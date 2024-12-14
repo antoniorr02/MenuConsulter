@@ -24,4 +24,4 @@ workflows:
       - test:
           matrix:
             parameters:
-              version: [1.17, 1.19, 1.23]j
+              version: [1.17, 1.19, 1.23]
