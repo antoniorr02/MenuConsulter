@@ -12,5 +12,5 @@ jobs:
             curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
             export PATH="/tmp/bin:$PATH"
       - run:
-          name: Ejecutar Tests
+          name: Ejecutar Test
           command: just test
