@@ -3,17 +3,20 @@ version: 2.1
 jobs:
   test:
     docker:
-    - image: cimg/go:1.23
+      - image: cimg/go:1.23
     steps:
-        - checkout 
-        - run:
-            name: Instalar Just
-            command: curl -fsSL https://just.systems/install.sh | bash -s -- --to /usr/local/bin
-        - run:
-            name: Ejecutar tests
-            command: just test
+      - checkout
+      - run:
+          name: Instalar Just
+          command: |
+            curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+            export PATH="/tmp/bin:$PATH"
+      - run:
+          name: Ejecutar tests
+          command: just test
 
 workflows:
-    test-workflow:
-        jobs:
-        - test
+  version: 2
+  test-workflow:
+    jobs:
+      - test
