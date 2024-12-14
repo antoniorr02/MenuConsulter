@@ -8,6 +8,9 @@ agent:
 
 blocks:
   - name: Test
+  trigger:
+      branches:
+        only: Objetivo-6
     task:
       jobs:
         - name: Test con Just
