@@ -23,7 +23,7 @@ workflows:
   test-workflow:
     jobs:
       - test:
-          matrix:
+          parameters:
             GO_VERSION:
               type: string
               values:
