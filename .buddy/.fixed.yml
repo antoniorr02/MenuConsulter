@@ -1,0 +1,11 @@
+version: "2"
+pipelines:
+  test-pipeline:
+    tasks:
+      - name: Instalar Just
+        type: run
+        script: |
+          mkdir -p /tmp/bin && curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+      - name: Ejecutar tests
+        type: run
+        script: /tmp/bin/just test

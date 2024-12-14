@@ -14,7 +14,7 @@
 
 **[Cirrus CI](https://cirrus-ci.org/)**: No es valido para nuestro proyecto, ya que para poder utilizarlo con un repositorio nos exige un pago mensual.
 
-**[Buddy]()**:
+**[Buddy](https://buddy.works/)**: 
 
 ### Justificación de la elección
 Como es necesario incluir al menos dos herramientas diferentes:
