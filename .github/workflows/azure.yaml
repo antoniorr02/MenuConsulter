@@ -1,0 +1,24 @@
+trigger:
+  - push
+
+jobs:
+- job: BuildAndTest
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - task: UseDotNet@2
+    inputs:
+    packageType: 'sdk'
+    version: 'latest'
+  
+  - task: UseGo@2
+    inputs:
+    versionSpec: 'latest'
+  
+  - task: InstallTool@0
+    inputs:
+    packageType: 'nuget'
+    versionSpec: 'latest'
+  
+  - script: just test
+    workingDirectory: $(Build.SourcesDirectory)
