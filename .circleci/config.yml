@@ -3,7 +3,8 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/go:<< parameters.version >>
+      - image: cimg/go:${GO_VERSION}
+    steps:
       - checkout
       - run:
           name: Instalar Just
@@ -24,4 +25,10 @@ workflows:
       - test:
           matrix:
             parameters:
-              version: [1.17, 1.19, 1.23]
+              version:
+                type: string
+                default: 1.17
+                values:
+                  - 1.17
+                  - 1.18
+                  - 1.23
