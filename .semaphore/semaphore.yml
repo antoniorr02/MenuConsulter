@@ -5,18 +5,15 @@ agent:
     type: f1-standard-2
     os_image: ubuntu2204
 blocks:
-  - name: Instalar y ejecutar pruebas
+  - name: Test
     task:
       jobs:
-        - name: Tests con Go
-          commands:
-            - checkout
-            - name: Test con Just
-              command:
-                - mkdir -p /tmp/bin
-                - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
-                - export PATH="/tmp/bin:$PATH"
-                - export PATH="/tmp/bin:$PATH"
-                - just --version
-                - export PATH="/tmp/bin:$PATH"
-                - just test
+        - name: Test con Just
+          command:
+            - mkdir -p /tmp/bin
+            - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+            - export PATH="/tmp/bin:$PATH"
+            - export PATH="/tmp/bin:$PATH"
+            - just --version
+            - export PATH="/tmp/bin:$PATH"
+            - just test
