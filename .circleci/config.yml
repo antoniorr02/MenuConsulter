@@ -11,18 +11,12 @@ jobs:
           command: |
             mkdir -p /tmp/bin
             curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
-            echo 'export PATH="/tmp/bin:$PATH"' >> ~/.bashrc
-            echo 'export PATH="/tmp/bin:$PATH"' >> ~/.profile
       - run:
           name: Verificar instalación de Just
-          command: |
-            source ~/.bashrc
-            just --version
+          command: /tmp/bin/just --version
       - run:
           name: Ejecutar tests
-          command: |
-            source ~/.bashrc
-            just test
+          command: /tmp/bin/just test
 
 workflows:
   version: 2
