@@ -4,7 +4,7 @@ on:
 
 jobs:
   test:
-    name: Pasar de Docker a Docker Hub
+    name: Ejecutando los test en GitHub Actions
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del repositorio

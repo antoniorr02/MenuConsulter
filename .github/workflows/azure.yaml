@@ -5,21 +5,17 @@ jobs:
  job: BuildAndTest
 pool:
     vmImage: 'ubuntu-latest'
-  teps:
-  - task: UseDotNet@2
-    inputs:
-    packageType: 'sdk'
-    version: 'latest'
-  
-  - task: UseGo@2
-    inputs:
-    versionSpec: 'latest'
-  
-  - task: InstallTool@0
-    inputs:
-    packageType: 'nuget'
-    versionSpec: 'latest'
-  
-  - script: just test
-    workingDirectory: $(Build.SourcesDirectory)
-#
+    steps:
+      - task: UseDotNet@2
+        inputs:
+        packageType: 'sdk'
+        version: 'latest'
+      - task: UseGo@2
+        inputs:
+        versionSpec: 'latest'
+      - task: InstallTool@0
+        inputs:
+        packageType: 'nuget'
+        versionSpec: 'latest'
+      - script: just test
+        workingDirectory: $(Build.SourcesDirectory)
