@@ -23,6 +23,6 @@ workflows:
   test-workflow:
     jobs:
       - build:
-        test:
-          matrix:
-            GO_VERSION: [1.17, 1.19, 1.23]
+          test:
+            matrix:
+              GO_VERSION: [1.17, 1.19, 1.23]
