@@ -8,15 +8,15 @@ agent:
 
 blocks:
   - name: Test
-  trigger:
-      branches:
-        only: Objetivo-6
+    trigger:
+        branches:
+          only: Objetivo-6
     task:
-      jobs:
-        - name: Test con Just
-          commands:
-            - mkdir -p /tmp/bin
-            - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
-            - export PATH="/tmp/bin:$PATH"
-            - just --version
-            - just test
+    jobs:
+      - name: Test con Just
+        commands:
+          - mkdir -p /tmp/bin
+          - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+          - export PATH="/tmp/bin:$PATH"
+          - just --version
+          - just test
