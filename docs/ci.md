@@ -21,4 +21,4 @@ Como es necesario incluir al menos dos herramientas diferentes:
 
 - En primer lugar utilizaremos el propio Github Actions al ser la herramienta estándar.
 
-- 
+- En segundo lugar tras haber probado todas las herramientas, me he decido por utilizar Buddy como herramienta de integraciñon continua. Por otro lado, en la configuración de circleci voy a probar lo que pide el objetivo para comprobar que varias versiones del lenguaje funcionan con nuestro programa.
