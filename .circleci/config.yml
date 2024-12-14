@@ -24,4 +24,9 @@ workflows:
     jobs:
       - test:
           matrix:
-            GO_VERSION: [1.17, 1.18, 1.23]
+            GO_VERSION:
+              type: string
+              values:
+                - 1.17
+                - 1.18
+                - 1.23
