@@ -1,19 +1,19 @@
 version: v1.0
 name: Probando semaphore
+
 agent:
   machine:
-    type: f1-standard-2
+    type: e1-standard-2
     os_image: ubuntu2204
+
 blocks:
   - name: Test
     task:
       jobs:
         - name: Test con Just
-          command:
+          commands:
             - mkdir -p /tmp/bin
             - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
             - export PATH="/tmp/bin:$PATH"
-            - export PATH="/tmp/bin:$PATH"
             - just --version
-            - export PATH="/tmp/bin:$PATH"
             - just test
