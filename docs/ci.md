@@ -14,7 +14,7 @@
 
 **[Cirrus CI](https://cirrus-ci.org/)**: No es valido para nuestro proyecto, ya que para poder utilizarlo con un repositorio nos exige un pago mensual.
 
-**[Buddy](https://buddy.works/)**: 
+**[Buddy](https://buddy.works/)**: Al igual que circle cumple nuestros dos requisitos, adicionalmente es el más facil de configurar, además el hecho de que se pueda configurar de forma completamente externa al programa, y sin tener que configurar casi nada del yml (se hace casi todo por interfaz), lo hace a mi parecer la opción más llamativa de todas las que he probado.
 
 ### Justificación de la elección
 Como es necesario incluir al menos dos herramientas diferentes:
