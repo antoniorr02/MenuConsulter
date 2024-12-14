@@ -17,5 +17,5 @@ blocks:
             - export PATH="/tmp/bin:$PATH"
             - just --version
             - git clone https://github.com/antoniorr02/MenuConsulter.git
-            - cd MenuConsulter/Objetivo-6
+            - cd MenuConsulter
             - just test
