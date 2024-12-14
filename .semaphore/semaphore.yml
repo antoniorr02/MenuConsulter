@@ -11,16 +11,12 @@ blocks:
         - name: Tests con Go
           commands:
             - checkout
-            - name: Instalar Just
-              command: |
-                mkdir -p /tmp/bin
-                curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
-                export PATH="/tmp/bin:$PATH"
-            - name: Verificar Just
-              command: |
-                export PATH="/tmp/bin:$PATH"
-                just --version
-            - name: Ejecutar pruebas
-              command: |
-                export PATH="/tmp/bin:$PATH"
-                just test
+            - name: Test con Just
+              command:
+                - mkdir -p /tmp/bin
+                - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+                - export PATH="/tmp/bin:$PATH"
+                - export PATH="/tmp/bin:$PATH"
+                - just --version
+                - export PATH="/tmp/bin:$PATH"
+                - just test
