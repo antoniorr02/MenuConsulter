@@ -6,6 +6,18 @@
 
 **[GitHub Actions](https://github.com/features/actions)**: Se trata de una herramienta gratuita y con completa integración en el propio Github.
 
+**[Azure DevOps](https://azure.microsoft.com/es-es/products/devops)**:
+
+**[Circle CI](https://circleci.com/)**:
+
+**[TravisCI](https://app.travis-ci.com/)**:
+
+**[Semaphore](https://semaphoreci.com/)**:
+
+**[Cirrus CI](https://cirrus-ci.org/)**:
+
+**[Buddy]()**:
+
 ### Justificación de la elección
 Como es necesario incluir al menos dos herramientas diferentes:
 
