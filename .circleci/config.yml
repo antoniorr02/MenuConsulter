@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/go:${GO_VERSION}
+      - image: circleci/go@1.7.3
     steps:
       - checkout
       - run:
@@ -22,11 +22,7 @@ workflows:
   version: 2
   test-workflow:
     jobs:
-      - test:
-          parameters:
-            GO_VERSION:
-              type: string
-              values:
-                - 1.17
-                - 1.18
-                - 1.23
+      - build:
+        test:
+          matrix:
+            GO_VERSION: [1.17, 1.19, 1.23]
