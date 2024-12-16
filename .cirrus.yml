@@ -6,11 +6,5 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Instalar Just
-          command: |
-            mkdir -p /tmp/bin
-            curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
-            export PATH="/tmp/bin:$PATH"
-      - run:
           name: Ejecutar Test
-          command: just test
+          command: docker run -u 1001 -t -v `pwd`:/app/test imagen
