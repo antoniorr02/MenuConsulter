@@ -12,9 +12,6 @@ jobs:
             mkdir -p /tmp/bin
             curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
       - run:
-          name: Verificar instalación de Just
-          command: /tmp/bin/just --version
-      - run:
           name: Ejecutar tests
           command: /tmp/bin/just test
 
