@@ -6,6 +6,9 @@ jobs:
       - image: antoniorr02/menuconsulter
     steps:
       - checkout
+      - run:
+          name: Ejecutar tests
+          command: just test
 
 workflows:
   version: 2
