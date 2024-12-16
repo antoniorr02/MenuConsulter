@@ -3,12 +3,9 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/go:1.23
+      - image: antoniorr02/menuconsulter
     steps:
       - checkout
-      - run:
-          name: Ejecutar test con docker
-          command: docker run -u 1001 -t -v `pwd`:/app/test imagen 
 
 workflows:
   version: 2
