@@ -15,7 +15,6 @@ blocks:
             - mkdir -p /tmp/bin
             - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
             - export PATH="/tmp/bin:$PATH"
-            - just --version
             - git clone https://github.com/antoniorr02/MenuConsulter.git
             - cd MenuConsulter
             - just test
