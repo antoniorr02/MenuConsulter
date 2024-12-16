@@ -7,13 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Instalar Just
-          command: |
-            mkdir -p /tmp/bin
-            curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
-      - run:
-          name: Ejecutar tests
-          command: /tmp/bin/just test
+          name: Ejecutar test con docker
+          command: docker run -u 1001 -t -v `pwd`:/app/test imagen 
 
 workflows:
   version: 2
