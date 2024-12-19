@@ -4,3 +4,4 @@ automatizar:
   fichero: justfile.go
   orden: just
 test: internal/extraccion_test.go
+CI: .github/workflows/github_actions.yml

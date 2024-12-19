@@ -1,0 +1,20 @@
+version: v1.0
+name: Probando semaphore
+
+agent:
+  machine:
+    type: f1-standard-2
+    os_image: ubuntu2204
+
+blocks:
+  - name: Test
+    task:
+      jobs:
+        - name: Test con Just
+          commands:
+            - mkdir -p /tmp/bin
+            - curl -fsSL https://just.systems/install.sh | bash -s -- --to /tmp/bin
+            - export PATH="/tmp/bin:$PATH"
+            - git clone https://github.com/antoniorr02/MenuConsulter.git
+            - cd MenuConsulter
+            - just test

@@ -1,0 +1,17 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: antoniorr02/menuconsulter
+    steps:
+      - checkout
+      - run:
+          name: Ejecutar tests
+          command: just test
+
+workflows:
+  version: 2
+  test-workflow:
+    jobs:
+      - test
