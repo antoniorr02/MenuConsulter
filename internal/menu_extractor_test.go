@@ -41,6 +41,7 @@ func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
 }
 
 func TestExtraerFecha(t *testing.T) {
+	config.InitLogger("test.log")
 	config.Logger.Info("Iniciando TestExtraerFecha")
 	doc := cargarDocumentoTest(t, "../data/menu.html")
 	tablaInline := encontrarTablaInline(t, doc)
