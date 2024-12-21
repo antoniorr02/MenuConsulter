@@ -1,25 +1,25 @@
 package config
 
 import (
-	"go.uber.org/zap"
+	"io"
+	"log/slog"
+	"os"
 )
 
-var (
-	Logger *zap.Logger
-)
+var Logger *slog.Logger
 
 func InitLogger(logFile string) {
-	var err error
-
-	// Crear un logger con zap
-	config := zap.NewProductionConfig()
-	config.OutputPaths = []string{logFile, "stderr"}
-
-	Logger, err = config.Build()
+	file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
-		panic("No se pudo inicializar el logger: " + err.Error())
+		panic(err)
 	}
 
-	// Sync es necesario si necesitas manejar la seguridad de los logs
-	defer Logger.Sync()
+	multiWriter := io.MultiWriter(file, os.Stdout)
+
+	// Configurar el handler de slog con opciones
+	handler := slog.NewTextHandler(multiWriter, &slog.HandlerOptions{
+		AddSource: true,
+	})
+
+	Logger = slog.New(handler)
 }

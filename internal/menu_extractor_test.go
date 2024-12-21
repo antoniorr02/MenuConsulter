@@ -5,9 +5,12 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"go.uber.org/zap"
 	"golang.org/x/net/html"
 )
+
+func init() {
+	config.InitLogger("fichero.log")
+}
 
 func cargarDocumentoTest(t *testing.T, filePath string) *html.Node {
 	t.Helper()
@@ -32,19 +35,11 @@ func encontrarTablaInline(t *testing.T, doc *html.Node) *html.Node {
 	return nil
 }
 
-// Función auxiliar para validar que un nodo no sea nil
-func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
-	t.Helper()
-	if nodo == nil {
-		t.Fatalf(mensaje)
-	}
-}
-
 func TestExtraerFecha(t *testing.T) {
-	config.InitLogger("test.log")
-	config.Logger.Info("Iniciando TestExtraerFecha")
 	doc := cargarDocumentoTest(t, "../data/menu.html")
+
 	tablaInline := encontrarTablaInline(t, doc)
+
 	fecha := extraerFecha(tablaInline)
 
 	assert.NotEmpty(t, fecha, "No se extrajo una fecha válida")
@@ -52,8 +47,8 @@ func TestExtraerFecha(t *testing.T) {
 }
 
 func TestProcesarPlatos(t *testing.T) {
-	config.Logger.Info("Iniciando TestProcesarPlatos")
 	doc := cargarDocumentoTest(t, "../data/menu.html")
+
 	tablaInline := encontrarTablaInline(t, doc)
 
 	// Encuentra la segunda fila de la tabla
@@ -72,7 +67,7 @@ func TestProcesarPlatos(t *testing.T) {
 
 func TestExtraerMenus(t *testing.T) {
 	filePath := "../data/menu.html"
-	config.Logger.Info("Iniciando test para ExtraerMenus", zap.String("archivo", filePath))
+	config.Logger.Info("Iniciando test para ExtraerMenus", "filePath", filePath)
 
 	menus, err := ExtraerMenus(filePath)
 

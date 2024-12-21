@@ -10,8 +10,9 @@
 
 **[Zerolog](https://pkg.go.dev/github.com/rs/zerolog)**: Cumple con todos los requisitos y ofrece una funcionalidad muy parecida a Logrus, sin embargo, es cierto que he encontrado una sintaxis más amigable en logrus.
 
-**[Zap](https://pkg.go.dev/go.uber.org/zap)**:
+**[Zap](https://pkg.go.dev/go.uber.org/zap)**: Cumple con todos los requisitos con una gran personalización de los logs, sin embargo, le pasa un poco como a zerolog con la sintaxis no tan limpia como logrus o log.
 
-**[Slog](https://go.dev/blog/slog)**:
+**[Slog](https://go.dev/blog/slog)**: Cumple con todos los requisitos propuestos, además, se trata del estándar del lenguaje desde Go 1.21, con lo que al estar más actualizado cumple mejor el segundo criterio que Log y supera muchas de sus limitaciones en cuanto a personalización.
 
 ### Justificación de la elección
+La elección final va a ser Slog, ya que se trata de la biblioteca estándar en Go para loggin y mejora en personalización y funcionalidad respecto a Log.

@@ -1,19 +1,23 @@
 package internal
 
 import (
+	"bytes"
+	"log/slog"
 	"testing"
-
-	"github.com/stretchr/testify/assert"
-	"go.uber.org/zap"
 )
 
 func TestLoggerInitialization(t *testing.T) {
-	config := zap.NewProductionConfig()
-	config.OutputPaths = []string{"stdout"}
-	logger, _ := config.Build()
-	defer logger.Sync()
+	var buffer bytes.Buffer
+
+	// Crear un handler con opciones para el logger
+	handler := slog.NewTextHandler(&buffer, &slog.HandlerOptions{
+		AddSource: false, // En el test, no necesitamos la fuente
+	})
+
+	logger := slog.New(handler)
 
 	logger.Info("Esto es un mensaje de prueba")
-
-	assert.NotNil(t, logger, "El logger no está inicializado")
+	if buffer.Len() == 0 {
+		t.Errorf("El logger no registró ningún mensaje")
+	}
 }

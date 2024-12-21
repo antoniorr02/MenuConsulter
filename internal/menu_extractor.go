@@ -6,27 +6,26 @@ import (
 	"os"
 	"strings"
 
-	"go.uber.org/zap"
 	"golang.org/x/net/html"
 )
 
 // Abre un archivo y devuelve su contenido como un documento HTML
 func cargarDocumento(filePath string) (*html.Node, error) {
-	config.Logger.Info("Intentando cargar el documento", zap.String("path", filePath))
+	config.Logger.Info("Intentando cargar el documento", "filePath", filePath)
 
 	file, err := os.Open(filePath)
 	if err != nil {
-		config.Logger.Error("Error al abrir el archivo", zap.String("path", filePath), zap.Error(err))
+		config.Logger.Error("Error al abrir el archivo", "filePath", filePath, "error", err)
 		return nil, fmt.Errorf("no se pudo abrir el archivo: %w", err)
 	}
 	defer file.Close()
 
 	doc, err := html.Parse(file)
 	if err != nil {
-		config.Logger.Error("Error al parsear el archivo", zap.String("path", filePath), zap.Error(err))
+		config.Logger.Error("Error al parsear el archivo", "filePath", filePath, "error", err)
 		return nil, fmt.Errorf("error al procesar el HTML: %w", err)
 	}
-	config.Logger.Info("Documento cargado exitosamente", zap.String("path", filePath))
+	config.Logger.Info("Documento cargado exitosamente", "filePath", filePath)
 	return doc, nil
 }
 
@@ -64,7 +63,7 @@ func procesarTablas(doc *html.Node) []Menu {
 
 	var menus []Menu
 	tablas := buscarNodos(doc, "table")
-	config.Logger.Info("Tablas encontradas", zap.Int("cantidad", len(tablas)))
+	config.Logger.Info("Tablas encontradas", "cantidad", len(tablas))
 
 	for _, tabla := range tablas {
 		for _, attr := range tabla.Attr {
@@ -76,7 +75,7 @@ func procesarTablas(doc *html.Node) []Menu {
 		}
 	}
 
-	config.Logger.Info("Tablas procesadas", zap.Int("cantidad de menús", len(menus)))
+	config.Logger.Info("Menús procesados", "cantidad", len(menus))
 	return menus
 }
 
@@ -91,11 +90,11 @@ func extraerFecha(table *html.Node) string {
 
 // Procesa las filas de una tabla para obtener los menús
 func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
-	config.Logger.Info("Procesando menú", zap.String("fecha", fecha))
+	config.Logger.Info("Procesando menú", "fecha", fecha)
 
 	var menus []Menu
 	trNodes := buscarNodos(table, "tr")
-	config.Logger.Info("Filas encontradas", zap.Int("cantidad", len(trNodes)))
+	config.Logger.Info("Filas encontradas en la tabla", "cantidad", len(trNodes))
 
 	for _, tr := range trNodes {
 		tdNodes := buscarNodos(tr, "td")
@@ -110,7 +109,7 @@ func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
 				Platos: procesarPlatos(tr),
 			}
 			menus = append(menus, menu)
-			config.Logger.Info("Menú agregado", zap.Any("menu", menu))
+			config.Logger.Info("Menú agregado", "menu", menu)
 		}
 	}
 	return menus
