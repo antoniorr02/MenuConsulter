@@ -11,21 +11,21 @@ import (
 
 // Abre un archivo y devuelve su contenido como un documento HTML
 func cargarDocumento(filePath string) (*html.Node, error) {
-	config.Logger.Printf("Intentando cargar el documento: %s", filePath)
+	config.Logger.Infof("Intentando cargar el documento: %s", filePath)
 
 	file, err := os.Open(filePath)
 	if err != nil {
-		config.Logger.Printf("Error al abrir el archivo %s: %v", filePath, err)
+		config.Logger.Infof("Error al abrir el archivo %s: %v", filePath, err)
 		return nil, fmt.Errorf("no se pudo abrir el archivo: %w", err)
 	}
 	defer file.Close()
 
 	doc, err := html.Parse(file)
 	if err != nil {
-		config.Logger.Printf("Error al parsear el archivo %s: %v", filePath, err)
+		config.Logger.Infof("Error al parsear el archivo %s: %v", filePath, err)
 		return nil, fmt.Errorf("error al procesar el HTML: %w", err)
 	}
-	config.Logger.Printf("Documento cargado exitosamente: %s", filePath)
+	config.Logger.Infof("Documento cargado exitosamente: %s", filePath)
 	return doc, nil
 }
 
@@ -59,23 +59,23 @@ func extraerTexto(n *html.Node) string {
 
 // Extrae las tablas con clase "inline"
 func procesarTablas(doc *html.Node) []Menu {
-	config.Logger.Println("Procesando tablas en el documento")
+	config.Logger.Info("Procesando tablas en el documento")
 
 	var menus []Menu
 	tablas := buscarNodos(doc, "table")
-	config.Logger.Printf("Se encontraron %d tablas", len(tablas))
+	config.Logger.Infof("Se encontraron %d tablas", len(tablas))
 
 	for _, tabla := range tablas {
 		for _, attr := range tabla.Attr {
 			if attr.Key == "class" && attr.Val == "inline" {
-				config.Logger.Println("Procesando tabla con clase 'inline'")
+				config.Logger.Info("Procesando tabla con clase 'inline'")
 				fecha := extraerFecha(tabla)
 				menus = append(menus, procesarMenuDeTabla(tabla, fecha)...)
 			}
 		}
 	}
 
-	config.Logger.Printf("Se procesaron %d menús", len(menus))
+	config.Logger.Infof("Se procesaron %d menús", len(menus))
 	return menus
 }
 
@@ -90,11 +90,11 @@ func extraerFecha(table *html.Node) string {
 
 // Procesa las filas de una tabla para obtener los menús
 func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
-	config.Logger.Printf("Procesando menú para la fecha: %s", fecha)
+	config.Logger.Infof("Procesando menú para la fecha: %s", fecha)
 
 	var menus []Menu
 	trNodes := buscarNodos(table, "tr")
-	config.Logger.Printf("Se encontraron %d filas en la tabla", len(trNodes))
+	config.Logger.Infof("Se encontraron %d filas en la tabla", len(trNodes))
 
 	for _, tr := range trNodes {
 		tdNodes := buscarNodos(tr, "td")
@@ -109,7 +109,7 @@ func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
 				Platos: procesarPlatos(tr),
 			}
 			menus = append(menus, menu)
-			config.Logger.Printf("Se agregó un menú: %v", menu)
+			config.Logger.Infof("Se agregó un menú: %v", menu)
 		}
 	}
 	return menus

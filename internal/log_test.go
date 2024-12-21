@@ -2,17 +2,22 @@ package internal
 
 import (
 	"bytes"
-	"log"
 	"testing"
+
+	"github.com/sirupsen/logrus"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestLoggerInitialization(t *testing.T) {
 	var buffer bytes.Buffer
 
-	logger := log.New(&buffer, "TEST: ", log.Ldate|log.Ltime|log.Lshortfile)
+	// Crear un logger de prueba
+	logger := logrus.New()
+	logger.SetOutput(&buffer)
+	logger.SetFormatter(&logrus.TextFormatter{DisableTimestamp: true})
 
-	logger.Printf("Esto es un mensaje de prueba")
-	if buffer.Len() == 0 {
-		t.Errorf("El logger no registró ningún mensaje")
-	}
+	logger.Info("Esto es un mensaje de prueba")
+
+	assert.NotEmpty(t, buffer.String(), "El logger no registró ningún mensaje")
+	assert.Contains(t, buffer.String(), "Esto es un mensaje de prueba", "El mensaje no es el esperado")
 }

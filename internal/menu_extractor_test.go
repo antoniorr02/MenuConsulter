@@ -73,7 +73,7 @@ func TestProcesarPlatos(t *testing.T) {
 
 func TestExtraerMenus(t *testing.T) {
 	filePath := "../data/menu.html"
-	config.Logger.Printf("Iniciando test para ExtraerMenus con archivo: %s", filePath)
+	config.Logger.Infof("Iniciando test para ExtraerMenus con archivo: %s", filePath)
 
 	menus, err := ExtraerMenus(filePath)
 
@@ -86,5 +86,5 @@ func TestExtraerMenus(t *testing.T) {
 	assert.Contains(t, menus[0].Platos[0].Nombre, "Pastel de espinacas", "El nombre del primer plato no es correcto")
 	assert.Contains(t, menus[0].Platos[0].Ingredientes, "Gluten", "No se extrajo correctamente el alérgeno del primer plato")
 
-	config.Logger.Println("Test para ExtraerMenus completado con éxito")
+	config.Logger.Info("Test para ExtraerMenus completado con éxito")
 }
