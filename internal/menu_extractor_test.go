@@ -1,9 +1,9 @@
 package internal
 
 import (
-	"MenuConsulter/internal/config"
 	"testing"
 
+	"github.com/rs/zerolog/log"
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/html"
 )
@@ -40,12 +40,9 @@ func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
 }
 
 func TestExtraerFecha(t *testing.T) {
-	config.InitLogger("test.log")
-
+	log.Info().Msg("Iniciando TestExtraerFecha")
 	doc := cargarDocumentoTest(t, "../data/menu.html")
-
 	tablaInline := encontrarTablaInline(t, doc)
-
 	fecha := extraerFecha(tablaInline)
 
 	assert.NotEmpty(t, fecha, "No se extrajo una fecha válida")
@@ -53,8 +50,8 @@ func TestExtraerFecha(t *testing.T) {
 }
 
 func TestProcesarPlatos(t *testing.T) {
+	log.Info().Msg("Iniciando TestProcesarPlatos")
 	doc := cargarDocumentoTest(t, "../data/menu.html")
-
 	tablaInline := encontrarTablaInline(t, doc)
 
 	// Encuentra la segunda fila de la tabla
@@ -73,7 +70,7 @@ func TestProcesarPlatos(t *testing.T) {
 
 func TestExtraerMenus(t *testing.T) {
 	filePath := "../data/menu.html"
-	config.Logger.Infof("Iniciando test para ExtraerMenus con archivo: %s", filePath)
+	log.Info().Msgf("Iniciando test para ExtraerMenus con archivo: %s", filePath)
 
 	menus, err := ExtraerMenus(filePath)
 
@@ -86,5 +83,5 @@ func TestExtraerMenus(t *testing.T) {
 	assert.Contains(t, menus[0].Platos[0].Nombre, "Pastel de espinacas", "El nombre del primer plato no es correcto")
 	assert.Contains(t, menus[0].Platos[0].Ingredientes, "Gluten", "No se extrajo correctamente el alérgeno del primer plato")
 
-	config.Logger.Info("Test para ExtraerMenus completado con éxito")
+	log.Info().Msg("Test para ExtraerMenus completado con éxito")
 }

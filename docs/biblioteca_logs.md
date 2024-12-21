@@ -8,7 +8,7 @@
 
 **[Logrus](https://pkg.go.dev/github.com/sirupsen/logrus)**: Cumple con todos los requisitos, además ofrece una mayor personalización que Log.
 
-**[Zerolog](https://pkg.go.dev/github.com/rs/zerolog)**:
+**[Zerolog](https://pkg.go.dev/github.com/rs/zerolog)**: Cumple con todos los requisitos y ofrece una funcionalidad muy parecida a Logrus, sin embargo, es cierto que he encontrado una sintaxis más amigable en logrus.
 
 **[Zap](https://pkg.go.dev/go.uber.org/zap)**:
 

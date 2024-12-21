@@ -4,30 +4,22 @@ import (
 	"io"
 	"os"
 
-	"github.com/sirupsen/logrus"
+	"github.com/rs/zerolog"
 )
 
-var Logger *logrus.Logger
+var Logger zerolog.Logger
 
 func InitLogger(logFile string) {
-	// Crear un nuevo logger
-	Logger = logrus.New()
-
-	// Configurar formato
-	Logger.SetFormatter(&logrus.TextFormatter{
-		FullTimestamp: true,
-	})
+	// Crear un logger con un formato JSON
+	Logger = zerolog.New(os.Stderr).With().Timestamp().Logger()
 
 	// Abrir el archivo de log
 	file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
-		logrus.Fatalf("No se pudo abrir el archivo de log: %v", err)
+		zerolog.Fatal.Err(err).Msg("No se pudo abrir el archivo de log")
 	}
 
 	// Configurar salida múltiple: archivo y terminal
-	multiWriter := io.MultiWriter(file, os.Stdout)
-	Logger.SetOutput(multiWriter)
-
-	// Establecer nivel de log
-	Logger.SetLevel(logrus.InfoLevel)
+	multiWriter := io.MultiWriter(file, os.Stderr)
+	Logger = Logger.Output(multiWriter)
 }
