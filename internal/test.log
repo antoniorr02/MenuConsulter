@@ -1,0 +1,648 @@
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor_test.go:76: Iniciando test para ExtraerMenus con archivo: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:62: Procesando tablas en el documento
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:66: Se encontraron 4 tablas
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:97: Se encontraron 25 filas en la tabla
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña [Apio Gluten Huevos Lácteos]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña de verduras (OV) [Apio Gluten Huevos Lácteos]} {Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:97: Se encontraron 14 filas en la tabla
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:97: Se encontraron 70 filas en la tabla
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada [Apio Lácteos]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de costillas de cerdo [Apio Gluten Sulfitos]} {Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote - Potaje de guisantes y verduras (OV) [Gluten Sulfitos]} {Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Gluten Lácteos Sulfitos]} {Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella (OV) [Gluten Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza jamón cocido y queso [Gluten Lácteos Soja Sulfitos]} {Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza 4 quesos [Gluten Lácteos]} {Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola [Gluten]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola (OV) [Gluten]} {Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:97: Se encontraron 58 filas en la tabla
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de patatas con costillas de cerdo [Sulfitos]} {Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote (Potaje de guisantes y verduras (Vegetariano - Celíaco) []} {Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Lácteos Soja* Sulfitos]} {Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella [Huevos Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahoria y tomate [Apio Lácteos Sulfitos]} {Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor.go:78: Se procesaron 139 menús
+MenuConsulter: 2024/12/21 14:10:31 menu_extractor_test.go:89: Test para ExtraerMenus completado con éxito
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor_test.go:76: Iniciando test para ExtraerMenus con archivo: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:62: Procesando tablas en el documento
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:66: Se encontraron 4 tablas
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:97: Se encontraron 25 filas en la tabla
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña [Apio Gluten Huevos Lácteos]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña de verduras (OV) [Apio Gluten Huevos Lácteos]} {Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:97: Se encontraron 14 filas en la tabla
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:97: Se encontraron 70 filas en la tabla
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada [Apio Lácteos]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de costillas de cerdo [Apio Gluten Sulfitos]} {Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote - Potaje de guisantes y verduras (OV) [Gluten Sulfitos]} {Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Gluten Lácteos Sulfitos]} {Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella (OV) [Gluten Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza jamón cocido y queso [Gluten Lácteos Soja Sulfitos]} {Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza 4 quesos [Gluten Lácteos]} {Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola [Gluten]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola (OV) [Gluten]} {Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:97: Se encontraron 58 filas en la tabla
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de patatas con costillas de cerdo [Sulfitos]} {Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote (Potaje de guisantes y verduras (Vegetariano - Celíaco) []} {Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Lácteos Soja* Sulfitos]} {Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella [Huevos Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahoria y tomate [Apio Lácteos Sulfitos]} {Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor.go:78: Se procesaron 139 menús
+MenuConsulter: 2024/12/21 14:13:05 menu_extractor_test.go:89: Test para ExtraerMenus completado con éxito
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor_test.go:76: Iniciando test para ExtraerMenus con archivo: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:62: Procesando tablas en el documento
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:66: Se encontraron 4 tablas
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:97: Se encontraron 25 filas en la tabla
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña [Apio Gluten Huevos Lácteos]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña de verduras (OV) [Apio Gluten Huevos Lácteos]} {Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:97: Se encontraron 14 filas en la tabla
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:97: Se encontraron 70 filas en la tabla
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada [Apio Lácteos]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de costillas de cerdo [Apio Gluten Sulfitos]} {Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote - Potaje de guisantes y verduras (OV) [Gluten Sulfitos]} {Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Gluten Lácteos Sulfitos]} {Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella (OV) [Gluten Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza jamón cocido y queso [Gluten Lácteos Soja Sulfitos]} {Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza 4 quesos [Gluten Lácteos]} {Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola [Gluten]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola (OV) [Gluten]} {Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:97: Se encontraron 58 filas en la tabla
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de patatas con costillas de cerdo [Sulfitos]} {Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote (Potaje de guisantes y verduras (Vegetariano - Celíaco) []} {Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Lácteos Soja* Sulfitos]} {Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella [Huevos Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahoria y tomate [Apio Lácteos Sulfitos]} {Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor.go:78: Se procesaron 139 menús
+MenuConsulter: 2024/12/21 14:22:22 menu_extractor_test.go:89: Test para ExtraerMenus completado con éxito
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor_test.go:76: Iniciando test para ExtraerMenus con archivo: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:14: Intentando cargar el documento: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:28: Documento cargado exitosamente: ../data/menu.html
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:62: Procesando tablas en el documento
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:66: Se encontraron 4 tablas
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:97: Se encontraron 25 filas en la tabla
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos (VG) [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pastel de espinacas, piñones y mozzarella [Gluten Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Gluten Lácteos]} {Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Verdura agridulce con cuscús de tomate seco (OV) [Gluten Sésamo Soja]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña [Apio Gluten Huevos Lácteos]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Lasaña de verduras (OV) [Apio Gluten Huevos Lácteos]} {Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Tempe empanado [Gluten Huevos Lácteos Soja]} {Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ensalada de verduras (OV) [Huevos]} {Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin diplomático [Gluten Huevos Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:93: Procesando menú para la fecha: VIERNES,  22  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:97: Se encontraron 14 filas en la tabla
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Ternera a la cazadora [Apio Sulfitos]} {Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos (´)]} {Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pimientos fritos []} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Pudin de verduras [Huevos Lácteos Soja Sulfitos]} {Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Crema de calabacín [Apio Lácteos Sulfitos]} {Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Hamburguesa de seta con boniatos (vegetariano) [Apio Huevos Lácteos Mostaza]} {Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Patatas a la española [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento VIERNES,  22  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre VIERNES,  22  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:97: Se encontraron 70 filas en la tabla
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de cerdo [Gluten Huevos Lácteos]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{San Jacobo de calabacín (OV) [Gluten Huevos Lácteos Soja]} {Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Gluten Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada [Apio Lácteos]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de costillas de cerdo [Apio Gluten Sulfitos]} {Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Gluten Moluscos Pescado Sulfitos]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote - Potaje de guisantes y verduras (OV) [Gluten Sulfitos]} {Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Gluten Huevos Soja]} {Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con leche [Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Gluten Lácteos Sulfitos]} {Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Gluten* Huevos Pescado Sulfitos]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella (OV) [Gluten Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza jamón cocido y queso [Gluten Lácteos Soja Sulfitos]} {Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Gluten Sulfitos]} {Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Gluten*]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pizza 4 quesos [Gluten Lácteos]} {Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Entrante LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola [Gluten]} {Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Dorada a la espalda [Pescado Sulfitos]} {Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []} {Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Migas de sémola (OV) [Gluten]} {Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Panaché de verduras [Sulfitos]} {Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Leche frita [Gluten Huevos Lácteos]} {Ensalada []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:71: Procesando tabla con clase 'inline'
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:93: Procesando menú para la fecha: LUNES,  25  DE  NOVIEMBRE  DE  2024
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:97: Se encontraron 58 filas en la tabla
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Lomo braseado [Apio Sulfitos]} {Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Coliflor a la crema [Huevos Lácteos]} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de judías [Sulfitos]} {Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Huevos escalfados a la florentina [Huevos Lácteos]} {Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tomate aliñado []} {Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Piña []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz pilaf con calamares americana [Lácteos Moluscos Pescado Sulfitos]} {Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pechuga de pollo a la parrilla []} {Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Menestra []} {Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con fritada (VG) [Apio]} {Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con queso azul [Huevos Lácteos Sulfitos]} {Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Pera []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Estofado de patatas con costillas de cerdo [Sulfitos]} {Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Merluza a la vasca [Crustáceos Moluscos Pescado Sulfitos]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Cascote (Potaje de guisantes y verduras (Vegetariano - Celíaco) []} {Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Hamburguesas de espinacas y tofu [Huevos Lácteos Soja]} {Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada mixta [Soja]} {Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Naranja []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis a la napolitana [Lácteos Soja* Sulfitos]} {Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tortilla de patatas con atún [Pescado]} {Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Ensalada de hortalizas (bella Elena) [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Espaguetis con crema de maíz dulce y mozzarella [Huevos Lácteos Soja Sulfitos]} {Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Tajín de verduras [Sulfitos]} {Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Mandarinas []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 1 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahoria y tomate [Apio Lácteos Sulfitos]} {Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Caldereta de cerdo [Sulfitos]} {Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Patatas risoladas [Sulfitos]} {Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Acompañamiento LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Menú 2 LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Arroz con verduras y soja [Apio Soja]} {Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Primero LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Musaka de verduras [Lácteos Sulfitos]} {Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Segundo LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Manzana []} {Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Postre LUNES,  25  DE  NOVIEMBRE  DE  2024 [{Crema de zanahorias (OV) [Apio Lácteos Sulfitos]}]}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:112: Se agregó un menú: {Cremas y sopas LUNES,  25  DE  NOVIEMBRE  DE  2024 []}
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor.go:78: Se procesaron 139 menús
+MenuConsulter: 2024/12/21 14:25:24 menu_extractor_test.go:89: Test para ExtraerMenus completado con éxito
