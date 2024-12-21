@@ -1,31 +1,32 @@
 package internal
 
 import (
+	"MenuConsulter/internal/config"
 	"fmt"
 	"os"
 	"strings"
 
-	"github.com/rs/zerolog/log"
+	"go.uber.org/zap"
 	"golang.org/x/net/html"
 )
 
 // Abre un archivo y devuelve su contenido como un documento HTML
 func cargarDocumento(filePath string) (*html.Node, error) {
-	log.Info().Msgf("Intentando cargar el documento: %s", filePath)
+	config.Logger.Info("Intentando cargar el documento", zap.String("path", filePath))
 
 	file, err := os.Open(filePath)
 	if err != nil {
-		log.Error().Msgf("Error al abrir el archivo %s: %v", filePath, err)
+		config.Logger.Error("Error al abrir el archivo", zap.String("path", filePath), zap.Error(err))
 		return nil, fmt.Errorf("no se pudo abrir el archivo: %w", err)
 	}
 	defer file.Close()
 
 	doc, err := html.Parse(file)
 	if err != nil {
-		log.Error().Msgf("Error al parsear el archivo %s: %v", filePath, err)
+		config.Logger.Error("Error al parsear el archivo", zap.String("path", filePath), zap.Error(err))
 		return nil, fmt.Errorf("error al procesar el HTML: %w", err)
 	}
-	log.Info().Msgf("Documento cargado exitosamente: %s", filePath)
+	config.Logger.Info("Documento cargado exitosamente", zap.String("path", filePath))
 	return doc, nil
 }
 
@@ -59,23 +60,23 @@ func extraerTexto(n *html.Node) string {
 
 // Extrae las tablas con clase "inline"
 func procesarTablas(doc *html.Node) []Menu {
-	log.Info().Msg("Procesando tablas en el documento")
+	config.Logger.Info("Procesando tablas en el documento")
 
 	var menus []Menu
 	tablas := buscarNodos(doc, "table")
-	log.Info().Msgf("Se encontraron %d tablas", len(tablas))
+	config.Logger.Info("Tablas encontradas", zap.Int("cantidad", len(tablas)))
 
 	for _, tabla := range tablas {
 		for _, attr := range tabla.Attr {
 			if attr.Key == "class" && attr.Val == "inline" {
-				log.Info().Msg("Procesando tabla con clase 'inline'")
+				config.Logger.Info("Procesando tabla con clase 'inline'")
 				fecha := extraerFecha(tabla)
 				menus = append(menus, procesarMenuDeTabla(tabla, fecha)...)
 			}
 		}
 	}
 
-	log.Info().Msgf("Se procesaron %d menús", len(menus))
+	config.Logger.Info("Tablas procesadas", zap.Int("cantidad de menús", len(menus)))
 	return menus
 }
 
@@ -90,11 +91,11 @@ func extraerFecha(table *html.Node) string {
 
 // Procesa las filas de una tabla para obtener los menús
 func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
-	log.Info().Msgf("Procesando menú para la fecha: %s", fecha)
+	config.Logger.Info("Procesando menú", zap.String("fecha", fecha))
 
 	var menus []Menu
 	trNodes := buscarNodos(table, "tr")
-	log.Info().Msgf("Se encontraron %d filas en la tabla", len(trNodes))
+	config.Logger.Info("Filas encontradas", zap.Int("cantidad", len(trNodes)))
 
 	for _, tr := range trNodes {
 		tdNodes := buscarNodos(tr, "td")
@@ -109,7 +110,7 @@ func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
 				Platos: procesarPlatos(tr),
 			}
 			menus = append(menus, menu)
-			log.Info().Msgf("Se agregó un menú: %v", menu)
+			config.Logger.Info("Menú agregado", zap.Any("menu", menu))
 		}
 	}
 	return menus

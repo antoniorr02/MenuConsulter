@@ -1,25 +1,31 @@
 package config
 
 import (
-	"io"
 	"os"
 
-	"github.com/rs/zerolog"
+	"go.uber.org/zap"
+	"go.uber.org/zap/zapcore"
 )
 
-var Logger zerolog.Logger
+var Logger *zap.Logger
 
 func InitLogger(logFile string) {
-	// Crear un logger con un formato JSON
-	Logger = zerolog.New(os.Stderr).With().Timestamp().Logger()
+	var err error
+
+	// Crear un logger con zap
+	Logger, err = zap.NewProduction()
+	if err != nil {
+		panic("No se pudo inicializar el logger: " + err.Error())
+	}
 
 	// Abrir el archivo de log
 	file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
-		zerolog.Fatal.Err(err).Msg("No se pudo abrir el archivo de log")
+		Logger.Fatal("No se pudo abrir el archivo de log", zap.Error(err))
 	}
 
 	// Configurar salida múltiple: archivo y terminal
-	multiWriter := io.MultiWriter(file, os.Stderr)
-	Logger = Logger.Output(multiWriter)
+	multiWriter := zap.CombineWriteSyncers(zapcore.AddSync(file), zapcore.AddSync(os.Stderr))
+	core := zapcore.NewCore(zapcore.NewJSONEncoder(zap.NewProductionEncoderConfig()), multiWriter, zap.InfoLevel)
+	Logger = zap.New(core)
 }
