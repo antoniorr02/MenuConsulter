@@ -11,7 +11,7 @@ var Logger *slog.Logger
 func InitLogger(logFile string) {
 	file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
-		slog.Warn("Could not open log file, falling back to stdout", "error", err)
+		slog.Warn("No se puede abrir el fichero de log", "error", err)
 		file = os.Stdout
 	}
 
