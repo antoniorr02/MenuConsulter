@@ -10,7 +10,7 @@ import (
 
 func init() {
 	config.InitLogger("fichero.log")
-	config.InitConfig()
+	config.LoadConfig("config/config.yaml")
 }
 
 func cargarDocumentoTest(t *testing.T, filePath string) *html.Node {

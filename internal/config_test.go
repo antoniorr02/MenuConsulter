@@ -8,9 +8,9 @@ import (
 )
 
 func TestInitConfig(t *testing.T) {
-	config.InitConfig()
+	config.LoadConfig("config/config.yaml")
 
-	assert.NotNil(t, config.Config)
-	assert.Equal(t, "MenuConsulter", config.Config.GetString("app.name"))
-	assert.Equal(t, "development", config.Config.GetString("app.env"))
+	assert.NotNil(t, config.K)
+	assert.Equal(t, "MenuConsulter", config.K.String("app.name"))
+	assert.Equal(t, "development", config.K.String("app.env"))
 }

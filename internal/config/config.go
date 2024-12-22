@@ -4,32 +4,26 @@ import (
 	"log"
 	"strings"
 
-	"github.com/spf13/viper"
+	"github.com/knadh/koanf"
+	"github.com/knadh/koanf/parsers/yaml"
+	"github.com/knadh/koanf/providers/env"
+	"github.com/knadh/koanf/providers/file"
 )
 
-var Config *viper.Viper
+var K = koanf.New(".")
 
-func InitConfig() {
-	v := viper.New()
-
-	// leer variables de entorno
-	v.AutomaticEnv()
-	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
-
-	v.SetDefault("app.name", "MenuConsulter")
-	v.SetDefault("app.env", "development")
-	v.SetDefault("log.level", "info")
-
-	v.SetConfigName("config")
-	v.SetConfigType("yaml")
-	v.AddConfigPath(".")
-	v.AddConfigPath("./config")
-
-	if err := v.ReadInConfig(); err != nil {
-		log.Printf("No se encontró el archivo de configuración: %v", err)
-	} else {
-		log.Printf("Archivo de configuración cargado: %s", v.ConfigFileUsed())
+func LoadConfig(configPath string) {
+	// Cargar configuración desde un archivo YAML
+	if err := K.Load(file.Provider(configPath), yaml.Parser()); err != nil {
+		log.Fatalf("Error al cargar el archivo de configuración: %v", err)
 	}
 
-	Config = v
+	// Sobrescribir con variables de entorno (prefijo APP_)
+	if err := K.Load(env.Provider("APP_", ".", func(s string) string {
+		return strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(s, "APP_")), "_", ".")
+	}), nil); err != nil {
+		log.Fatalf("Error al cargar las variables de entorno: %v", err)
+	}
+
+	log.Println("Configuración cargada exitosamente")
 }
