@@ -1,5 +1,5 @@
 # Requisitos buscados para el sistema de configuración
-1. Puntuación de [Snyk Advisor](https://snyk.io/)
+1. Puntuación de [Snyk Advisor](https://snyk.io/) la cuál pone puntuaciones sobre 100 dependiendo de la seguridad, popularidad, mantenimiento y comunidad de diferentes herramientas como lo son por ejemplo los sistemas de configuración.
 2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
 
 # Opciones disponibles
