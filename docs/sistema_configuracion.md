@@ -11,5 +11,5 @@
 **[Kong](https://github.com/alecthomas/kong)**: Esta herramienta la he encontrado en reddit como alternativa a viper con la ventaja sobre viper y cobra que tiene muchas menos dependencias, del mismo modo, ciñéndonos a nuestros criterios, su puntuación en Snyk es de 95 sobre 100 igualando a Viper y también ha sido actualizada en los últimos días.
 
 ### Justificación de la elección
-Finalmente Kong que parecía la más prometedora ha resultado ser la más tediosa de configurar, con lo que
+Finalmente Kong que parecía la más prometedora ha resultado ser la más tediosa de configurar, con lo que finalmente como viper y koanf cumplen todos los requisitos, he optado por quedarme con viper que considero que es la herramienta que más se suele utilizar con golang.
 

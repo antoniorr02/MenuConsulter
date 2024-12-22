@@ -1,33 +1,35 @@
 package config
 
 import (
-	"os"
+	"log"
+	"strings"
 
-	"github.com/alecthomas/kong"
+	"github.com/spf13/viper"
 )
 
-type Config struct {
-	Env     string `help:"Entorno de la aplicación (development, production)." env:"APP_ENV" default:"development"`
-	Logging struct {
-		Level string `help:"Nivel de logging (debug, info, warn, error)." env:"APP_LOGGING_LEVEL" default:"info"`
-	} `embed:"" prefix:"logging."`
-}
+var Config *viper.Viper
 
-var Cfg Config
+func InitConfig() {
+	v := viper.New()
 
-func LoadConfig() {
-	if os.Getenv("TEST_ENV") == "" {
-		os.Setenv("TEST_ENV", "true")
+	// leer variables de entorno
+	v.AutomaticEnv()
+	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
+
+	v.SetDefault("app.name", "MenuConsulter")
+	v.SetDefault("app.env", "development")
+	v.SetDefault("log.level", "info")
+
+	v.SetConfigName("config")
+	v.SetConfigType("yaml")
+	v.AddConfigPath(".")
+	v.AddConfigPath("./config")
+
+	if err := v.ReadInConfig(); err != nil {
+		log.Printf("No se encontró el archivo de configuración: %v", err)
+	} else {
+		log.Printf("Archivo de configuración cargado: %s", v.ConfigFileUsed())
 	}
-	if os.Getenv("TEST_ENV") == "true" {
-		if Cfg.Env == "" {
-			Cfg.Env = "development"
-		}
-		if Cfg.Logging.Level == "" {
-			Cfg.Logging.Level = "info"
-		}
-		return
-	}
 
-	kong.Parse(&Cfg, kong.Name("MenuConsulter"), kong.Description("Una aplicación para gestionar menús."))
+	Config = v
 }

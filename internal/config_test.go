@@ -2,21 +2,15 @@ package internal
 
 import (
 	"MenuConsulter/internal/config"
-	"os"
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestInitConfig(t *testing.T) {
-	// Ensure default values are set
-	if os.Getenv("APP_ENV") == "" {
-		os.Setenv("APP_ENV", "development")
-	}
+	config.InitConfig()
 
-	// Load the config
-	config.LoadConfig()
-
-	// Check if the Env is set correctly
-	if config.Cfg.Env != "development" {
-		t.Errorf("Expected Env to be 'development', got '%s'", config.Cfg.Env)
-	}
+	assert.NotNil(t, config.Config)
+	assert.Equal(t, "MenuConsulter", config.Config.GetString("app.name"))
+	assert.Equal(t, "development", config.Config.GetString("app.env"))
 }
