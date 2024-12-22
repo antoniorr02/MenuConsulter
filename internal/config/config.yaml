@@ -1,0 +1,6 @@
+app:
+  name: MenuConsulter
+  env: development
+
+log:
+  level: debug
