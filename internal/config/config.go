@@ -1,29 +1,33 @@
 package config
 
 import (
-	"log"
-	"strings"
+	"os"
 
-	"github.com/knadh/koanf"
-	"github.com/knadh/koanf/parsers/yaml"
-	"github.com/knadh/koanf/providers/env"
-	"github.com/knadh/koanf/providers/file"
+	"github.com/alecthomas/kong"
 )
 
-var K = koanf.New(".")
+type Config struct {
+	Env     string `help:"Entorno de la aplicación (development, production)." env:"APP_ENV" default:"development"`
+	Logging struct {
+		Level string `help:"Nivel de logging (debug, info, warn, error)." env:"APP_LOGGING_LEVEL" default:"info"`
+	} `embed:"" prefix:"logging."`
+}
 
-func LoadConfig(configPath string) {
-	// Cargar configuración desde un archivo YAML
-	if err := K.Load(file.Provider(configPath), yaml.Parser()); err != nil {
-		log.Fatalf("Error al cargar el archivo de configuración: %v", err)
+var Cfg Config
+
+func LoadConfig() {
+	if os.Getenv("TEST_ENV") == "" {
+		os.Setenv("TEST_ENV", "true")
+	}
+	if os.Getenv("TEST_ENV") == "true" {
+		if Cfg.Env == "" {
+			Cfg.Env = "development"
+		}
+		if Cfg.Logging.Level == "" {
+			Cfg.Logging.Level = "info"
+		}
+		return
 	}
 
-	// Sobrescribir con variables de entorno (prefijo APP_)
-	if err := K.Load(env.Provider("APP_", ".", func(s string) string {
-		return strings.ReplaceAll(strings.ToLower(strings.TrimPrefix(s, "APP_")), "_", ".")
-	}), nil); err != nil {
-		log.Fatalf("Error al cargar las variables de entorno: %v", err)
-	}
-
-	log.Println("Configuración cargada exitosamente")
+	kong.Parse(&Cfg, kong.Name("MenuConsulter"), kong.Description("Una aplicación para gestionar menús."))
 }

@@ -13,7 +13,7 @@ import (
 func cargarDocumento(filePath string) (*html.Node, error) {
 	config.Logger.Info("Intentando cargar el documento", "filePath", filePath)
 
-	if config.K.String("app.env") == "development" {
+	if config.Cfg.Env == "development" {
 		config.Logger.Debug("Ejecutando en entorno de desarrollo")
 	}
 
