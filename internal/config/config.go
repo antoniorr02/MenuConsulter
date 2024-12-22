@@ -12,7 +12,6 @@ var Config *viper.Viper
 func InitConfig() {
 	v := viper.New()
 
-	// leer variables de entorno
 	v.AutomaticEnv()
 	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 

@@ -17,7 +17,6 @@ func InitLogger(logFile string) {
 
 	multiWriter := io.MultiWriter(file, os.Stdout)
 
-	// Configurar el handler de slog con opciones
 	handler := slog.NewTextHandler(multiWriter, &slog.HandlerOptions{
 		AddSource: true,
 	})

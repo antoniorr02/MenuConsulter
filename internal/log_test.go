@@ -9,9 +9,8 @@ import (
 func TestLoggerInitialization(t *testing.T) {
 	var buffer bytes.Buffer
 
-	// Crear un handler con opciones para el logger
 	handler := slog.NewTextHandler(&buffer, &slog.HandlerOptions{
-		AddSource: false, // En el test, no necesitamos la fuente
+		AddSource: false,
 	})
 
 	logger := slog.New(handler)
