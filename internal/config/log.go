@@ -11,7 +11,8 @@ var Logger *slog.Logger
 func InitLogger(logFile string) {
 	file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
-		panic(err)
+		slog.Warn("Could not open log file, falling back to stdout", "error", err)
+		file = os.Stdout
 	}
 
 	multiWriter := io.MultiWriter(file, os.Stdout)
