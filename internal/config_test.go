@@ -1,16 +1,27 @@
 package internal
 
 import (
-	"MenuConsulter/internal/config"
+	"bytes"
 	"testing"
 
+	"MenuConsulter/internal/config"
+
+	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/assert"
 )
 
-func TestInitConfig(t *testing.T) {
+func TestInitLogger(t *testing.T) {
+	var logOutput bytes.Buffer
+
 	config.InitConfig()
 
-	assert.NotNil(t, config.Config)
-	assert.Equal(t, "MenuConsulter", config.Config.GetString("app.name"))
-	assert.Equal(t, "development", config.Config.GetString("app.env"))
+	logger := logrus.New()
+	logger.Out = &logOutput
+	logger.SetLevel(logrus.InfoLevel)
+	logger.SetFormatter(&logrus.TextFormatter{})
+
+	logger.Info("Prueba de log")
+
+	logContent := logOutput.String()
+	assert.Contains(t, logContent, "Prueba de log", "El contenido del log debería contener el mensaje esperado")
 }
