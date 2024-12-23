@@ -22,6 +22,14 @@ func cargarDocumentoTest(t *testing.T, filePath string) *html.Node {
 	return doc
 }
 
+// Función auxiliar para validar que un nodo no sea nil
+func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
+	t.Helper()
+	if nodo == nil {
+		t.Fatalf(mensaje)
+	}
+}
+
 func encontrarTablaInline(t *testing.T, doc *html.Node) *html.Node {
 	t.Helper()
 	tablas := buscarNodos(doc, "table")
