@@ -16,4 +16,4 @@
 **[Slog](https://go.dev/blog/slog)**: Cumple con todos los requisitos propuestos, además, se trata del estándar del lenguaje desde Go 1.21, con lo que al estar más actualizado cumple mejor el segundo criterio que Log y supera muchas de sus limitaciones en cuanto a personalización.
 
 ### Justificación de la elección
-La elección final va a ser Slog, ya que se trata de la biblioteca estándar en Go para login y mejora en personalización y funcionalidad respecto a Log.
+La elección final va a ser Slog, ya que se trata de la biblioteca estándar en Go para logging y mejora en personalización y funcionalidad respecto a Log.
