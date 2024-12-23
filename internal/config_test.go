@@ -11,5 +11,5 @@ import (
 func TestConfiguracion(t *testing.T) {
 	config.InitConfig()
 
-	assert.Equal(t, "development", config.Config.GetString("app.env"), "El entorno por defecto debería ser 'development'")
+	assert.Equal(t, "production", config.Config.GetString("app.env"), "El entorno por defecto debería ser 'production'")
 }
