@@ -1,6 +1,7 @@
 package internal
 
 import (
+	"MenuConsulter/internal/config"
 	"fmt"
 	"os"
 	"strings"
@@ -10,16 +11,25 @@ import (
 
 // Abre un archivo y devuelve su contenido como un documento HTML
 func cargarDocumento(filePath string) (*html.Node, error) {
+	config.Logger.Info("Intentando cargar el documento", "filePath", filePath)
+
+	if config.Config.GetString("app.env") == "development" {
+		config.Logger.Debug("Ejecutando en entorno de desarrollo")
+	}
+
 	file, err := os.Open(filePath)
 	if err != nil {
+		config.Logger.Error("Error al abrir el archivo", "filePath", filePath, "error", err)
 		return nil, fmt.Errorf("no se pudo abrir el archivo: %w", err)
 	}
 	defer file.Close()
 
 	doc, err := html.Parse(file)
 	if err != nil {
+		config.Logger.Error("Error al parsear el archivo", "filePath", filePath, "error", err)
 		return nil, fmt.Errorf("error al procesar el HTML: %w", err)
 	}
+	config.Logger.Info("Documento cargado exitosamente", "filePath", filePath)
 	return doc, nil
 }
 
@@ -53,16 +63,23 @@ func extraerTexto(n *html.Node) string {
 
 // Extrae las tablas con clase "inline"
 func procesarTablas(doc *html.Node) []Menu {
+	config.Logger.Info("Procesando tablas en el documento")
+
 	var menus []Menu
 	tablas := buscarNodos(doc, "table")
+	config.Logger.Info("Tablas encontradas", "cantidad", len(tablas))
+
 	for _, tabla := range tablas {
 		for _, attr := range tabla.Attr {
 			if attr.Key == "class" && attr.Val == "inline" {
+				config.Logger.Info("Procesando tabla con clase 'inline'")
 				fecha := extraerFecha(tabla)
 				menus = append(menus, procesarMenuDeTabla(tabla, fecha)...)
 			}
 		}
 	}
+
+	config.Logger.Info("Menús procesados", "cantidad", len(menus))
 	return menus
 }
 
@@ -77,8 +94,12 @@ func extraerFecha(table *html.Node) string {
 
 // Procesa las filas de una tabla para obtener los menús
 func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
+	config.Logger.Info("Procesando menú", "fecha", fecha)
+
 	var menus []Menu
 	trNodes := buscarNodos(table, "tr")
+	config.Logger.Info("Filas encontradas en la tabla", "cantidad", len(trNodes))
+
 	for _, tr := range trNodes {
 		tdNodes := buscarNodos(tr, "td")
 		if len(tdNodes) >= 2 {
@@ -92,6 +113,7 @@ func procesarMenuDeTabla(table *html.Node, fecha string) []Menu {
 				Platos: procesarPlatos(tr),
 			}
 			menus = append(menus, menu)
+			config.Logger.Info("Menú agregado", "menu", menu)
 		}
 	}
 	return menus

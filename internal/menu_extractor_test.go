@@ -1,11 +1,16 @@
 package internal
 
 import (
+	"MenuConsulter/internal/config"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 	"golang.org/x/net/html"
 )
+
+func init() {
+	config.InitLogger()
+}
 
 func cargarDocumentoTest(t *testing.T, filePath string) *html.Node {
 	t.Helper()
@@ -30,7 +35,6 @@ func encontrarTablaInline(t *testing.T, doc *html.Node) *html.Node {
 	return nil
 }
 
-// Función auxiliar para validar que un nodo no sea nil
 func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
 	t.Helper()
 	if nodo == nil {
@@ -70,6 +74,7 @@ func TestProcesarPlatos(t *testing.T) {
 
 func TestExtraerMenus(t *testing.T) {
 	filePath := "../data/menu.html"
+	config.Logger.Info("Iniciando test para ExtraerMenus", "filePath", filePath)
 
 	menus, err := ExtraerMenus(filePath)
 
@@ -81,4 +86,6 @@ func TestExtraerMenus(t *testing.T) {
 	assert.Equal(t, "Menú 1", menus[0].Tipo, "El primer menú no tiene el tipo correcto")
 	assert.Contains(t, menus[0].Platos[0].Nombre, "Pastel de espinacas", "El nombre del primer plato no es correcto")
 	assert.Contains(t, menus[0].Platos[0].Ingredientes, "Gluten", "No se extrajo correctamente el alérgeno del primer plato")
+
+	config.Logger.Info("Test para ExtraerMenus completado con éxito")
 }
