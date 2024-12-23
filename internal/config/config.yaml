@@ -5,4 +5,4 @@ app:
 log:
   level: debug
   logfile: 
-    path: "../../fichero.log"
+    path: "fichero.log"

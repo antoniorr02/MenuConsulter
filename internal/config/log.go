@@ -8,7 +8,9 @@ import (
 
 var Logger *slog.Logger
 
-func InitLogger(logFile string) {
+func InitLogger() {
+	InitConfig()
+	logFile := Config.GetString("log.logfile.path")
 	file, err := os.OpenFile(logFile, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
 	if err != nil {
 		slog.Warn("No se puede abrir el fichero de log", "error", err)
