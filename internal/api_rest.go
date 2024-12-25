@@ -1,57 +1,60 @@
 package internal
 
 import (
-	"github.com/gin-gonic/gin"
+	"net/http"
+
+	"github.com/go-chi/chi/v5"
 )
 
-var router = gin.Default()
+var router = chi.NewRouter()
 
 func Router() {
 	if router == nil {
-		router.GET("/Plato/{Nombre}", getPlato)
-		router.PUT("/Plato/{Nombre}", putPlato)
-		router.DELETE("/Plato/{Nombre}", deletePlato)
-		router.GET("/Comedor/{Nombre}", getComedor)
-		router.PUT("/Comedor/{Nombre}", putComedor)
-		router.DELETE("/Comedor/{Nombre}", deleteComedor)
-		router.GET("/Menu/{Fecha}", getMenu)
-		router.PUT("/Menu/{Fecha}", putMenu)
-		router.DELETE("/Menu/{Fecha}", deleteMenu)
+		router.Get("/Plato/{Nombre}", getPlato)
+		router.Put("/Plato/{Nombre}", putPlato)
+		router.Delete("/Plato/{Nombre}", deletePlato)
+
+		router.Get("/Comedor/{Nombre}", getComedor)
+		router.Put("/Comedor/{Nombre}", putComedor)
+		router.Delete("/Comedor/{Nombre}", deleteComedor)
+
+		router.Get("/Menu/{Fecha}", getMenu)
+		router.Put("/Menu/{Fecha}", putMenu)
+		router.Delete("/Menu/{Fecha}", deleteMenu)
 	}
 }
 
-func getPlato(c *gin.Context) {
+func getPlato(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func putPlato(c *gin.Context) {
+func putPlato(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func deletePlato(c *gin.Context) {
+func deletePlato(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func getComedor(c *gin.Context) {
+func getComedor(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func putComedor(c *gin.Context) {
+func putComedor(w http.ResponseWriter, r *http.Request) {
+}
+
+func deleteComedor(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func deleteComedor(c *gin.Context) {
+func getMenu(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func getMenu(c *gin.Context) {
+func putMenu(w http.ResponseWriter, r *http.Request) {
 
 }
 
-func putMenu(c *gin.Context) {
-
-}
-
-func deleteMenu(c *gin.Context) {
+func deleteMenu(w http.ResponseWriter, r *http.Request) {
 
 }
