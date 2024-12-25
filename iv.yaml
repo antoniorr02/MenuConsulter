@@ -5,4 +5,5 @@ automatizar:
   orden: just
 test: internal/extraccion_test.go
 CI: .github/workflows/github_actions.yml
+configuracion: internal/config/config.yaml
 framework: chi
