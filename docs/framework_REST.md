@@ -5,7 +5,7 @@
 
 # Opciones disponibles
 
-**[Gin](https://github.com/gin-gonic/gin)**: Cuenta con una valoración en snyk de 93 sobre 100, sin embargo, lleva sin ser actualizada desde el mes pasado.
+**[Gin](https://github.com/gin-gonic/gin)**: Cuenta con una valoración en snyk de 93 sobre 100, lleva sin ser actualizada desde el mes pasado.
 
 **[Echo](https://github.com/labstack/echo)**: Tiene una valoración de 97 sobre 100 y ha sido actualizada esta semana.
 
