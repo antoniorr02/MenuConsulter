@@ -1,6 +1,7 @@
 # Requisitos buscados para el framework REST
 1. Puntuación de [Snyk Advisor](https://snyk.io/) la cuál pone puntuaciones sobre 100 dependiendo de la seguridad, popularidad, mantenimiento y comunidad de diferentes herramientas como lo son por ejemplo los frameworks REST.
 2. Debe de ser una herramienta actualizada para no aumentar la deuda técnica.
+3. Dada la sencillez del proyecto en el ámbito de una asignatura académica, optaremos con el framework que nos proporcionen la funcionalidad mínima necesaria para nuestro proyecto (manejar rutas), siendo por tanto un criterio la elección de la herramienta menos pesada entre las opciones que cumplan los criterios restantes.
 
 # Opciones disponibles
 
