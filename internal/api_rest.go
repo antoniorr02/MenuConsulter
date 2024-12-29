@@ -10,17 +10,17 @@ var router = chi.NewRouter()
 
 func Router() {
 	if router == nil {
-		router.Get("/plato/{nombre}", getplato)
-		router.Put("/plato/{nombre}", putplato)
-		router.Delete("/plato/{nombre}", deleteplato)
+		router.Get("/platos/{nombre}", getplato)
+		router.Put("/platos/{nombre}", putplato)
+		router.Delete("/platos/{nombre}", deleteplato)
 
-		router.Get("/comedor/{nombre}", getcomedor)
-		router.Put("/comedor/{nombre}", putcomedor)
-		router.Delete("/comedor/{nombre}", deletecomedor)
+		router.Get("/comedores/{nombre}", getcomedor)
+		router.Put("/comedores/{nombre}", putcomedor)
+		router.Delete("/comedores/{nombre}", deletecomedor)
 
-		router.Get("/menu/{fecha}", getmenu)
-		router.Put("/menu/{fecha}", putmenu)
-		router.Delete("/menu/{fecha}", deletemenu)
+		router.Get("/menus/{fecha}", getmenu)
+		router.Put("/menus/{fecha}", putmenu)
+		router.Delete("/menus/{fecha}", deletemenu)
 	}
 }
 
