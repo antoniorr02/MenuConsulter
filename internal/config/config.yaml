@@ -1,0 +1,8 @@
+app:
+  name: MenuConsulter
+  env: production
+
+log:
+  level: debug
+  logfile: 
+    path: "fichero.log"
