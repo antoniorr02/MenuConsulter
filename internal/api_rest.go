@@ -47,5 +47,4 @@ func getmenu(w http.ResponseWriter, r *http.Request) {
 }
 
 func putmenu(w http.ResponseWriter, r *http.Request) {
-
 }
