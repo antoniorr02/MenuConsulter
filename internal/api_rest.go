@@ -10,21 +10,27 @@ var router = chi.NewRouter()
 
 func Router() {
 	if router == nil {
-		router.Route("/comedores", func(comedorRouter chi.Router) {
-			comedorRouter.Get("/{nombre_comedor}", getcomedor)
-			comedorRouter.Put("/{nombre_comedor}", putcomedor)
-
-			comedorRouter.Route("/{nombre_comedor}/menus", func(menuRouter chi.Router) {
-				menuRouter.Get("/{fecha}", getmenu)
-				menuRouter.Put("/{fecha}", putmenu)
-
-				menuRouter.Route("/{fecha}/platos", func(platoRouter chi.Router) {
-					platoRouter.Get("/{nombre_plato}", getplato)
-					platoRouter.Put("/{nombre_plato}", putplato)
-				})
-			})
-		})
+		router.Route("/comedores", comedoresRoutes)
 	}
+}
+
+func comedoresRoutes(comedorRouter chi.Router) {
+	comedorRouter.Get("/{nombre_comedor}", getcomedor)
+	comedorRouter.Put("/{nombre_comedor}", putcomedor)
+
+	comedorRouter.Route("/{nombre_comedor}/menus", menusRoutes)
+}
+
+func menusRoutes(menuRouter chi.Router) {
+	menuRouter.Get("/{fecha}", getmenu)
+	menuRouter.Put("/{fecha}", putmenu)
+
+	menuRouter.Route("/{fecha}/platos", platosRoutes)
+}
+
+func platosRoutes(platoRouter chi.Router) {
+	platoRouter.Get("/{nombre_plato}", getplato)
+	platoRouter.Put("/{nombre_plato}", putplato)
 }
 
 func getplato(respuesta http.ResponseWriter, peticion *http.Request) {
