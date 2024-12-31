@@ -10,41 +10,41 @@ var router = chi.NewRouter()
 
 func Router() {
 	if router == nil {
-		router.Route("/comedores", func(r chi.Router) {
-			r.Get("/{nombre_comedor}", getcomedor)
-			r.Put("/{nombre_comedor}", putcomedor)
+		router.Route("/comedores", func(comedorRouter chi.Router) {
+			comedorRouter.Get("/{nombre_comedor}", getcomedor)
+			comedorRouter.Put("/{nombre_comedor}", putcomedor)
 
-			r.Route("/{nombre_comedor}/menus", func(r chi.Router) {
-				r.Get("/{fecha}", getmenu)
-				r.Put("/{fecha}", putmenu)
+			comedorRouter.Route("/{nombre_comedor}/menus", func(menuRouter chi.Router) {
+				menuRouter.Get("/{fecha}", getmenu)
+				menuRouter.Put("/{fecha}", putmenu)
 
-				r.Route("/{fecha}/platos", func(r chi.Router) {
-					r.Get("/{nombre_plato}", getplato)
-					r.Put("/{nombre_plato}", putplato)
+				menuRouter.Route("/{fecha}/platos", func(platoRouter chi.Router) {
+					platoRouter.Get("/{nombre_plato}", getplato)
+					platoRouter.Put("/{nombre_plato}", putplato)
 				})
 			})
 		})
 	}
 }
 
-func getplato(w http.ResponseWriter, r *http.Request) {
+func getplato(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func putplato(w http.ResponseWriter, r *http.Request) {
+func putplato(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func getcomedor(w http.ResponseWriter, r *http.Request) {
+func getcomedor(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func putcomedor(w http.ResponseWriter, r *http.Request) {
+func putcomedor(respuesta http.ResponseWriter, peticion *http.Request) {
 }
 
-func getmenu(w http.ResponseWriter, r *http.Request) {
+func getmenu(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func putmenu(w http.ResponseWriter, r *http.Request) {
+func putmenu(respuesta http.ResponseWriter, peticion *http.Request) {
 }
