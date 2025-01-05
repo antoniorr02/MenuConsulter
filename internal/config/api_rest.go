@@ -6,7 +6,7 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-var router = chi.NewRouter()
+var router *chi.Mux
 
 func init() {
 	router = chi.NewRouter()
