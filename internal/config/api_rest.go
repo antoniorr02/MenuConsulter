@@ -14,33 +14,19 @@ func init() {
 }
 
 func Router() {
-	router.Route("/comedores", comedoresRoutes)
+	router.Get("/comedores/{nombre_comedor}", getComedor)
+	router.Get("/comedores/{nombre_comedor}/menus/{fecha}", getMenu)
+	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/platos/{nombre_plato}", getPlato)
 }
 
-func comedoresRoutes(comedorRouter chi.Router) {
-	comedorRouter.Get("/{nombre_comedor}", getcomedor)
-
-	comedorRouter.Route("/{nombre_comedor}/menus", menusRoutes)
-}
-
-func menusRoutes(menuRouter chi.Router) {
-	menuRouter.Get("/{fecha}", getmenu)
-
-	menuRouter.Route("/{fecha}/platos", platosRoutes)
-}
-
-func platosRoutes(platoRouter chi.Router) {
-	platoRouter.Get("/{nombre_plato}", getplato)
-}
-
-func getplato(respuesta http.ResponseWriter, peticion *http.Request) {
+func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func getcomedor(respuesta http.ResponseWriter, peticion *http.Request) {
+func getComedor(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func getmenu(respuesta http.ResponseWriter, peticion *http.Request) {
+func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
