@@ -1,4 +1,4 @@
-package internal
+package config
 
 import (
 	"net/http"
@@ -8,10 +8,13 @@ import (
 
 var router = chi.NewRouter()
 
+func init() {
+	router = chi.NewRouter()
+	Router()
+}
+
 func Router() {
-	if router == nil {
-		router.Route("/comedores", comedoresRoutes)
-	}
+	router.Route("/comedores", comedoresRoutes)
 }
 
 func comedoresRoutes(comedorRouter chi.Router) {
