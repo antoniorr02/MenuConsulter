@@ -6,14 +6,7 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-var router *chi.Mux
-
-func init() {
-	router = chi.NewRouter()
-	Router()
-}
-
-func Router() {
+func Router(router *chi.Mux) {
 	router.Get("/comedores", getComedores)
 	router.Get("/comedor/{nombre_comedor}", getComedor)
 	router.Get("/comedores/{nombre_comedor}/menus", getMenus)
