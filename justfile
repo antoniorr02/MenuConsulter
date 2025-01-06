@@ -1,10 +1,9 @@
-BINARY_NAME := "bin"
 CODE_FOLDERS := "./internal"
 
 # Tarea para construir el proyecto
 build:
     echo "Construyendo el proyecto..."
-    go build -o {{BINARY_NAME}} {{CODE_FOLDERS}}
+    go build -o {{CODE_FOLDERS}}
 
 # Tarea para instalar las dependencias
 install_deps:
