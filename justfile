@@ -1,9 +1,10 @@
+BINARY_NAME := "bin"
 CODE_FOLDERS := "./internal"
 
 # Tarea para construir el proyecto
 build:
     echo "Construyendo el proyecto..."
-    go build -o {{.CODE_FOLDERS}}/...
+    go build -o {{CODE_FOLDERS}}
 
 # Tarea para instalar las dependencias
 install_deps:
@@ -13,12 +14,12 @@ install_deps:
 # Tarea para limpiar los binarios
 clean:
     echo "Limpiando los binarios..."
-    go clean {{.CODE_FOLDERS}}
+    go clean {{CODE_FOLDERS}}
 
 # Tarea para comprobar la sintaxis del proyecto
 check:
     echo "Comprobando sintaxis del proyecto..."
-    gofmt -e {{.CODE_FOLDERS}} > /dev/null
+    gofmt -e {{CODE_FOLDERS}} > /dev/null
 
 test:
     echo "Ejecutando tests del proyecto..."
