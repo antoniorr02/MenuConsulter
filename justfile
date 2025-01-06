@@ -6,7 +6,7 @@ build:
     go build {{CODE_FOLDERS}}
 
 # Tarea para instalar las dependencias
-install_deps:
+install:
     echo "Instalando las dependencias..."
     go mod tidy
 
