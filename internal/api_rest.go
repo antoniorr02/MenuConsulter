@@ -18,10 +18,15 @@ func Router() {
 	router.Get("/comedor/{nombre_comedor}", getComedor)
 	router.Get("/comedores/{nombre_comedor}/menus", getMenus)
 	router.Get("/comedores/{nombre_comedor}/menu/{fecha}", getMenu)
+	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/platos", getPlatos)
 	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/plato/{nombre_plato}", getPlato)
 }
 
 func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
+
+}
+
+func getPlatos(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
