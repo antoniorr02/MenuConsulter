@@ -36,5 +36,4 @@ func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 }
 
 func getMenus(respuesta http.ResponseWriter, peticion *http.Request) {
-
 }
