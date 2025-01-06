@@ -6,61 +6,35 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
-var router = chi.NewRouter()
-
-func Router() {
-	if router == nil {
-		router.Route("/comedores", func(r chi.Router) {
-			r.Get("/{nombre_comedor}", getcomedor)
-			r.Put("/{nombre_comedor}", putcomedor)
-			r.Delete("/{nombre_comedor}", deletecomedor)
-
-			r.Route("/{nombre_comedor}/menus", func(r chi.Router) {
-				r.Get("/{fecha}", getmenu)
-				r.Put("/{fecha}", putmenu)
-				r.Delete("/{fecha}", deletemenu)
-
-				r.Route("/{fecha}/platos", func(r chi.Router) {
-					r.Get("/{nombre_plato}", getplato)
-					r.Put("/{nombre_plato}", putplato)
-					r.Delete("/{nombre_plato}", deleteplato)
-				})
-			})
-		})
-	}
+func Router(router *chi.Mux) {
+	router.Get("/comedores", getComedores)
+	router.Get("/comedor/{nombre_comedor}", getComedor)
+	router.Get("/comedores/{nombre_comedor}/menus", getMenus)
+	router.Get("/comedores/{nombre_comedor}/menu/{fecha}", getMenu)
+	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/platos", getPlatos)
+	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/plato/{nombre_plato}", getPlato)
 }
 
-func getplato(w http.ResponseWriter, r *http.Request) {
+func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func putplato(w http.ResponseWriter, r *http.Request) {
+func getPlatos(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func deleteplato(w http.ResponseWriter, r *http.Request) {
+func getComedores(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func getcomedor(w http.ResponseWriter, r *http.Request) {
+func getComedor(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func putcomedor(w http.ResponseWriter, r *http.Request) {
-}
-
-func deletecomedor(w http.ResponseWriter, r *http.Request) {
+func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
 
-func getmenu(w http.ResponseWriter, r *http.Request) {
-
-}
-
-func putmenu(w http.ResponseWriter, r *http.Request) {
-
-}
-
-func deletemenu(w http.ResponseWriter, r *http.Request) {
+func getMenus(respuesta http.ResponseWriter, peticion *http.Request) {
 
 }
