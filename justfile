@@ -8,7 +8,7 @@ build:
 # Tarea para instalar las dependencias
 install:
     echo "Instalando las dependencias..."
-    go mod tidy
+    go mod download
 
 # Tarea para comprobar la sintaxis del proyecto
 check:
