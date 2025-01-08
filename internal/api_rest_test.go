@@ -14,9 +14,14 @@ func init() {
 	config.InitLogger()
 }
 
-func TestGetComedores(t *testing.T) {
+func setupRouter() *chi.Mux {
 	router := chi.NewRouter()
 	Router(router)
+	return router
+}
+
+func TestGetComedores(t *testing.T) {
+	router := setupRouter()
 
 	req, err := http.NewRequest("GET", "/comedores", nil)
 	if err != nil {
@@ -33,8 +38,7 @@ func TestGetComedores(t *testing.T) {
 }
 
 func TestGetComedor(t *testing.T) {
-	router := chi.NewRouter()
-	Router(router)
+	router := setupRouter()
 
 	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva", nil)
 	if err != nil {
@@ -51,8 +55,7 @@ func TestGetComedor(t *testing.T) {
 }
 
 func TestGetMenus(t *testing.T) {
-	router := chi.NewRouter()
-	Router(router)
+	router := setupRouter()
 
 	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva/menus", nil)
 	if err != nil {
@@ -69,8 +72,7 @@ func TestGetMenus(t *testing.T) {
 }
 
 func TestGetMenu(t *testing.T) {
-	router := chi.NewRouter()
-	Router(router)
+	router := setupRouter()
 
 	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva/menu/2024-11-22", nil)
 	if err != nil {
@@ -89,8 +91,7 @@ func TestGetMenu(t *testing.T) {
 }
 
 func TestGetPlatos(t *testing.T) {
-	router := chi.NewRouter()
-	Router(router)
+	router := setupRouter()
 
 	req, err := http.NewRequest("GET", "/comedor/prueba_comedor/menu/2024-11-22/platos", nil)
 	if err != nil {
@@ -109,8 +110,7 @@ func TestGetPlatos(t *testing.T) {
 }
 
 func TestGetPlato(t *testing.T) {
-	router := chi.NewRouter()
-	Router(router)
+	router := setupRouter()
 
 	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva/menu/2024-11-22/plato/Manzana", nil)
 	if err != nil {
