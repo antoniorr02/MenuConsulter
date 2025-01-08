@@ -131,18 +131,18 @@ func convertirFecha(fecha string) (string, error) {
 
 func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 	fecha := chi.URLParam(peticion, "fecha")
-	filePath := "../data/menu.html"
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
-	}
-
 	fechaFormateada, err := convertirFecha(fecha)
 	if err != nil {
 		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
 		log.Printf("Error en la conversión de fecha: %s", err)
 		return
+	}
+
+	filePath := "../data/menu.html"
+	menus, err := ExtraerMenus(filePath)
+	if err != nil {
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	for _, menu := range menus {
@@ -166,17 +166,17 @@ func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 
 func getPlatos(respuesta http.ResponseWriter, peticion *http.Request) {
 	fecha := chi.URLParam(peticion, "fecha")
+	fechaFormateada, err := convertirFecha(fecha)
+	if err != nil {
+		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
+		return
+	}
+
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
 		log.Fatalf("Error crítico al extraer menús: %v", err)
 		os.Exit(1)
-	}
-
-	fechaFormateada, err := convertirFecha(fecha)
-	if err != nil {
-		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-		return
 	}
 
 	for _, menu := range menus {
@@ -199,18 +199,18 @@ func getPlatos(respuesta http.ResponseWriter, peticion *http.Request) {
 
 func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
 	fecha := chi.URLParam(peticion, "fecha")
+	fechaFormateada, err := convertirFecha(fecha)
+	if err != nil {
+		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
+		return
+	}
+
 	nombrePlato := chi.URLParam(peticion, "nombre_plato")
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
 		log.Fatalf("Error crítico al extraer menús: %v", err)
 		os.Exit(1)
-	}
-
-	fechaFormateada, err := convertirFecha(fecha)
-	if err != nil {
-		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-		return
 	}
 
 	for _, menu := range menus {
