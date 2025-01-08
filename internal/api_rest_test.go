@@ -18,7 +18,7 @@ func init() {
 
 func setupRouter() *chi.Mux {
 	router := chi.NewRouter()
-	Router(router)
+	Router(router, "../data/menu.html")
 	return router
 }
 
