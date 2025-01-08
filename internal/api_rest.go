@@ -1,11 +1,11 @@
 package internal
 
 import (
-	"MenuConsulter/internal/config"
 	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
+	"os"
 	"strings"
 	"time"
 
@@ -26,9 +26,8 @@ func getComedores(respuesta http.ResponseWriter, peticion *http.Request) {
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
-		http.Error(respuesta, "Error al procesar los comedores", http.StatusInternalServerError)
-		config.Logger.Error("Error al extraer menús", "error", err)
-		return
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	var comedores []string
@@ -47,9 +46,8 @@ func getComedor(respuesta http.ResponseWriter, peticion *http.Request) {
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
-		http.Error(respuesta, "Error al procesar el comedor", http.StatusInternalServerError)
-		config.Logger.Error("Error al extraer menús", "error", err)
-		return
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	var comedorMenus []Menu
@@ -68,9 +66,8 @@ func getMenus(respuesta http.ResponseWriter, peticion *http.Request) {
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
-		http.Error(respuesta, "Error al procesar los menús", http.StatusInternalServerError)
-		config.Logger.Error("Error al extraer menús", "error", err)
-		return
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	var filteredMenus []Menu
@@ -134,15 +131,11 @@ func convertirFecha(fecha string) (string, error) {
 
 func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 	fecha := chi.URLParam(peticion, "fecha")
-
-	log.Printf("Fecha recibida: %s", fecha)
-
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
-		http.Error(respuesta, "Error al procesar el menú", http.StatusInternalServerError)
-		config.Logger.Error("Error al extraer menús", "error", err)
-		return
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	fechaFormateada, err := convertirFecha(fecha)
@@ -152,8 +145,6 @@ func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 		return
 	}
 
-	log.Printf("Fecha convertida: %s", fechaFormateada)
-
 	for _, menu := range menus {
 		menuFecha := string(menu.Fecha)
 		menuFechaFormateada, err := convertirFecha(menuFecha)
@@ -162,8 +153,6 @@ func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
 			log.Printf("Error en la conversión de fecha: %s", err)
 			return
 		}
-
-		log.Printf("Comparando fecha del menú: %s con la fecha solicitada: %s", menuFechaFormateada, fechaFormateada)
 
 		if menuFechaFormateada == fechaFormateada {
 			respuesta.Header().Set("Content-Type", "application/json")
@@ -180,9 +169,8 @@ func getPlatos(respuesta http.ResponseWriter, peticion *http.Request) {
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
-		http.Error(respuesta, "Error al procesar los platos", http.StatusInternalServerError)
-		config.Logger.Error("Error al extraer menús", "error", err)
-		return
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	fechaFormateada, err := convertirFecha(fecha)
@@ -215,9 +203,8 @@ func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
-		http.Error(respuesta, "Error al procesar el plato", http.StatusInternalServerError)
-		config.Logger.Error("Error al extraer menús", "error", err)
-		return
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
 	}
 
 	fechaFormateada, err := convertirFecha(fecha)
@@ -236,7 +223,6 @@ func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
 		}
 		if menuFechaFormateada == fechaFormateada {
 			for _, plato := range menu.Platos {
-				log.Printf("Comparando plato: %s con nombre solicitado: %s", plato.Nombre, nombrePlato)
 				if plato.Nombre == nombrePlato {
 					respuesta.Header().Set("Content-Type", "application/json")
 					json.NewEncoder(respuesta).Encode(plato)
