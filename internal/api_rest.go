@@ -174,7 +174,7 @@ func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
 		}
 		if menuFechaFormateada == fechaFormateada {
 			for _, plato := range menu.Platos {
-				if plato.Nombre == nombrePlato {
+				if strings.EqualFold(plato.Nombre, nombrePlato) {
 					respuesta.Header().Set("Content-Type", "application/json")
 					json.NewEncoder(respuesta).Encode(plato)
 					return

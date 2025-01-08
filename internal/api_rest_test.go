@@ -114,7 +114,7 @@ func TestGetPlatos(t *testing.T) {
 func TestGetPlato(t *testing.T) {
 	router := setupRouter()
 
-	req, err := http.NewRequest("GET", "/menu/2024-11-22/plato/Manzana", nil)
+	req, err := http.NewRequest("GET", "/menu/2024-11-22/plato/manzana", nil)
 	if err != nil {
 		t.Fatalf("Error al crear la solicitud: %v", err)
 	}
