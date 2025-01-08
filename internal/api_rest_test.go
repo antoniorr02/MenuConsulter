@@ -2,6 +2,8 @@ package internal
 
 import (
 	"MenuConsulter/internal/config"
+	"encoding/json"
+	"log"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -35,6 +37,18 @@ func TestGetMenus(t *testing.T) {
 	config.Logger.Info("TestGetMenus ejecutado con éxito")
 
 	assert.Contains(t, rr.Header().Get("Content-Type"), "application/json", "El tipo de contenido no es JSON")
+
+	var menus []Menu
+	err = json.NewDecoder(rr.Body).Decode(&menus)
+	if err != nil {
+		t.Fatalf("Error al deserializar la respuesta: %v", err)
+	}
+
+	assert.NotEmpty(t, menus, "La respuesta no contiene menús")
+
+	for _, menu := range menus {
+		log.Printf("Menú del día: %s", menu.Fecha)
+	}
 }
 
 func TestGetMenu(t *testing.T) {
@@ -54,6 +68,16 @@ func TestGetMenu(t *testing.T) {
 	config.Logger.Info("TestGetMenu ejecutado con éxito")
 
 	assert.Contains(t, rr.Header().Get("Content-Type"), "application/json", "El tipo de contenido no es JSON")
+
+	var menu Menu
+	err = json.NewDecoder(rr.Body).Decode(&menu)
+	if err != nil {
+		t.Fatalf("Error al deserializar la respuesta: %v", err)
+	}
+
+	assert.NotEmpty(t, menu, "La respuesta no contiene ningún menú")
+
+	log.Printf("Menú del día: %s", menu.Fecha)
 }
 
 func TestGetPlatos(t *testing.T) {
@@ -73,6 +97,18 @@ func TestGetPlatos(t *testing.T) {
 	config.Logger.Info("TestGetPlatos ejecutado con éxito")
 
 	assert.Contains(t, rr.Header().Get("Content-Type"), "application/json", "El tipo de contenido no es JSON")
+
+	var platos []Plato
+	err = json.NewDecoder(rr.Body).Decode(&platos)
+	if err != nil {
+		t.Fatalf("Error al deserializar la respuesta: %v", err)
+	}
+
+	assert.NotEmpty(t, platos, "La respuesta no contiene menús")
+
+	for _, plato := range platos {
+		log.Printf("Menú del día: %s", plato.Nombre)
+	}
 }
 
 func TestGetPlato(t *testing.T) {
@@ -92,4 +128,14 @@ func TestGetPlato(t *testing.T) {
 	config.Logger.Info("TestGetPlato ejecutado con éxito")
 
 	assert.Contains(t, rr.Header().Get("Content-Type"), "application/json", "El tipo de contenido no es JSON")
+
+	var plato Plato
+	err = json.NewDecoder(rr.Body).Decode(&plato)
+	if err != nil {
+		t.Fatalf("Error al deserializar la respuesta: %v", err)
+	}
+
+	assert.NotEmpty(t, plato, "La respuesta no contiene menús")
+
+	log.Printf("Menú del día: %s", plato.Nombre)
 }
