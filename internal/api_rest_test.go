@@ -104,7 +104,7 @@ func TestGetPlatos(t *testing.T) {
 		t.Fatalf("Error al deserializar la respuesta: %v", err)
 	}
 
-	assert.NotEmpty(t, platos, "La respuesta no contiene menús")
+	assert.NotEmpty(t, platos, "La respuesta no contiene platos")
 
 	for _, plato := range platos {
 		log.Printf("Menú del día: %s", plato.Nombre)
@@ -135,7 +135,7 @@ func TestGetPlato(t *testing.T) {
 		t.Fatalf("Error al deserializar la respuesta: %v", err)
 	}
 
-	assert.NotEmpty(t, plato, "La respuesta no contiene menús")
+	assert.NotEmpty(t, plato, "La respuesta no contiene ningún plato")
 
 	log.Printf("Menú del día: %s", plato.Nombre)
 }
