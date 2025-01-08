@@ -20,44 +20,10 @@ func setupRouter() *chi.Mux {
 	return router
 }
 
-func TestGetComedores(t *testing.T) {
-	router := setupRouter()
-
-	req, err := http.NewRequest("GET", "/comedores", nil)
-	if err != nil {
-		t.Fatalf("Error al crear la solicitud: %v", err)
-	}
-
-	rr := httptest.NewRecorder()
-	router.ServeHTTP(rr, req)
-
-	assert.Equal(t, http.StatusOK, rr.Code, "El código de estado HTTP no es el esperado")
-	config.Logger.Info("TestGetComedores ejecutado con éxito")
-
-	assert.Contains(t, rr.Header().Get("Content-Type"), "application/json", "El tipo de contenido no es JSON")
-}
-
-func TestGetComedor(t *testing.T) {
-	router := setupRouter()
-
-	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva", nil)
-	if err != nil {
-		t.Fatalf("Error al crear la solicitud: %v", err)
-	}
-
-	rr := httptest.NewRecorder()
-	router.ServeHTTP(rr, req)
-
-	assert.Equal(t, http.StatusOK, rr.Code, "El código de estado HTTP no es el esperado")
-	config.Logger.Info("TestGetComedor ejecutado con éxito")
-
-	assert.Contains(t, rr.Header().Get("Content-Type"), "application/json", "El tipo de contenido no es JSON")
-}
-
 func TestGetMenus(t *testing.T) {
 	router := setupRouter()
 
-	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva/menus", nil)
+	req, err := http.NewRequest("GET", "/menus", nil)
 	if err != nil {
 		t.Fatalf("Error al crear la solicitud: %v", err)
 	}
@@ -74,7 +40,7 @@ func TestGetMenus(t *testing.T) {
 func TestGetMenu(t *testing.T) {
 	router := setupRouter()
 
-	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva/menu/2024-11-22", nil)
+	req, err := http.NewRequest("GET", "/menu/2024-11-22", nil)
 	if err != nil {
 		t.Fatalf("Error al crear la solicitud: %v", err)
 	}
@@ -93,7 +59,7 @@ func TestGetMenu(t *testing.T) {
 func TestGetPlatos(t *testing.T) {
 	router := setupRouter()
 
-	req, err := http.NewRequest("GET", "/comedor/prueba_comedor/menu/2024-11-22/platos", nil)
+	req, err := http.NewRequest("GET", "/menu/2024-11-22/platos", nil)
 	if err != nil {
 		t.Fatalf("Error al crear la solicitud: %v", err)
 	}
@@ -112,7 +78,7 @@ func TestGetPlatos(t *testing.T) {
 func TestGetPlato(t *testing.T) {
 	router := setupRouter()
 
-	req, err := http.NewRequest("GET", "/comedor/comedores-fuentenueva/menu/2024-11-22/plato/Manzana", nil)
+	req, err := http.NewRequest("GET", "/menu/2024-11-22/plato/Manzana", nil)
 	if err != nil {
 		t.Fatalf("Error al crear la solicitud: %v", err)
 	}

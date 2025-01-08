@@ -13,56 +13,14 @@ import (
 )
 
 func Router(router *chi.Mux) *chi.Mux {
-	router.Get("/comedores", getComedores)
-	router.Get("/comedor/{nombre_comedor}", getComedor)
-	router.Get("/comedor/{nombre_comedor}/menus", getMenus)
-	router.Get("/comedor/{nombre_comedor}/menu/{fecha}", getMenu)
-	router.Get("/comedor/{nombre_comedor}/menu/{fecha}/platos", getPlatos)
-	router.Get("/comedor/{nombre_comedor}/menu/{fecha}/plato/{nombre_plato}", getPlato)
+	router.Get("/menus", getMenus)
+	router.Get("/menu/{fecha}", getMenu)
+	router.Get("/menu/{fecha}/platos", getPlatos)
+	router.Get("/menu/{fecha}/plato/{nombre_plato}", getPlato)
 	return router
 }
 
-func getComedores(respuesta http.ResponseWriter, peticion *http.Request) {
-	filePath := "../data/menu.html"
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
-	}
-
-	var comedores []string
-	for _, menu := range menus {
-		if !contains(comedores, menu.Tipo) {
-			comedores = append(comedores, menu.Tipo)
-		}
-	}
-
-	respuesta.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(respuesta).Encode(comedores)
-}
-
-func getComedor(respuesta http.ResponseWriter, peticion *http.Request) {
-	nombreComedor := chi.URLParam(peticion, "nombre_comedor")
-	filePath := "../data/menu.html"
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
-	}
-
-	var comedorMenus []Menu
-	for _, menu := range menus {
-		if menu.Tipo == nombreComedor {
-			comedorMenus = append(comedorMenus, menu)
-		}
-	}
-
-	respuesta.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(respuesta).Encode(comedorMenus)
-}
-
 func getMenus(respuesta http.ResponseWriter, peticion *http.Request) {
-	nombreComedor := chi.URLParam(peticion, "nombre_comedor")
 	filePath := "../data/menu.html"
 	menus, err := ExtraerMenus(filePath)
 	if err != nil {
@@ -70,15 +28,8 @@ func getMenus(respuesta http.ResponseWriter, peticion *http.Request) {
 		os.Exit(1)
 	}
 
-	var filteredMenus []Menu
-	for _, menu := range menus {
-		if menu.Tipo == nombreComedor {
-			filteredMenus = append(filteredMenus, menu)
-		}
-	}
-
 	respuesta.Header().Set("Content-Type", "application/json")
-	json.NewEncoder(respuesta).Encode(filteredMenus)
+	json.NewEncoder(respuesta).Encode(menus)
 }
 
 func convertirFecha(fecha string) (string, error) {
