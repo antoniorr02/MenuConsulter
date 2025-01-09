@@ -35,13 +35,6 @@ func encontrarTablaInline(t *testing.T, doc *html.Node) *html.Node {
 	return nil
 }
 
-func validarNodoNoNulo(t *testing.T, nodo *html.Node, mensaje string) {
-	t.Helper()
-	if nodo == nil {
-		t.Fatalf(mensaje)
-	}
-}
-
 func TestExtraerFecha(t *testing.T) {
 	doc := cargarDocumentoTest(t, "../data/menu.html")
 

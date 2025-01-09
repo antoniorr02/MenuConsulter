@@ -10,7 +10,7 @@ import (
 
 func Router(router *chi.Mux, menus []Menu) *chi.Mux {
 	router.Get("/menus", func(respuesta http.ResponseWriter, peticion *http.Request) {
-		getMenus(respuesta, peticion, menus)
+		getMenus(respuesta, menus)
 	})
 	router.Get("/menu/{fecha}", func(respuesta http.ResponseWriter, peticion *http.Request) {
 		getMenu(respuesta, peticion, menus)
@@ -24,7 +24,7 @@ func Router(router *chi.Mux, menus []Menu) *chi.Mux {
 	return router
 }
 
-func getMenus(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
+func getMenus(respuesta http.ResponseWriter, menus []Menu) {
 	respuesta.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(respuesta).Encode(menus)
 }
