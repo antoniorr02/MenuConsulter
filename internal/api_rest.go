@@ -1,39 +1,81 @@
 package internal
 
 import (
+	"encoding/json"
 	"net/http"
+	"strings"
 
 	"github.com/go-chi/chi/v5"
 )
 
-func Router(router *chi.Mux) {
-	router.Get("/comedores", getComedores)
-	router.Get("/comedor/{nombre_comedor}", getComedor)
-	router.Get("/comedores/{nombre_comedor}/menus", getMenus)
-	router.Get("/comedores/{nombre_comedor}/menu/{fecha}", getMenu)
-	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/platos", getPlatos)
-	router.Get("/comedores/{nombre_comedor}/menus/{fecha}/plato/{nombre_plato}", getPlato)
+func Router(router *chi.Mux, menus []Menu) *chi.Mux {
+	router.Get("/menus", func(respuesta http.ResponseWriter, peticion *http.Request) {
+		getMenus(respuesta, peticion, menus)
+	})
+	router.Get("/menu/{fecha}", func(respuesta http.ResponseWriter, peticion *http.Request) {
+		getMenu(respuesta, peticion, menus)
+	})
+	router.Get("/menu/{fecha}/platos", func(respuesta http.ResponseWriter, peticion *http.Request) {
+		getPlatos(respuesta, peticion, menus)
+	})
+	router.Get("/menu/{fecha}/plato/{nombre_plato}", func(respuesta http.ResponseWriter, peticion *http.Request) {
+		getPlato(respuesta, peticion, menus)
+	})
+	return router
 }
 
-func getPlato(respuesta http.ResponseWriter, peticion *http.Request) {
-
+func getMenus(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
+	respuesta.Header().Set("Content-Type", "application/json")
+	json.NewEncoder(respuesta).Encode(menus)
 }
 
-func getPlatos(respuesta http.ResponseWriter, peticion *http.Request) {
+func getMenu(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
+	fecha := chi.URLParam(peticion, "fecha")
 
+	for _, menu := range menus {
+		menuFecha := string(menu.Fecha)
+		if fecha == menuFecha {
+			respuesta.Header().Set("Content-Type", "application/json")
+			json.NewEncoder(respuesta).Encode(menu)
+			return
+		}
+	}
+
+	http.NotFound(respuesta, peticion)
 }
 
-func getComedores(respuesta http.ResponseWriter, peticion *http.Request) {
+func getPlatos(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
+	fecha := chi.URLParam(peticion, "fecha")
 
+	for _, menu := range menus {
+		menuFecha := string(menu.Fecha)
+		if menuFecha == fecha {
+			respuesta.Header().Set("Content-Type", "application/json")
+			json.NewEncoder(respuesta).Encode(menu.Platos)
+			return
+		}
+	}
+
+	http.NotFound(respuesta, peticion)
 }
 
-func getComedor(respuesta http.ResponseWriter, peticion *http.Request) {
+func getPlato(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
+	fecha := chi.URLParam(peticion, "fecha")
 
-}
+	nombrePlato := chi.URLParam(peticion, "nombre_plato")
 
-func getMenu(respuesta http.ResponseWriter, peticion *http.Request) {
+	for _, menu := range menus {
+		menuFecha := string(menu.Fecha)
+		if menuFecha == fecha {
+			for _, plato := range menu.Platos {
+				if strings.EqualFold(plato.Nombre, nombrePlato) {
+					respuesta.Header().Set("Content-Type", "application/json")
+					json.NewEncoder(respuesta).Encode(plato)
+					return
+				}
+			}
+		}
+	}
 
-}
-
-func getMenus(respuesta http.ResponseWriter, peticion *http.Request) {
+	http.NotFound(respuesta, peticion)
 }

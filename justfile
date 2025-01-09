@@ -1,23 +1,14 @@
-BINARY_NAME := "bin"
-BIN := "./bin"
 CODE_FOLDERS := "./internal"
 
 # Tarea para construir el proyecto
 build:
     echo "Construyendo el proyecto..."
-    mkdir -p {{BIN}}
-    go build -o {{BIN}}/{{BINARY_NAME}} {{CODE_FOLDERS}}
+    go build {{CODE_FOLDERS}}
 
 # Tarea para instalar las dependencias
-install_deps:
+install:
     echo "Instalando las dependencias..."
-    go mod tidy
-
-# Tarea para limpiar los binarios
-clean:
-    echo "Limpiando los binarios..."
-    rm -f {{BIN}}/{{BINARY_NAME}}
-    go clean {{CODE_FOLDERS}}
+    go mod download
 
 # Tarea para comprobar la sintaxis del proyecto
 check:
