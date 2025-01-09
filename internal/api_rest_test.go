@@ -6,6 +6,7 @@ import (
 	"log"
 	"net/http"
 	"net/http/httptest"
+	"os"
 	"testing"
 
 	"github.com/go-chi/chi/v5"
@@ -18,7 +19,13 @@ func init() {
 
 func setupRouter() *chi.Mux {
 	router := chi.NewRouter()
-	Router(router, "../data/menu.html")
+	filePath := "../data/menu.html"
+	menus, err := ExtraerMenus(filePath)
+	if err != nil {
+		log.Fatalf("Error crítico al extraer menús: %v", err)
+		os.Exit(1)
+	}
+	Router(router, menus)
 	return router
 }
 

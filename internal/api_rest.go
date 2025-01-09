@@ -5,37 +5,29 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"os"
 	"strings"
 	"time"
 
 	"github.com/go-chi/chi/v5"
 )
 
-func Router(router *chi.Mux, rutaMenu string) *chi.Mux {
+func Router(router *chi.Mux, menus []Menu) *chi.Mux {
 	router.Get("/menus", func(respuesta http.ResponseWriter, peticion *http.Request) {
-		getMenus(respuesta, peticion, rutaMenu)
+		getMenus(respuesta, peticion, menus)
 	})
 	router.Get("/menu/{fecha}", func(respuesta http.ResponseWriter, peticion *http.Request) {
-		getMenu(respuesta, peticion, rutaMenu)
+		getMenu(respuesta, peticion, menus)
 	})
 	router.Get("/menu/{fecha}/platos", func(respuesta http.ResponseWriter, peticion *http.Request) {
-		getPlatos(respuesta, peticion, rutaMenu)
+		getPlatos(respuesta, peticion, menus)
 	})
 	router.Get("/menu/{fecha}/plato/{nombre_plato}", func(respuesta http.ResponseWriter, peticion *http.Request) {
-		getPlato(respuesta, peticion, rutaMenu)
+		getPlato(respuesta, peticion, menus)
 	})
 	return router
 }
 
-func getMenus(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu string) {
-	filePath := rutaMenu
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
-	}
-
+func getMenus(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	respuesta.Header().Set("Content-Type", "application/json")
 	json.NewEncoder(respuesta).Encode(menus)
 }
@@ -88,20 +80,13 @@ func convertirFecha(fecha string) (string, error) {
 	return fechaFormateada, nil
 }
 
-func getMenu(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu string) {
+func getMenu(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	fecha := chi.URLParam(peticion, "fecha")
 	fechaFormateada, err := convertirFecha(fecha)
 	if err != nil {
 		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
 		log.Printf("Error en la conversión de fecha: %s", err)
 		return
-	}
-
-	filePath := rutaMenu
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
 	}
 
 	for _, menu := range menus {
@@ -123,19 +108,12 @@ func getMenu(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu str
 	http.NotFound(respuesta, peticion)
 }
 
-func getPlatos(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu string) {
+func getPlatos(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	fecha := chi.URLParam(peticion, "fecha")
 	fechaFormateada, err := convertirFecha(fecha)
 	if err != nil {
 		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
 		return
-	}
-
-	filePath := rutaMenu
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
 	}
 
 	for _, menu := range menus {
@@ -156,7 +134,7 @@ func getPlatos(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu s
 	http.NotFound(respuesta, peticion)
 }
 
-func getPlato(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu string) {
+func getPlato(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	fecha := chi.URLParam(peticion, "fecha")
 	fechaFormateada, err := convertirFecha(fecha)
 	if err != nil {
@@ -165,12 +143,6 @@ func getPlato(respuesta http.ResponseWriter, peticion *http.Request, rutaMenu st
 	}
 
 	nombrePlato := chi.URLParam(peticion, "nombre_plato")
-	filePath := rutaMenu
-	menus, err := ExtraerMenus(filePath)
-	if err != nil {
-		log.Fatalf("Error crítico al extraer menús: %v", err)
-		os.Exit(1)
-	}
 
 	for _, menu := range menus {
 		menuFecha := string(menu.Fecha)
