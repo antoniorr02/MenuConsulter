@@ -2,11 +2,8 @@ package internal
 
 import (
 	"encoding/json"
-	"fmt"
-	"log"
 	"net/http"
 	"strings"
-	"time"
 
 	"github.com/go-chi/chi/v5"
 )
@@ -32,73 +29,12 @@ func getMenus(respuesta http.ResponseWriter, peticion *http.Request, menus []Men
 	json.NewEncoder(respuesta).Encode(menus)
 }
 
-func convertirFecha(fecha string) (string, error) {
-	fecha = strings.TrimSpace(fecha)
-	fecha = strings.ReplaceAll(fecha, "  ", " ")
-
-	if _, err := time.Parse("2006-01-02", fecha); err == nil {
-		return fecha, nil
-	}
-
-	parts := strings.Split(fecha, ",")
-	if len(parts) < 2 {
-		return "", fmt.Errorf("fecha en formato incorrecto: %s", fecha)
-	}
-	fecha = strings.TrimSpace(parts[1])
-
-	partes := strings.Fields(fecha)
-	if len(partes) < 5 {
-		return "", fmt.Errorf("fecha incompleta: %s", fecha)
-	}
-
-	dia := partes[0]
-	mes := partes[2]
-	ano := partes[4]
-
-	meses := map[string]string{
-		"enero":      "01",
-		"febrero":    "02",
-		"marzo":      "03",
-		"abril":      "04",
-		"mayo":       "05",
-		"junio":      "06",
-		"julio":      "07",
-		"agosto":     "08",
-		"septiembre": "09",
-		"octubre":    "10",
-		"noviembre":  "11",
-		"diciembre":  "12",
-	}
-
-	mes = strings.ToLower(mes)
-	mesNumero, ok := meses[mes]
-	if !ok {
-		return "", fmt.Errorf("mes no válido: %s", mes)
-	}
-
-	fechaFormateada := fmt.Sprintf("%s-%s-%s", ano, mesNumero, dia)
-	return fechaFormateada, nil
-}
-
 func getMenu(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	fecha := chi.URLParam(peticion, "fecha")
-	fechaFormateada, err := convertirFecha(fecha)
-	if err != nil {
-		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-		log.Printf("Error en la conversión de fecha: %s", err)
-		return
-	}
 
 	for _, menu := range menus {
 		menuFecha := string(menu.Fecha)
-		menuFechaFormateada, err := convertirFecha(menuFecha)
-		if err != nil {
-			http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-			log.Printf("Error en la conversión de fecha: %s", err)
-			return
-		}
-
-		if menuFechaFormateada == fechaFormateada {
+		if fecha == menuFecha {
 			respuesta.Header().Set("Content-Type", "application/json")
 			json.NewEncoder(respuesta).Encode(menu)
 			return
@@ -110,21 +46,10 @@ func getMenu(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu
 
 func getPlatos(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	fecha := chi.URLParam(peticion, "fecha")
-	fechaFormateada, err := convertirFecha(fecha)
-	if err != nil {
-		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-		return
-	}
 
 	for _, menu := range menus {
 		menuFecha := string(menu.Fecha)
-		menuFechaFormateada, err := convertirFecha(menuFecha)
-		if err != nil {
-			http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-			log.Printf("Error en la conversión de fecha: %s", err)
-			return
-		}
-		if menuFechaFormateada == fechaFormateada {
+		if menuFecha == fecha {
 			respuesta.Header().Set("Content-Type", "application/json")
 			json.NewEncoder(respuesta).Encode(menu.Platos)
 			return
@@ -136,23 +61,12 @@ func getPlatos(respuesta http.ResponseWriter, peticion *http.Request, menus []Me
 
 func getPlato(respuesta http.ResponseWriter, peticion *http.Request, menus []Menu) {
 	fecha := chi.URLParam(peticion, "fecha")
-	fechaFormateada, err := convertirFecha(fecha)
-	if err != nil {
-		http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-		return
-	}
 
 	nombrePlato := chi.URLParam(peticion, "nombre_plato")
 
 	for _, menu := range menus {
 		menuFecha := string(menu.Fecha)
-		menuFechaFormateada, err := convertirFecha(menuFecha)
-		if err != nil {
-			http.Error(respuesta, "Fecha inválida", http.StatusBadRequest)
-			log.Printf("Error en la conversión de fecha: %s", err)
-			return
-		}
-		if menuFechaFormateada == fechaFormateada {
+		if menuFecha == fecha {
 			for _, plato := range menu.Platos {
 				if strings.EqualFold(plato.Nombre, nombrePlato) {
 					respuesta.Header().Set("Content-Type", "application/json")

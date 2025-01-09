@@ -3,11 +3,14 @@ package internal
 import (
 	"MenuConsulter/internal/config"
 	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
 	"net/http/httptest"
 	"os"
+	"strings"
 	"testing"
+	"time"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/assert"
@@ -15,6 +18,54 @@ import (
 
 func init() {
 	config.InitLogger()
+}
+
+func convertirFecha(fecha string) (string, error) {
+	fecha = strings.TrimSpace(fecha)
+	fecha = strings.ReplaceAll(fecha, "  ", " ")
+
+	if _, err := time.Parse("2006-01-02", fecha); err == nil {
+		return fecha, nil
+	}
+
+	parts := strings.Split(fecha, ",")
+	if len(parts) < 2 {
+		return "", fmt.Errorf("fecha en formato incorrecto: %s", fecha)
+	}
+	fecha = strings.TrimSpace(parts[1])
+
+	partes := strings.Fields(fecha)
+	if len(partes) < 5 {
+		return "", fmt.Errorf("fecha incompleta: %s", fecha)
+	}
+
+	dia := partes[0]
+	mes := partes[2]
+	ano := partes[4]
+
+	meses := map[string]string{
+		"enero":      "01",
+		"febrero":    "02",
+		"marzo":      "03",
+		"abril":      "04",
+		"mayo":       "05",
+		"junio":      "06",
+		"julio":      "07",
+		"agosto":     "08",
+		"septiembre": "09",
+		"octubre":    "10",
+		"noviembre":  "11",
+		"diciembre":  "12",
+	}
+
+	mes = strings.ToLower(mes)
+	mesNumero, ok := meses[mes]
+	if !ok {
+		return "", fmt.Errorf("mes no válido: %s", mes)
+	}
+
+	fechaFormateada := fmt.Sprintf("%s-%s-%s", ano, mesNumero, dia)
+	return fechaFormateada, nil
 }
 
 func setupRouter() *chi.Mux {
@@ -25,6 +76,15 @@ func setupRouter() *chi.Mux {
 		log.Fatalf("Error crítico al extraer menús: %v", err)
 		os.Exit(1)
 	}
+	for i, menu := range menus {
+		fechaConvertida, err := convertirFecha(string(menu.Fecha))
+		if err != nil {
+			log.Fatalf("Error al convertir la fecha '%s': %v", string(menu.Fecha), err)
+			os.Exit(1)
+		}
+		menus[i].Fecha = DiaSemana(fechaConvertida)
+	}
+
 	Router(router, menus)
 	return router
 }
